@@ -1,0 +1,13 @@
+repositories:
+  px4_msgs:
+    type: git
+    url: https://github.com/hidro-iri/px4_msgs.git
+    version: master
+  px4_ros_com:
+    type: git
+    url: https://github.com/hidro-iri/px4_ros_com.git
+    version: master
+  eagle_mpc_ros2:
+    type: git
+    url: https://github.com/hidro-iri/eagle_ros2.git
+    version: devel

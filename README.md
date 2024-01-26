@@ -14,7 +14,7 @@ Before deploying Borinot, ensuring a proper assembly and configuration is pivota
   - [Components List](hardware/components_list.md) - A comprehensive list of all parts you'll need.
   - [Building Instructions](hardware/building_instructions.md) - Step by step guide to build Borinot.
   
-- **[Software](software/README.md) :warning: In construction**
+- **[Software](software/README.md)**
   - [Borinot Bringups](resource/bringup.md) - Steps required to bring up the various subsystems of Borinot, including the flight controller, manipulator, and sensors.
 
 If you encounter any difficulties during assembly or setup, our [Troubleshooting](resource/troubleshooting.md) section is here to help.

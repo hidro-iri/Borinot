@@ -30,8 +30,7 @@ To use Borinot, we've made a set of guides to help you get started with it:
 ## Citing
 If you use Borinot in your research work, please acknowledge our work by citing the following paper:
 
-> :warning: **[Citation Information Pending]**
-<!-- Add citation when available -->
+> J. Martí-Saumell, H. Duarte, P. Grosch, J. Andrade-Cetto, A. Santamaria-Navarro, J. Solà. Borinot: an open thrust-torque-controlled robot for research on agile aerial-contact motion. arXiv preprint arXiv:2307.14686, 2023.
 
 ## License
 

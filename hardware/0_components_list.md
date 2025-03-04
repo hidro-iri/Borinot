@@ -2,6 +2,45 @@
 
 Before beginning assembly, ensure you have all necessary components on hand. This list is organized into categories for ease of reference.
 
+## Upper Part
+
+<!-- Put Picture of all the piece of the upper part -->
+<!-- Plus comment of the picture -->
+
+
+
+| Part Name | Quantity | Type | Assembly Reference |
+|:-|:-:|:-:|:-|
+| [Motor Cases](CAD/motor_case/) | 6 | 3D part | [Airframe Assembly](building_instructions.md#airframe-assembly) |
+| [Body Case](CAD/body_case/) | 1 | 3D part | [Body Assembly](building_instructions.md#body-assembly) |
+| [Landing Gear](CAD/landing_gear/) | 1 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
+| [Controller Case](CAD/controller_case/) | 1 | | [Controller Assembly](building_instructions.md#controller-assembly) |
+| [2DOF Flying Arm](CAD/flying_arm/) | 1 | | [Flying Arm Assembly](building_instructions.md#flying-arm-assembly) |
+| [TMotor F90-1300KV](https://store.tmotor.com/goods.php?id=1064) | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
+| [TMotor F35A 6s](https://store.tmotor.com/goods.php?id=1176) | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
+| [NUC i7](https://ark.intel.com/content/www/us/en/ark/products/series/217835/intel-nuc-kit-with-12th-generation-intel-core-processors.html) | 1 | | [Body Assembly](building_instructions.md#body-assembly) |
+| [PixHawk5](https://docs.px4.io/main/en/flight_controller/pixhawk5x.html) | 1 | | [Body Assembly](building_instructions.md#body-assembly) |
+| ø**...**mm O-ring Seals | 24 | | [Airframe Assembly](building_instructions.md#airframe-assembly) | <!--Mechanical Components-->
+| ø20mm O-ring Seals | 12 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
+| M3x5mm Screws | 12 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
+| M3x10mm Screws | 8 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
+| M3x10mm Nylon Screws | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
+| M3x16mm Screws | 8 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
+| M3x30mm Screws | 24 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
+| M4 Nuts | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
+| M3 Nuts | 16 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
+| M3 Inserts | 12 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
+| Cable Ties | 6 | | [Body Assembly](building_instructions.md#body-assembly) |
+| ø8mmx110.0mm Carbon Fiber Round Tubes | 4 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
+| ø8mmx170.0mm Carbon Fiber Round Tubes | 2 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
+| ø8mmx300.0mm Carbon Fiber Round Tubes | 2 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
+| ø8mmx352.5mm Carbon Fiber Round Tubes | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
+| [Markers](https://optitrack.com/accessories/markers/#mcm-14.0-m4-10) | 11 | | [Airframe Assembly](building_instructions.md#airframe-assembly) & [Body Assembly](building_instructions.md#body-assembly)|
+
+
+## Lower Part
+
+
 ## Electronics
 
 - **Computer:** Intel [NUC i7](https://ark.intel.com/content/www/us/en/ark/products/series/217835/intel-nuc-kit-with-12th-generation-intel-core-processors.html)
@@ -24,11 +63,11 @@ Before beginning assembly, ensure you have all necessary components on hand. Thi
 
 | Part Name | Quantity | Comments | Assembly Reference |
 |:-|:-:|:-:|:-|
-| [Motor Cases](cad_files/motor_case/) | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
-| [Body Case](cad_files/body_case/) | 1 | | [Body Assembly](building_instructions.md#body-assembly) |
-| [Landing Gear](cad_files/landing_gear/) | 1 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
-| [Controller Case](cad_files/controller_case/) | 1 | | [Controller Assembly](building_instructions.md#controller-assembly) |
-| [2DOF Flying Arm](cad_files/flying_arm/) | 1 | | [Flying Arm Assembly](building_instructions.md#flying-arm-assembly) |
+| [Motor Cases](CAD/motor_case/) | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
+| [Body Case](CAD/body_case/) | 1 | | [Body Assembly](building_instructions.md#body-assembly) |
+| [Landing Gear](CAD/landing_gear/) | 1 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
+| [Controller Case](CAD/controller_case/) | 1 | | [Controller Assembly](building_instructions.md#controller-assembly) |
+| [2DOF Flying Arm](CAD/flying_arm/) | 1 | | [Flying Arm Assembly](building_instructions.md#flying-arm-assembly) |
 | [TMotor F90-1300KV](https://store.tmotor.com/goods.php?id=1064) | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
 | [TMotor F35A 6s](https://store.tmotor.com/goods.php?id=1176) | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
 | [NUC i7](https://ark.intel.com/content/www/us/en/ark/products/series/217835/intel-nuc-kit-with-12th-generation-intel-core-processors.html) | 1 | | [Body Assembly](building_instructions.md#body-assembly) |

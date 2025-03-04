@@ -7,12 +7,10 @@ Borinot is an open-source Unmanned Aerial Loco-Manipulator, developed by the HiD
 <!-- Quick section of the main software associate with it: eagle_mpc_lib -->
 <!-- Add section ## Why Borinot Exists -->
 
-## Assembly and Setup Guide
-Before deploying Borinot, ensuring a proper assembly and configuration is pivotal. To guide you through this process, we've created detailed instructions for the robot's assembly and its software configuration:
+## Assembly and Setup Guide  
+Before deploying Borinot, ensure proper assembly and configuration. For detailed hardware assembly instructions, refer to:  
 
-- **[Hardware](hardware/README.md)**
-  - [Components List](hardware/components_list.md) - A comprehensive list of all parts you'll need.
-  - [Building Instructions](hardware/building_instructions.md) - Step by step guide to build Borinot.
+- **[Hardware Guide](hardware/README.md)** - Step-by-step instructions for assembling Borinot, including a complete components list and building process.
   
 - **[Software](software/README.md)**
   - [Borinot Bringups](resource/bringup.md) - Steps required to bring up the various subsystems of Borinot, including the flight controller, manipulator, and sensors.
@@ -34,6 +32,6 @@ If you use Borinot in your research work, please acknowledge our work by citing 
 
 ## License
 
-Borinot is licensed under the BSD 3-clause license. You can read the full license [here](LICENSE.md).
+Borinot is licensed under the BSD 3-clause license. You can read the full license [here](LICENSE).
 
 [Back to HiDRo Group](../profile/README.md)

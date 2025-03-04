@@ -98,3 +98,7 @@ The main body requires careful placement and connection of components:
   - **Pixhawk 5x USB to the NUC using the provided USB C cable.**
 
 Ensure all connections are secure before proceeding with the next step.
+
+---
+
+[Next → Upper Body Integration](4_upper_body_integration.md)

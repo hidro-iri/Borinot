@@ -44,3 +44,7 @@ The controller case contains all the electronics require to control the arm. It 
 The controller case and the arm are holded by the landing gear. The last step is to attach the arm to the landing gear.
 
 - **Using 6 M3 screws, attach the arm to the landing gear.**
+
+---
+
+[Next → Final Assembly](8_final_assembly.md)

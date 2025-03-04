@@ -72,3 +72,7 @@ With both the base and first link assembled, the final step involves connecting 
 - **Attach the ODRI link and the extremity using 2 M3 15mm screws**.
 
 <!-- Add section for the extremities -->
+
+---
+
+[Next → Lower Body Integration](7_lower_body_integration.md)

@@ -172,3 +172,7 @@ For signal:
 2. Secure using 4xM3x30 screws. Ensure the o-ring is positioned on the carbon tube, fitting inside the tube holder and motor.
 3. Install the ESC within the motor support.
 4. Secure the motor cache with 2xM3x6 screws.
+
+---
+
+[Next → Main Body Assembly](3_main_body_assembly.md)

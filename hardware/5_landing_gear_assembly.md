@@ -62,3 +62,7 @@ The landing gear serves as the foundational structure for Borinot's lower body, 
 
 <img src="../media/landing_gear_assembly_13.png" alt="Side view of the assembled landing gear" width="350"/>
 <img src="../media/landing_gear_final.png" alt="Side view of the assembled landing gear" width="350"/>
+
+---
+
+[Next → Flying Arm Assembly](6_flying_arm_assembly.md)

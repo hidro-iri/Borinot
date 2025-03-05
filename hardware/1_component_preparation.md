@@ -39,8 +39,7 @@ The Power Module distributes power to all components (computer, motors, arm, fli
    > :warning: Do not hesitate to force when insering the the EC5 terminal inside the case.
 3. **Reposition** the capacitor and battery cable so they point **inward** on the board.
 
-:-------------------------:|:-------------------------:
-<img src="../media/1_power_module_step_2b.avif" alt="Hot swap components" height="350"> | <img src="../media/1_power_module_step_2.avif" alt="Hot swap components" height="350">
+<img src="../media/1_power_module_step_2b.avif" alt="Hot swap components" height="350"> <img src="../media/1_power_module_step_2.avif" alt="Hot swap components" height="350">
 
 > **Close view: Finalized hot-swap cable; diode visible at front-right**
 
@@ -68,7 +67,8 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 12. **Cut** the masterboard power cable in half.
 13. **Crimp** JST connector onto each cable.
 14. **Use** the connector-bearing cable for the [flying arm assembly](6_flying_arm_assembly.md) and the other as the **masterboard cable**.
-15. **Solder** the masterboard cable to the **5V com pin**, ensuring proper polarity.
+   > :warning: Be sure to put the connector the correct way to ensure that positive connect to positive. 
+15. **Solder** the masterboard cable to the **5V com pin**, ensuring proper polarity (black cable to ground, red cable to 5V).
 
 <img src="../media/1_power_module_step_5.avif" alt="Computer components" width="350">
 
@@ -76,7 +76,7 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 
 16. **Set VDD to 12V** using the jumper configuration.
 17. **Cut** the computer cable to a **24cm length**.
-18. **Solder** the computer cable to the **12V servo pin**, maintaining correct polarity.
+18. **Solder** the computer cable to the **VDD servo pin**, maintaining correct polarity.
 
 <img src="../media/1_power_module_modified.avif" alt="Modified power module" width="350">
 

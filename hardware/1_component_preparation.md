@@ -61,13 +61,14 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 10. **Add** heat shrink tubing to seal the connections.  
     > :information_source: This cable will be referred to as the **microdriver cable**.
 11. **Solder** the microdriver cable to the pad visible on the picture (red to B+ pad, black to GND pad).
+    > :information_source: Put a heat shrink on the connector for manipulation safety.
 
 <img src="../media/1_power_module_step_4.avif" alt="Masterboard components" width="350">
 
 > **Top view: Components for masterboard cable (from right to left: masterboard power cable, JST male connector, JST female connector)**
 
 12. **Cut** the masterboard power cable in half.
-13. **Solder** a JST connector onto each cable.
+13. **Crimp** JST connector onto each cable.
 14. **Use** the connector-bearing cable for the [flying arm assembly](6_flying_arm_assembly.md) and the other as the **masterboard cable**.
 15. **Solder** the masterboard cable to the **5V com pin**, ensuring proper polarity.
 
@@ -135,7 +136,7 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 
 5. **Solder** 5cm of the leftover phase cables from the motors to the ESC’s phase pads.
 6. **Attach** the female banana plugs to these phase cables and **add** heat shrink tubing over the connections before heating to seal.
-7. **Solder** 20cm power cables to the ESC’s power pads.  
+7. **Solder** 30cm power cables to the ESC’s power pads.  
    > :information_source: Connect the red cable to the positive (+) pad and the black cable to the negative (–) pad.
 8. **Slide** heat shrink tubing onto both power cables (do not heat yet).
 9. **Solder** the XT30 male connectors to the ends of the power cables.  

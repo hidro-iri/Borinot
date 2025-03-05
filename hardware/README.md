@@ -12,6 +12,6 @@ Contents:
 5. [**Landing Gear Assembly**](5_landing_gear_assembly.md) - Construct landing gear with dampers.
 6. [**Flying Arm Assembly**](6_flying_arm_assembly.md) - Assemble ODRI actuator and controller case.
 7. [**Lower Body Integration**](7_lower_body_integration.md) - Connect flying arm to landing gear and electronics.
-8. [**Final Assembly**](8_final_assembly.md) - Combine upper and lower bodies, then test the system.
+8. [**Final Assembly**](8_final_assembly.md) - Combine upper and lower bodies.
 
 [Back to Borinot Main Page](../README.md)

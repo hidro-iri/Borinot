@@ -29,8 +29,7 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 
 ### Steps
 
-<img src="../media/1_power_module_step_1.avif" alt="Reposition current component" width="350">
-<img src="../media/1_power_module_step_1b.avif" alt="Reposition current component" width="350">
+<img src="../media/1_power_module_step_1.avif" alt="Reposition current component" width="350"> | <img src="../media/1_power_module_step_1b.avif" alt="Reposition current component" width="350">
 
 > **Top view: EC5 connector and power module prior to battery cable connector replacement**
 
@@ -41,8 +40,7 @@ The Power Module distributes power to all components (computer, motors, arm, fli
    > :warning: Do not hesitate to force when insering the the EC5 terminal inside the case.
 3. **Reposition** the capacitor and battery cable so they point **inward** on the board.
 
-<img src="../media/1_power_module_step_2b.avif" alt="Hot swap components" height="350">
-<img src="../media/1_power_module_step_2.avif" alt="Hot swap components" height="350">
+<img src="../media/1_power_module_step_2b.avif" alt="Hot swap components" height="350"> <img src="../media/1_power_module_step_2.avif" alt="Hot swap components" height="350">
 
 > **Close view: Finalized hot-swap cable; diode visible at front-right**
 

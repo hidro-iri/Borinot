@@ -96,7 +96,7 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 1. **Trim** the phase cables by about **5cm**.  
    > :warning: Retain the trimmed segments for the ESC modification.
 2. **Solder** the male banana plugs to the trimmed phase cables.  
-   > :info: Use the connector’s side hole to help evenly melt the solder paste.
+   > :information_source: Use the connector’s side hole to help evenly melt the solder paste.
 3. **Add** heat shrink tubing around the connectors to insulate the soldered joints.
 4. **Repeat** these steps for all 6 brushless motors.
 
@@ -109,13 +109,13 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 5. **Solder** 5cm of the leftover phase cables from the motors to the ESC’s phase pads.
 6. **Attach** the female banana plugs to these phase cables and **add** heat shrink tubing over the connections before heating to seal.
 7. **Solder** 20cm power cables to the ESC’s power pads.  
-   > :info: Connect the red cable to the positive (+) pad and the black cable to the negative (–) pad.
+   > :information_source: Connect the red cable to the positive (+) pad and the black cable to the negative (–) pad.
 8. **Slide** heat shrink tubing onto both power cables (do not heat yet).
 9. **Solder** the XT30 male connectors to the ends of the power cables.  
    > :warning: Double-check polarity before sealing.
 10. **Heat** the tubing to secure the connections.
 11. **Solder** 30cm servo cables to the ESC’s servo pads.  
-    > :info: Attach the white cable to the signal (S) pad and the black cable to the ground (–) pad.
+    > :information_source: Attach the white cable to the signal (S) pad and the black cable to the ground (–) pad.
 12. **Crimp** the wires and attach the servo connectors.  
     > :warning: Double-check the orientation.
 13. **Repeat** the entire ESC modification process for all 6 ESCs.

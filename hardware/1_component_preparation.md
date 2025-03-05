@@ -124,18 +124,18 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 
 <img src="../media/1_motor_modified.avif" alt="Modified brushless motor" width="350">
 
-> `Close view: Finalized motor`
+> **Close view: Finalized motor**
 
 #### ESC Modification
 
 <img src="../media/1_esc_step_1.avif" alt="ESC modification" width="350">
 
-> **Close view: ESC faces – Left/Middle ones show pads labeled \`–\`, \`S\`, and \`T\` for signal cables at the bottom left. Right one shows power cable pads at the top; displays phase cable pads at the bottom**
+> **Close view: ESC faces – Left/Middle ones show pads labeled `–`, `S`, and `T` for signal cables at the bottom left. Right one shows power cable pads at the top; displays phase cable pads at the bottom**
 
 5. **Solder** 5cm of the leftover phase cables from the motors to the ESC’s phase pads.
 6. **Attach** the female banana plugs to these phase cables and **add** heat shrink tubing over the connections before heating to seal.
 7. **Solder** 30cm power cables to the ESC’s power pads.  
-   > :information_source: Connect the red cable to the positive (+) pad and the black cable to the negative (–) pad.
+   > :information_source: Connect the red cable to the positive (`+`) pad and the black cable to the negative (`–`) pad.
 8. **Slide** heat shrink tubing onto both power cables (do not heat yet).
 9. **Solder** the XT30 male connectors to the ends of the power cables.  
    > :warning: Double-check polarity before sealing.

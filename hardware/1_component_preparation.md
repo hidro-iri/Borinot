@@ -39,14 +39,14 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 5. **Solder** the diode's cathode (left leg) to the positive power cable.
 6. **Solder** the negative power cable to the negative terminal of the XT30-M connector.
 7. **Add** heat shrink tubing over the connectors and **heat** to seal.  
-   > This cable will be referred to as the **hot-swap cable**.
+   > :information_source: This cable will be referred to as the **hot-swap cable**.
 8. **Solder** the hot-swap cable to the original battery cable location, keeping the same orientation.
 
 <img src="../media/1_power_module_step_3.avif" alt="Microdriver components" width="400">
 
 9. **Solder** both power cables to the XT30 connector (red to positive, black to negative).
 10. **Add** heat shrink tubing to seal the connections.  
-    > This cable will be referred to as the **microdriver cable**.
+    > :information_source: This cable will be referred to as the **microdriver cable**.
 11. **Solder** the microdriver cable to the pad atop the Pixhawk connector (red to B+ pad, black to GND pad).
 
 <img src="../media/1_power_module_step_4.avif" alt="Masterboard components" width="400">

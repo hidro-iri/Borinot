@@ -10,7 +10,7 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 
 ### Materials
 
-<img src="../media/1_power_module_exploded.avif" alt="Exploded view of power module components" width="400">
+<img src="../media/1_power_module_exploded.avif" alt="Exploded view of power module components" width="350">
 
 > **Top view: computer cable, power module, masterboard power cable with JST connectors, EC5 connector, XT30-F connector, diode for hot-swap cable, XT30-M connector for microdriver, power cables**
 
@@ -29,44 +29,49 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 
 ### Steps
 
-<img src="../media/1_power_module_step_1.avif" alt="Reposition current component" width="400">
+<img src="../media/1_power_module_step_1.avif" alt="Reposition current component" width="350">
+<img src="../media/1_power_module_step_1b.avif" alt="Reposition current component" width="350">
 
 > **Top view: EC5 connector and power module prior to battery cable connector replacement**
 
 1. **Unsolder** the capacitor and battery cable from the board.
 2. **Replace** the battery cable's connector from XT60 to EC5.
+   > :warning: Do not cut the cable to remove the XT60.
+
+   > :warning: Do not hesitate to force when insering the the EC5 terminal inside the case.
 3. **Reposition** the capacitor and battery cable so they point **inward** on the board.
 
-<img src="../media/1_power_module_step_2.avif" alt="Hot swap components" height="400">
+<img src="../media/1_power_module_step_2b.avif" alt="Hot swap components" height="350">
+<img src="../media/1_power_module_step_2.avif" alt="Hot swap components" height="350">
 
 > **Close view: Finalized hot-swap cable; diode visible at front-right**
 
-4. **Bend** the diode's anode (right leg) to align with the positive terminal of the XT30-M connector and **solder** it.
+4. **Bend** the diode's anode (right leg) to connect with the positive terminal of the XT30-M connector and **solder** it.
 5. **Solder** the diode's cathode (left leg) to the positive power cable.
 6. **Solder** the negative power cable to the negative terminal of the XT30-M connector.
 7. **Add** heat shrink tubing over the connectors and **heat** to seal.  
    > :information_source: This cable will be referred to as the **hot-swap cable**.
 8. **Solder** the hot-swap cable to the original battery cable location, keeping the same orientation.
 
-<img src="../media/1_power_module_step_3.avif" alt="Microdriver components" width="400">
+<img src="../media/1_power_module_step_3.avif" alt="Microdriver components" width="350">
 
 > **Close view: Pad for microdriver soldering with corresponding cables and connector**
 
 9. **Solder** both power cables to the XT30 connector (red to positive, black to negative).
 10. **Add** heat shrink tubing to seal the connections.  
     > :information_source: This cable will be referred to as the **microdriver cable**.
-11. **Solder** the microdriver cable to the pad atop the Pixhawk connector (red to B+ pad, black to GND pad).
+11. **Solder** the microdriver cable to the pad visible on the picture (red to B+ pad, black to GND pad).
 
-<img src="../media/1_power_module_step_4.avif" alt="Masterboard components" width="400">
+<img src="../media/1_power_module_step_4.avif" alt="Masterboard components" width="350">
 
 > **Top view: Components for masterboard cable (from right to left: masterboard power cable, JST male connector, JST female connector)**
 
 12. **Cut** the masterboard power cable in half.
 13. **Solder** a JST connector onto each cable.
 14. **Use** the connector-bearing cable for the [flying arm assembly](6_flying_arm_assembly.md) and the other as the **masterboard cable**.
-15. **Solder** the masterboard cable to the **5V servo pin**, ensuring proper polarity.
+15. **Solder** the masterboard cable to the **5V com pin**, ensuring proper polarity.
 
-<img src="../media/1_power_module_step_5.avif" alt="Computer components" width="400">
+<img src="../media/1_power_module_step_5.avif" alt="Computer components" width="350">
 
 > **Close view: VDD jumper pins (middle left) and computer cable at servo pin (lower right)**
 
@@ -74,7 +79,7 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 17. **Cut** the computer cable to a **24cm length**.
 18. **Solder** the computer cable to the **12V servo pin**, maintaining correct polarity.
 
-<img src="../media/1_power_module_modified.avif" alt="Modified power module" width="400">
+<img src="../media/1_power_module_modified.avif" alt="Modified power module" width="350">
 
 > **Top view: Final modified power module**
 
@@ -86,7 +91,7 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 
 ### Materials
 
-<img src="../media/1_brushless_motor_exploded.avif" alt="Exploded view of brushless motor components" width="400">
+<img src="../media/1_brushless_motor_exploded.avif" alt="Exploded view of brushless motor components" width="350">
 
 > **Top view: Components for motor and ESC modification (from top to bottom, left to right: servo connector, ESC, motor, servo pins, power cables, banana plug, XT30-M connector, signal cables)**
 
@@ -107,7 +112,7 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 
 #### Brushless Motor Modification
 
-<img src="../media/1_motor_step_1.avif" alt="Brushless motor modification" width="400">
+<img src="../media/1_motor_step_1.avif" alt="Brushless motor modification" width="350">
 
 > **Top view: Motor and banana plugs (from left to right)**
 
@@ -118,13 +123,13 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 3. **Add** heat shrink tubing around the connectors to insulate the soldered joints.
 4. **Repeat** these steps for all 6 brushless motors.
 
-<img src="../media/1_motor_modified.avif" alt="Modified brushless motor" width="400">
+<img src="../media/1_motor_modified.avif" alt="Modified brushless motor" width="350">
 
 > `Close view: Finalized motor`
 
 #### ESC Modification
 
-<img src="../media/1_esc_step_1.avif" alt="ESC modification" width="400">
+<img src="../media/1_esc_step_1.avif" alt="ESC modification" width="350">
 
 > **Close view: ESC faces – Left/Middle ones show pads labeled \`–\`, \`S\`, and \`T\` for signal cables at the bottom left. Right one shows power cable pads at the top; displays phase cable pads at the bottom**
 
@@ -142,7 +147,7 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
     > :warning: Double-check the orientation.
 13. **Repeat** the entire ESC modification process for all 6 ESCs.
 
-<img src="../media/1_esc_modified.avif" alt="Modified ESC" width="400">
+<img src="../media/1_esc_modified.avif" alt="Modified ESC" width="350">
 
 > **Top view: Finalized modified ESC**
 

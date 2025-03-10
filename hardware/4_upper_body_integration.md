@@ -1,55 +1,48 @@
-## Airframe Assembly (Upper Body)
+# Upper Body Integration
 
-The airframe, which is part of the upper body, comprises the motors, ESCs (Electronic Speed Controllers), motor case, and the carbon fiber frame.
+## 3D part 
 
-> :warning: **Note**: Motor identification is crucial. Please refer to the [Hexarotor X airframe reference](https://docs.px4.io/main/en/airframes/airframe_reference.html#hexarotor-x) to correctly identify each motor.
+### Materials
 
-### 3D Preparation
+- 3d parts (spacers)
+- nuts M3 (x8)
 
-1. Clean all 3D printed parts thoroughly.
-2. Ensure all support structures, especially those inside the tube holder, are completely removed.
-3. Assemble the motor marker as follows for each motor:
-   
-| Motor ID | Marker Position |
-|:-:|:-:|
-| 1 | Bottom Right |
-| 2 | Top Right |
-| 3 | Top Left |
-| 4 | Bottom Left |
-| 5 | Top Right |
-| 6 | Bottom Right |
+### Steps
 
-4. Attach two inserts to the bottom part.
-5. Complete the assembly of the motor cache.
+1. clean plastic
+2. put nuts
 
-### Motor Wiring
+## Airframe Mounting
 
-1. Cut phase cables to a length of 5cm.
-2. Solder the male phase connector.
-3. Cover each connector with heat shrink tubing.
+### Materials
 
-### ESC Wiring
+- Main Body
+- Airframe
+- 3D parts
 
-For the phase:
-1. Solder a 5cm cable from the motor.
-2. Attach the female phase connectors.
-3. Place heat shrink tubing around the full connector.
+### steps
 
-For power:
-1. Solder a 20cm cable, using red for positive (+) and black for negative (-).
-2. Place heat shrink tubing around the cable (do not heat yet).
-3. Attach the XT18 connector.
-4. Heat the tubing around the cable first, followed by the connector.
+1. place the main body on top of the airframe
+2. put the spacers betwen the differents carbon fiber tubes
+    > :warning: The slots should be facing out.
+    > :information_source: The spacer are place at the intersections of the carbon fibers tube (seeing from the top)
+    > :information_source: The more distance between two tubes, the bigger the spacers
+3. put landing gear interface below each spacers
+    > :warning: The slots should be facing out.
+4. Tight the airframe to the main body using fasteners
+    > :information_source: use the mainbody's inside cavity to hide the head of the fasteners
 
-For signal:
-1. Solder a 30cm cable using white for the signal and black for ground.
+## Upper Body Routing
 
-### Final Assembly
+> :warning: Patience is key.
 
-1. Combine the motor's top, middle, and bottom parts.
-2. Secure using 4xM3x30 screws. Ensure the o-ring is positioned on the carbon tube, fitting inside the tube holder and motor.
-3. Install the ESC within the motor support.
-4. Secure the motor cache with 2xM3x6 screws.
+### steps
+
+1. Follow the routing schematic (picture showing on which should pass each cable)
+2. start by the power cables
+3. continue with the signal cables
+4. finish with the others
+
 
 ---
 

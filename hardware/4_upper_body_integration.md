@@ -23,16 +23,16 @@
 ### steps
 
 1. Place the main body on top of the airframe keeping the fronts align.
-> :information_source: each CF tube should fit inside the CFT slots.
-> :warning: if one triangle does not fit, place properly two tubes and reassemble the two others motor cases to make the third bare fits.
+> :information_source: each CF tube should fit inside the CFT slots.  
+> :warning: if one triangle does not fit, place properly two tubes and reassemble the two others motor cases to make the third bare fits.  
 2. Put one spacer between the differents carbon fiber tubes.
-> :warning: The slots should be facing out.
-> :information_source: The spacer is place at the intersections of the carbon fibers tube. (seeing from the top)
+> :warning: The slots should be facing out.  
+> :information_source: The spacer is place at the intersections of the carbon fibers tube. (seeing from the top)  
 > :information_source: The more distance between two tubes, the bigger the spacers
 3. if the spacer if touching the lower bares, put the associate landing gear interface below the spacer
-> :warning: The slots should be facing out.
+> :warning: The slots should be facing out.  
 4. Tight the airframe to the main body where the spacer is using fasteners
-> :information_source: use the main body's inside cavity to hide the head of the fasteners.
+> :information_source: use the main body's inside cavity to hide the head of the fasteners.  
 5. repeat steps 2 to 4 for each spacer.
 
 

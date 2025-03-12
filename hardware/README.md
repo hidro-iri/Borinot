@@ -1,4 +1,4 @@
-# Borinot: Building Instructions
+# Borinot: Hardware Building Instructions
 
 This guide provides a step-by-step overview of assembling Borinot. The assembly process is divided into two main sections: the **upper body** (steps 1 to 4) and the **lower body** (steps 5 to 7). Before you begin, ensure you have the necessary components (step 0).
 

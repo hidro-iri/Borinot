@@ -1,4 +1,4 @@
-# PX4 Autopilot
+# Pixhawk Configuration
 
 ## 1 Installation
 In order to perform direct actuator control we need to modify the [original](https://github.com/PX4/PX4-Autopilot) PX4 repository. You should install [this modified version](https://github.com/hidro-iri/PX4-Autopilot).

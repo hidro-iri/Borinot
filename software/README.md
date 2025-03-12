@@ -1,19 +1,13 @@
-# Eagle - Software
+# Borinot: Software Setup Guide
 
-:warning: In construction :construction_worker:
+This guide provides a step-by-step overview of configuring Borinot's software stack.
 
-Below there is a list of software related to the operation of UAMs. Click on each one of them to know more.
+---
 
-## 1. [EagleMPC](eagle_mpc_lib/README.md)
+## Contents:
+0. [**Computer Configuration**](0_computer_configuration.md) - Set up Ubuntu 20.04, configure lab network access, and enable SSH.  
+1. [**Pixhawk Configuration**](1_pixhawk_configuration.md) - Install and customize PX4 firmware, configure ROS2 communication bridge.  
+2. [**EagleMPC Installation**](2_eagle_mpc_installation.md) - Install control library with Crocoddyl dependency and Python bindings.  
+3. [**ROS2 Installation & Configuration**](3_ros2_install_config.md) - Install ROS2 Galactic, build workspace, and validate Pixhawk connectivity.  
 
-Low level C++ library to apply Model Predictive Control techniques to aerial manipulators.
-
-## 2. [Eagle ROS2](eagle_ros2/README.md)
-
-ROS2 library containing several ROS2 packages to operate with UAMs.
-
-## 3. [PX4 Autopilot](px4/README.md)
-
-Fork of the very popular firmware for flight controllers.
-
-[Back to Eagle](../README.md)
+[Back to Borinot Main Page](../README.md)

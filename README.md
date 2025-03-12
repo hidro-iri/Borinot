@@ -14,8 +14,7 @@ Before deploying Borinot, ensure proper assembly and configuration. For detailed
 
 - **[Hardware Guide](hardware/README.md)** - Step-by-step instructions for assembling Borinot, including a complete components list and building process.
   
-- **[Software](software/README.md)**
-  - [Borinot Bringups](resource/bringup.md) - Steps required to bring up the various subsystems of Borinot, including the flight controller, manipulator, and sensors.
+- **[Software Setup](software/README.md)** - Guide to Borinot's software stack installation, configuration, and subsystem integration. 
 
 If you encounter any difficulties during assembly or setup, our [Troubleshooting](resource/troubleshooting.md) section is here to help.
 

@@ -20,15 +20,16 @@ foo@bar:<path-to-px4-inst-folder/eagle-px4>$  ./Tools/setup/ubuntu.sh
 
 #### 1.1.1 Fast-DDS
 To build **FastDDS**, **Foonathan memory** is required. Both installation procedures are explained at the PX4 wiki.
-1. [**Foonathan memory**](https://docs.px4.io/master/en/dev_setup/fast-dds-installation.html#foonathan-memory)
-2. [**FastDDS**](https://docs.px4.io/master/en/dev_setup/fast-dds-installation.html#fast-dds)
+
+1. [**Foonathan memory**](https://github.com/eProsima/foonathan_memory_vendor)
+2. [**FastDDS**](git@github.com:eProsima/Fast-DDS.git) tag v2.0.2
 
 #### 1.1.2 Fast-RTPS-Gen
 To build **FastRTPS-Gen**, we need **Gradle**, which at the same time must be downloaded using **SDKman**. Thus we recommend to follow a reverse order:
 
 1. Install [**SDKman**](https://sdkman.io/install)
 2. Install [**Gradle**](https://docs.px4.io/master/en/dev_setup/fast-dds-installation.html#gradle). From a terminal run: `sdk install gradle 6.3`.
-3. Follow [these steps](https://docs.px4.io/master/en/dev_setup/fast-dds-installation.html#fast-rtps-gen) to build **Fast-RTPS-Gen**.
+3. Follow [these steps](https://github.com/eProsima/Fast-DDS-Gen/tree/v1.0.4) to build **Fast-RTPS-Gen**. tag v1.0.4
 
 ## 2 Build
 

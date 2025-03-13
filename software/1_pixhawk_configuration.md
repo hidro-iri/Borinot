@@ -7,11 +7,11 @@ In order to perform direct actuator control we need to modify the [original](htt
 
 Quick installation commands (the last command it is a script to install all PX4 Autopilot dependencies):
 ```console
-foo@bar:~$ cd <path-to-px4-inst-folder>
-foo@bar:<path-to-px4-inst-folder>$ git clone --branch motor_control https://github.com/hidro-iri/PX4-Autopilot.git eagle-px4
-foo@bar:<path-to-px4-inst-folder>$ cd eagle-px4
-foo@bar:<path-to-px4-inst-folder/eagle-px4>$  git submodule update --init --recursive
-foo@bar:<path-to-px4-inst-folder/eagle-px4>$  ./Tools/setup/ubuntu.sh
+foo@bar:~$ cd libraries
+foo@bar:libraries$ git clone --branch motor_control https://github.com/hidro-iri/PX4-Autopilot.git
+foo@bar:libraries$ cd PX4-Autopilot
+foo@bar:libraries/PX4-Autopilot$  git submodule update --init --recursive
+foo@bar:libraries/PX4-Autopilot$  ./Tools/setup/ubuntu.sh
 ```
 
 > :warning: "Relogin or reboot computer before attempting to build NuttX targets"

@@ -22,7 +22,30 @@ foo@bar:libraries/PX4-Autopilot$  ./Tools/setup/ubuntu.sh
 To build **FastDDS**, **Foonathan memory** is required. Both installation procedures are explained at the PX4 wiki.
 
 1. [**Foonathan memory**](https://github.com/eProsima/foonathan_memory_vendor)
-2. [**FastDDS**](git@github.com:eProsima/Fast-DDS.git) tag v2.0.2
+
+``` shell
+cd ~/libraries
+git clone --branch v1.3.1 https://github.com/eProsima/foonathan_memory_vendor
+cd foonathan_memory_vendor
+git submodule update --init --recursive
+mkdir build && cd build
+cmake .. 
+make
+sudo make install 
+```
+
+2. [**FastDDS**](https://github.com/eProsima/Fast-DDS.git) tag v2.0.2
+
+``` shell
+cd ~/libraries
+git clone --branch v2.0.2 https://github.com/eProsima/Fast-DDS.git
+cd Fast-DDS
+git submodule update --init --recursive
+mkdir build && cd build
+cmake .. 
+make
+sudo make install 
+```
 
 #### 1.1.2 Fast-RTPS-Gen
 To build **FastRTPS-Gen**, we need **Gradle**, which at the same time must be downloaded using **SDKman**. Thus we recommend to follow a reverse order:

@@ -1,24 +1,26 @@
 # EagleMPC Installation
 
-    :warning: Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. :warning:
+> :warning: Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. :warning:
 
 
 This library contains tools to solve *optimal control problems* (OCPs) that deal with *unmanned aerial manipulators* (UAMs). For more information, [read the repo](https://github.com/hidro-iri/eagle_mpc_lib).
 
 ## Part 1: Crocoddyl Installation
-1. **Add** robotpkg apt repository
-    ``` bash
+1. **Add** robotpkg apt repository:
+    > :information_source: original documentation [here](http://robotpkg.openrobots.org/debian.html)
+    ``` script
     sudo apt install -qqy lsb-release
     sudo mkdir -p /etc/apt/keyrings
     curl http://robotpkg.openrobots.org/packages/debian/robotpkg.asc \
-      sudo tee /etc/apt/keyrings/robotpkg.asc
+       | sudo tee /etc/apt/keyrings/robotpkg.asc
     echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/robotpkg.asc] http://robotpkg.openrobots.org/packages/debian/pub $(lsb_release -cs) robotpkg" \
-      sudo tee /etc/apt/sources.list.d/robotpkg.list
+       | sudo tee /etc/apt/sources.list.d/robotpkg.list
     sudo apt update
     ```
-2. **Configure** environment variables for robotpkg
+2. **Configure** environment variables for robotpkg:
     - In `~/.bashrc`, add this line to the end
     ``` bash
+    # openrobot robotpkg
     export PATH=/opt/openrobots/bin:$PATH
     export PKG_CONFIG_PATH=/opt/openrobots/lib/pkgconfig:$PKG_CONFIG_PATH
     export LD_LIBRARY_PATH=/opt/openrobots/lib:$LD_LIBRARY_PATH
@@ -27,17 +29,18 @@ This library contains tools to solve *optimal control problems* (OCPs) that deal
     ```
     > :warning: source `~/.bashrc` or open a new terminal to pursue
 
-3. **Install** Crocoddyl dependencies
+3. **Install** Crocoddyl dependencies:
     ``` bash
-    sudo apt install -qqy robotpkg-py38-eigenpy=2.8.0
-    sudo apt install -qqy robotpkg-hpp-fcl=1.8.1
-    sudo apt install -qqy robotpkg-py38-hpp-fcl=1.8.1
-    sudo apt install -qqy robotpkg-pinocchio=2.6.10
-    sudo apt install -qqy robotpkg-py38-pinocchio=2.6.10
+    sudo apt install -qqy robotpkg-py38-eigenpy=2.8.0 \
+                          robotpkg-hpp-fcl=1.8.1 \
+                          robotpkg-py38-hpp-fcl=1.8.1 \
+                          robotpkg-pinocchio=2.6.10 \                          robotpkg-py38-pinocchio=2.6.10 \
+                          robotpkg-example-robot-data=4.1.0 \
+                          robotpkg-py38-example-robot-data=4.1.0
     ```
-4. **Build** and **install** custom Crocoddyl from source
-   > the original Crocoddyl repository has been modify to consider different stopping criteria.
-   >The modified version is avalaible [here](https://github.com/PepMS/crocoddyl/tree/sbfddp-v2).
+4. **Build** and **install** custom Crocoddyl from source:
+    > :information_source: The original Crocoddyl repository has been modify to consider different stopping criteria.  
+   > The modified version is avalaible [here](https://github.com/PepMS/crocoddyl/tree/sbfddp-v2).
     ```bash
     cd ~/libraries
     git clone --recursive https://github.com/PepMS/crocoddyl.git -b sbfddp-v2
@@ -47,10 +50,10 @@ This library contains tools to solve *optimal control problems* (OCPs) that deal
     make -j6
     sudo make install
     ```
-5. **Configure** environment variables for Crocoddyl
+5. **Configure** environment variables for Crocoddyl:
     - In `~/.bashrc`, add this line to the end 
-    ```console
-    export PATH=/usr/local/bin:$PATH
+    ```bash
+    # Crocoddyl 
     export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
     export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
     export PYTHONPATH=/usr/local/lib/python3/dist-packages:$PYTHONPATH
@@ -81,7 +84,7 @@ This library contains tools to solve *optimal control problems* (OCPs) that deal
     make -j6
     sudo make install
     ```
-    >:warning: **Problem with the system locale** :warning: The Yaml parser uses the `std::stod` function to convert a string to a double. This function is locale dependant. Be sure to have set a locale that uses `.` as a decimal separator. To make sure of it you can run:
+    > :warning: **Problem with the system locale** :warning: The Yaml parser uses the `std::stod` function to convert a string to a double. This function is locale dependant. Be sure to have set a locale that uses `.` as a decimal separator. To make sure of it you can run:
     ```console
     export LC_NUMERIC="en_US.UTF-8"
     ```

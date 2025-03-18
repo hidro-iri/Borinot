@@ -1,5 +1,12 @@
 # Pixhawk Configuration
 
+In this part we will install all the libraries to flash and interact with the pixhawk.
+
+1. Custom PX4 Install
+2. Fast-DDS (previously FastRTPS)
+3. FAST-DDS-Gen (previously Fast-RTPS-Gen)
+4. Installation
+
 ## 1 Installation
 In order to perform direct actuator control we need to modify the [original](https://github.com/PX4/PX4-Autopilot) PX4 repository. You should install [this modified version](https://github.com/hidro-iri/PX4-Autopilot).
 
@@ -21,22 +28,38 @@ foo@bar:libraries/PX4-Autopilot$  ./Tools/setup/ubuntu.sh
 #### 1.1.1 Fast-DDS
 To build **FastDDS**, **Foonathan memory** is required. Both installation procedures are explained at the PX4 wiki.
 
+```
+sudo apt install libasio-dev libtinyxml2-dev
+```
+
 1. [**Foonathan memory**](https://github.com/eProsima/foonathan_memory_vendor)
 
 ``` shell
 cd ~/libraries
 git clone --branch v1.3.1 https://github.com/eProsima/foonathan_memory_vendor
 cd foonathan_memory_vendor
-git submodule update --init --recursive
 mkdir build && cd build
 cmake .. 
 make
 sudo make install 
 ```
 
-2. [**FastDDS**](https://github.com/eProsima/Fast-DDS.git) tag v2.0.2
+1. [**Fast CDR**](https://github.com/eProsima/foonathan_memory_vendor)
 
 ``` shell
+cd ~/libraries
+git clone --branch v1.3.1 https://github.com/eProsima/foonathan_memory_vendor
+cd foonathan_memory_vendor
+mkdir build && cd build
+cmake .. 
+make
+sudo make install 
+```
+
+2. [**FastDDS**](https://github.com/eProsima/Fast-DDS/tree/v2.0.2) tag v2.0.2
+
+``` shell
+sudo apt install 
 cd ~/libraries
 git clone --branch v2.0.2 https://github.com/eProsima/Fast-DDS.git
 cd Fast-DDS
@@ -51,7 +74,7 @@ sudo make install
 To build **FastRTPS-Gen**, we need **Gradle**, which at the same time must be downloaded using **SDKman**. Thus we recommend to follow a reverse order:
 
 1. Install [**SDKman**](https://sdkman.io/install)
-2. Install [**Gradle**](https://docs.px4.io/master/en/dev_setup/fast-dds-installation.html#gradle). From a terminal run: `sdk install gradle 6.3`.
+2. Install [**Gradle**] From a terminal run: `sdk install gradle 6.3`.
 3. Follow [these steps](https://github.com/eProsima/Fast-DDS-Gen/tree/v1.0.4) to build **Fast-RTPS-Gen**. tag v1.0.4
 
 ## 2 Build
@@ -88,4 +111,4 @@ foo@bar:<path-to-px4>$ make px4_fmu-v5x_rtps upload
 ```
 
 
-[Back to Software](../README.md)
+[Next → Eagle MPC Configuration](2_eagle_mpc.md)

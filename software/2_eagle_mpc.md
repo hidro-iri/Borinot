@@ -20,4 +20,5 @@ See [here for installation instructions](https://github.com/hidro-iri/eagle_mpc_
 See [here for building instructions](https://github.com/hidro-iri/eagle_mpc_lib#3-installation---eagle-mpc)
 
 
-[Back to Software](../README.md)
+
+[Next → ROS2 Workspace Configuration](3_odri.md)

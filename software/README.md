@@ -3,7 +3,7 @@
 This guide provides a step-by-step overview of configuring Borinot's software stack.
 
 ## Contents:
-0. [**Computer Configuration**](0_computer_system.md) - Set up Ubuntu 20.04, install utility libraries, configure lab network access and enable SSH.  
+0. [**Computer Configuration**](0_computer_configuration.md) - Set up Ubuntu 20.04, install utility libraries, configure lab network access and enable SSH.  
 1. [**Pixhawk Configuration**](1_pixhawk_configuration.md) - Install and customize PX4 firmware.
 2. [**EagleMPC Installation**](2_eagle_mpc.md) - Install control library with Crocoddyl dependency and Python bindings.  
 3. [**ODRI Controller Install**](3_odri.md) - Install controller library with masterboard sdk and odri control libraries.

@@ -24,7 +24,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 2. **Install** ROS 2 packages:
 ``` bash
 sudo apt update
-sudo apt install ros-galactic-desktop
+sudo apt install ros-galactic-desktop ros-dev-tools
 ```
 3. source the ros2 environment
 ``` bash
@@ -71,8 +71,19 @@ sudo make install
 cd ~/galactic_ws
 colcon build --event-handlers console_direct+ --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Release --symlink-install
 ```
-5. source the ros2 workspace environment
-6. test
+> :warning: **KNOWN ISSUE**: :warning:  
+``` bash
+CMake Error in eagle_ros2/eagle_mpc_controller/CMakeLists.txt:
+Imported target "eagle_mpc" includes non-existent path
+"/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../../include"
+```
+> In case the compilation throws this error, the include path in the `/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/yaml-cpp-config.cmake` file must be changed.  
+> Change line 8, where the path is set to the following: `set(YAML_CPP_INCLUDE_DIR "${YAML_CPP_CMAKE_DIR}/../../../../include")`.  
+> **Important**: eagle_mpc_lib has to be recompile before running `colcon build` 
+
+
+1. source the ros2 workspace environment
+2. test
 ``` bash
 mkdir ~/galactic_ws && cd ~/galactic_ws
 ```

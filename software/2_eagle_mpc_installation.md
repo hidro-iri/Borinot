@@ -75,14 +75,6 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j6
 sudo make install
 ```
-> :warning: **KNOWN ISSUE**: :warning:  
-``` bash
-CMake Error in eagle_mpc_ros/eagle_mpc_controller/CMakeLists.txt:
-Imported target "eagle_mpc" includes non-existent path
-"/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../../include"
-```
-> In case the compilation throws this error, the include path in the `/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/yaml-cpp-config.cmake` file must be changed.  
-> Change line 8, where the path is set to the following: `set(YAML_CPP_INCLUDE_DIR "${YAML_CPP_CMAKE_DIR}/../../../../include")`.  
 > :warning: **Problem with the system locale** :warning: The Yaml parser uses the `std::stod` function to convert a string to a double. This function is locale dependant. Be sure to have set a locale that uses `.` as a decimal separator. To make sure of it you can run:
 ``` bash
 export LC_NUMERIC="en_US.UTF-8"

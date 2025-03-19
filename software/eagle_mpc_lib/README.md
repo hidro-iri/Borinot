@@ -1,4 +1,4 @@
-# EagleMPC library
+# Eagle MPC library
 This library contains tools to solve *optimal control problems* (OCPs) that deal with *unmanned aerial manipulators* (UAMs).
 It is strongly dependant on [Crocoddyl](https://github.com/loco-3d/crocoddyl), whose API is used to build the OCPs.
 

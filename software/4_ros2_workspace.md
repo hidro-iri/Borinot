@@ -1,6 +1,18 @@
 # ROS2 Workspace
 
 # Part 1: ROS2 Galactic Installation
+> :information_source: The official documentation can be find [here](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html). The following is just a rewriting 
+0. **Set locale**
+``` bash
+locale  # check for UTF-8
+
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+locale  # verify settings
+```
 1. **Setup** sources:
 ``` bash
 sudo apt install software-properties-common
@@ -9,17 +21,16 @@ sudo apt update && sudo apt install curl
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 ```
-
-1. **Install** ROS 2 packages:
+2. **Install** ROS 2 packages:
 ``` bash
 sudo apt update
 sudo apt install ros-galactic-desktop
 ```
-2. source the ros2 environment
+3. source the ros2 environment
 ``` bash
 source /opt/ros/galactic/setup.bash
 ```
-3. test
+1. test
 ``` bash
 source /opt/ros/galactic/setup.bash
 ros2 run demo_nodes_cpp talker
@@ -44,7 +55,7 @@ sudo make install
 2. **Build** and **install** hidro_utils from source:
 ``` bash
 cd ~/libraries
-git clone --recursive https://github.com/hidro-iri/hidro_utils.git -b main
+git clone --recursive git@github.com:hidro-iri/hidro_utils.git -b main
 cd hidro_utils
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -56,12 +67,14 @@ sudo make install
 2. install vcs `sudo apt install python3_vcstool`
 3. clone the repo using `vcs import < borinot.repos`
 4. build using `colcon`
+``` bash
+cd ~/galactic_ws
+colcon build --event-handlers console_direct+ --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Release
+```
 5. source the ros2 workspace environment
 6. test
 ``` bash
 mkdir ~/galactic_ws && cd ~/galactic_ws
 ```
-
-
 
 [Back to Software](README.md)

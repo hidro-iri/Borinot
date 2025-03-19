@@ -11,43 +11,57 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 ```
 
 1. **Install** ROS 2 packages:
-```
+``` bash
 sudo apt update
 sudo apt install ros-galactic-desktop
-1. source the ros2 environment
-2. test
+```
+2. source the ros2 environment
+``` bash
+source /opt/ros/galactic/setup.bash
+```
+3. test
+``` bash
+source /opt/ros/galactic/setup.bash
+ros2 run demo_nodes_cpp talker
+```
+
+``` bash
+source /opt/ros/galactic/setup.bash
+ros2 run demo_nodes_cpp talker
+```
 
 # Part 2: ROS2 Repositories dependencies
-1. **Build** and **install** custom Master Board SDK from source:
-> :information_source: The original Master Board SDK repository has been forked to converse an older version compatible with the rest of the system.  
-> The modified version is avalaible [here](https://github.com/hidro-iri/master-board).
+1. **Build** and **install** vrpn from source:
 ``` bash
 cd ~/libraries
-git clone --recursive https://github.com/hidro-iri/master-board.git -b flying_arm
-cd master-board/sdk/master_board_sdk
+git clone --recursive https://github.com/vrpn/vrpn.git -b master
+cd vrpn
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j6
 sudo make install
 ```
-2. **Build** and **install** custom Master Board SDK from source:
-> :information_source: The original Master Board SDK repository has been forked to converse an older version compatible with the rest of the system.  
-> The modified version is avalaible [here](https://github.com/hidro-iri/master-board).
+2. **Build** and **install** hidro_utils from source:
 ``` bash
 cd ~/libraries
-git clone --recursive https://github.com/hidro-iri/master-board.git -b flying_arm
-cd master-board/sdk/master_board_sdk
+git clone --recursive https://github.com/hidro-iri/hidro_utils.git -b main
+cd hidro_utils
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j6
 sudo make install
 ```
 # Part 3: ROS2 Workspace Setup
-4. create the workspace `galactic_ws`
-5. install vsc
-6. clone the repo using `vcs import < borinot.repos`
-7. build using `colcon`
-8. source the ros2 workspace environment
-9. test
+1. create the workspace `galactic_ws`
+2. install vcs `sudo apt install python3_vcstool`
+3. clone the repo using `vcs import < borinot.repos`
+4. build using `colcon`
+5. source the ros2 workspace environment
+6. test
+``` bash
+mkdir ~/galactic_ws && cd ~/galactic_ws
+```
+
+
 
 [Back to Software](README.md)

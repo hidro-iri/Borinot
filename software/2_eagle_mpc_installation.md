@@ -7,7 +7,7 @@ This library contains tools to solve *optimal control problems* (OCPs) that deal
 
 ## Part 1: Crocoddyl Installation
 1. **Add** robotpkg apt repository:
-    > :information_source: original documentation [here](http://robotpkg.openrobots.org/debian.html)
+> :information_source: original documentation [here](http://robotpkg.openrobots.org/debian.html)
 ``` bash
 sudo apt install -qqy lsb-release
 sudo mkdir -p /etc/apt/keyrings
@@ -27,8 +27,7 @@ export LD_LIBRARY_PATH=/opt/openrobots/lib:$LD_LIBRARY_PATH
 export PYTHONPATH=/opt/openrobots/lib/python3.8/site-packages:$PYTHONPATH
 export CMAKE_PREFIX_PATH=/opt/openrobots:$CMAKE_PREFIX_PATH
 ```
-    > :warning: source `~/.bashrc` or open a new terminal to pursue
-
+> :warning: source `~/.bashrc` or open a new terminal to pursue
 3. **Install** Crocoddyl dependencies:
 ``` bash
 sudo apt install -qqy robotpkg-py38-eigenpy=2.8.0 \
@@ -40,8 +39,8 @@ sudo apt install -qqy robotpkg-py38-eigenpy=2.8.0 \
                       robotpkg-py38-example-robot-data=4.1.0
 ```
 4. **Build** and **install** custom Crocoddyl from source:
-    > :information_source: The original Crocoddyl repository has been modify to consider different stopping criteria.  
-    > The modified version is avalaible [here](https://github.com/PepMS/crocoddyl/tree/sbfddp-v2).
+> :information_source: The original Crocoddyl repository has been modify to consider different stopping criteria.  
+> The modified version is avalaible [here](https://github.com/PepMS/crocoddyl/tree/sbfddp-v2).
 ``` bash
 cd ~/libraries
 git clone --recursive https://github.com/PepMS/crocoddyl.git -b sbfddp-v2
@@ -59,7 +58,7 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 export PYTHONPATH=/usr/local/lib/python3/dist-packages:$PYTHONPATH
 ```
-    > :warning: source `~/.bashrc` or open a new terminal to pursue
+> :warning: source `~/.bashrc` or open a new terminal to pursue
 
 ## Part 2: Eagle MPC Installation
 1. **Install** EagleMPC dependencies
@@ -76,20 +75,23 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j6
 sudo make install
 ```
-    > :warning: **KNOWN ISSUE**: :warning:  
+> :warning: **KNOWN ISSUE**: :warning:  
 ``` bash
 CMake Error in eagle_mpc_ros/eagle_mpc_controller/CMakeLists.txt:
 Imported target "eagle_mpc" includes non-existent path
 "/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../../include"
 ```
-    > In case the compilation throws this error, the include path in the `/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/yaml-cpp-config.cmake` file must be changed.  
-    > Change line 8, where the path is set to the following: `set(YAML_CPP_INCLUDE_DIR "${YAML_CPP_CMAKE_DIR}/../../../../include")`.
-    > :warning: **Problem with the system locale** :warning: The Yaml parser uses the `std::stod` function to convert a string to a double. This function is locale dependant. Be sure to have set a locale that uses `.` as a decimal separator. To make sure of it you can run:
+> In case the compilation throws this error, the include path in the `/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/yaml-cpp-config.cmake` file must be changed.  
+> Change line 8, where the path is set to the following: `set(YAML_CPP_INCLUDE_DIR "${YAML_CPP_CMAKE_DIR}/../../../../include")`.  
+> :warning: **Problem with the system locale** :warning: The Yaml parser uses the `std::stod` function to convert a string to a double. This function is locale dependant. Be sure to have set a locale that uses `.` as a decimal separator. To make sure of it you can run:
 ``` bash
 export LC_NUMERIC="en_US.UTF-8"
 ```
  
-## Part 3: Running examples
+## Part 3: Running example
+
+> :warning: A monitor connected to the computer is required to run this example
+
 As this library contains Python bindings to its C++ code, we can run a python-based example.
 1. Open viewer in one terminal (Ctrl + T)
 

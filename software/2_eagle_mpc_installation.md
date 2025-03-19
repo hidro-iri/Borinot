@@ -1,4 +1,4 @@
-# EagleMPC Installation
+# Eagle MPC Installation
 
 > :warning: Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. :warning:
 
@@ -61,11 +61,11 @@ export PYTHONPATH=/usr/local/lib/python3/dist-packages:$PYTHONPATH
 > :warning: source `~/.bashrc` or open a new terminal to pursue
 
 ## Part 2: Eagle MPC Installation
-1. **Install** EagleMPC dependencies
+1. **Install** Eagle MPC dependencies:
 ``` bash
 sudo apt install libyaml-cpp-dev
 ```
-2. **Build** and **install** EagleMPC
+2. **Build** and **install** Eagle MPC:
 ``` bash
 cd ~/libraries
 git clone https://github.com/hidro-iri/eagle_mpc_lib.git -b bfa2_experiments
@@ -89,19 +89,20 @@ export LC_NUMERIC="en_US.UTF-8"
 ```
  
 ## Part 3: Running example
-
 > :warning: A monitor connected to the computer is required to run this example
 
 As this library contains Python bindings to its C++ code, we can run a python-based example.
-1. Open viewer in one terminal (Ctrl + T)
-
+1. **Install** gepetto viewer:
+```bash
+sudo apt install -qqy robotpkg-py38-qt5-viewer-corba=5.8.0
+```
+1. **Open** viewer in one terminal:
 ``` bash
 gepetto-gui
 ```
-
-2. In a second terminal (Ctrl + T) launch the example
+1. **Launch** the example in a second terminal:
 ``` bash
 python3 ~/libraries/eagle_mpc_lib/examples/python/trajectory.py display
 ```
 
-[Next → ROS2 Workspace Configuration](3_master_board_configuration.md)
+[Next → Master Board Configuration](3_master_board_configuration.md)

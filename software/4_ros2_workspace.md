@@ -69,7 +69,7 @@ sudo make install
 4. build using `colcon`
 ``` bash
 cd ~/galactic_ws
-colcon build --event-handlers console_direct+ --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Release
+colcon build --event-handlers console_direct+ --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Release --symlink-install
 ```
 5. source the ros2 workspace environment
 6. test

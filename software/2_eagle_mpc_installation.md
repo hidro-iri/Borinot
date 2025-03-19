@@ -94,7 +94,7 @@ export LC_NUMERIC="en_US.UTF-8"
 As this library contains Python bindings to its C++ code, we can run a python-based example.
 1. **Install** gepetto viewer:
 ```bash
-sudo apt install -qqy robotpkg-py38-qt5-viewer-corba=5.8.0
+sudo apt install -qqy robotpkg-py38-qt5-gepetto-viewer-corba=5.8.0
 ```
 1. **Open** viewer in one terminal:
 ``` bash

@@ -1,0 +1,5 @@
+alias ..='cd ..'
+alias rosgalactic='source /opt/ros/galactic/setup.bash && source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash'
+alias rosgalactic_cyclone='source /opt/ros/galactic/setup.bash && source /home/hidro/galactic_ws/install/setup.bash && cd /home/hidro/galactic_ws && export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp && export CYCLONEDDS_URI=/home/hidro/galactic_ws/src/eagle_ros2/eagle_ros2_bringup/config_dds/cyclone_dds_nuc.xml'
+alias rosnoetic='source /opt/ros/noetic/setup.bash && source /home/hidro/noetic_ws/devel/setup.bash && cd /home/hidro/noetic_ws && export ROS_MASTER_URI=http://192.168.1.102:11311 && export ROS_IP=192.168.1.102'
+alias rosnoetic_ethernet='source /opt/ros/noetic/setup.bash && source /home/hidro/noetic_ws/devel/setup.bash && cd /home/hidro/noetic_ws && export ROS_MASTER_URI=http://10.42.0.136:11311 && export ROS_IP=10.42.0.136'

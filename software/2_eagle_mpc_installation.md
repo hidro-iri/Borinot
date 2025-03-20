@@ -1,4 +1,4 @@
-# EagleMPC Installation
+# Eagle MPC Installation
 
 > :warning: Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. :warning:
 
@@ -7,7 +7,7 @@ This library contains tools to solve *optimal control problems* (OCPs) that deal
 
 ## Part 1: Crocoddyl Installation
 1. **Add** robotpkg apt repository:
-    > :information_source: original documentation [here](http://robotpkg.openrobots.org/debian.html)
+> :information_source: original documentation [here](http://robotpkg.openrobots.org/debian.html)
 ``` bash
 sudo apt install -qqy lsb-release
 sudo mkdir -p /etc/apt/keyrings
@@ -27,8 +27,7 @@ export LD_LIBRARY_PATH=/opt/openrobots/lib:$LD_LIBRARY_PATH
 export PYTHONPATH=/opt/openrobots/lib/python3.8/site-packages:$PYTHONPATH
 export CMAKE_PREFIX_PATH=/opt/openrobots:$CMAKE_PREFIX_PATH
 ```
-    > :warning: source `~/.bashrc` or open a new terminal to pursue
-
+> :warning: source `~/.bashrc` or open a new terminal to pursue
 3. **Install** Crocoddyl dependencies:
 ``` bash
 sudo apt install -qqy robotpkg-py38-eigenpy=2.8.0 \
@@ -40,8 +39,8 @@ sudo apt install -qqy robotpkg-py38-eigenpy=2.8.0 \
                       robotpkg-py38-example-robot-data=4.1.0
 ```
 4. **Build** and **install** custom Crocoddyl from source:
-    > :information_source: The original Crocoddyl repository has been modify to consider different stopping criteria.  
-    > The modified version is avalaible [here](https://github.com/PepMS/crocoddyl/tree/sbfddp-v2).
+> :information_source: The original Crocoddyl repository has been modify to consider different stopping criteria.  
+> The modified version is avalaible [here](https://github.com/PepMS/crocoddyl/tree/sbfddp-v2).
 ``` bash
 cd ~/libraries
 git clone --recursive https://github.com/PepMS/crocoddyl.git -b sbfddp-v2
@@ -59,14 +58,14 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 export PYTHONPATH=/usr/local/lib/python3/dist-packages:$PYTHONPATH
 ```
-    > :warning: source `~/.bashrc` or open a new terminal to pursue
+> :warning: source `~/.bashrc` or open a new terminal to pursue
 
 ## Part 2: Eagle MPC Installation
-1. **Install** EagleMPC dependencies
+1. **Install** Eagle MPC dependencies:
 ``` bash
 sudo apt install libyaml-cpp-dev
 ```
-2. **Build** and **install** EagleMPC
+2. **Build** and **install** Eagle MPC:
 ``` bash
 cd ~/libraries
 git clone https://github.com/hidro-iri/eagle_mpc_lib.git -b bfa2_experiments
@@ -76,30 +75,26 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j6
 sudo make install
 ```
-    > :warning: **KNOWN ISSUE**: :warning:  
-``` bash
-CMake Error in eagle_mpc_ros/eagle_mpc_controller/CMakeLists.txt:
-Imported target "eagle_mpc" includes non-existent path
-"/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/../../../../../include"
-```
-    > In case the compilation throws this error, the include path in the `/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/yaml-cpp-config.cmake` file must be changed.  
-    > Change line 8, where the path is set to the following: `set(YAML_CPP_INCLUDE_DIR "${YAML_CPP_CMAKE_DIR}/../../../../include")`.
-    > :warning: **Problem with the system locale** :warning: The Yaml parser uses the `std::stod` function to convert a string to a double. This function is locale dependant. Be sure to have set a locale that uses `.` as a decimal separator. To make sure of it you can run:
+> :warning: **Problem with the system locale** :warning: The Yaml parser uses the `std::stod` function to convert a string to a double. This function is locale dependant. Be sure to have set a locale that uses `.` as a decimal separator. To make sure of it you can run:
 ``` bash
 export LC_NUMERIC="en_US.UTF-8"
 ```
  
-## Part 3: Running examples
-As this library contains Python bindings to its C++ code, we can run a python-based example.
-1. Open viewer in one terminal (Ctrl + T)
+## Part 3: Running example
+> :warning: A monitor connected to the computer is required to run this example
 
+As this library contains Python bindings to its C++ code, we can run a python-based example.
+1. **Install** gepetto viewer:
+```bash
+sudo apt install -qqy robotpkg-py38-qt5-gepetto-viewer-corba=5.8.0
+```
+1. **Open** viewer in one terminal:
 ``` bash
 gepetto-gui
 ```
-
-2. In a second terminal (Ctrl + T) launch the example
+1. **Launch** the example in a second terminal:
 ``` bash
 python3 ~/libraries/eagle_mpc_lib/examples/python/trajectory.py display
 ```
 
-[Next → ROS2 Workspace Configuration](3_master_board_configuration.md)
+[Next → Master Board Configuration](3_master_board_configuration.md)

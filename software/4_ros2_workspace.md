@@ -1,5 +1,7 @@
 # ROS2 Workspace
 
+> :warning: Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. :warning:
+
 # Part 1: ROS2 Galactic Installation
 > :information_source: The official documentation can be find [here](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html). The following is just a rewriting 
 0. **Set locale**
@@ -65,7 +67,7 @@ sudo make install
 # Part 3: ROS2 Workspace Setup
 1. create the workspace `galactic_ws`
 2. install vcs `sudo apt install python3_vcstool`
-3. clone the repo using `vcs import < borinot.repos`
+3. clone the repo using `vcs import < borinot_onboard.repos`
 4. build using `colcon`
 ``` bash
 cd ~/galactic_ws
@@ -80,12 +82,17 @@ Imported target "eagle_mpc" includes non-existent path
 > In case the compilation throws this error, the include path in the `/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp/yaml-cpp-config.cmake` file must be changed.  
 > Change line 8, where the path is set to the following: `set(YAML_CPP_INCLUDE_DIR "${YAML_CPP_CMAKE_DIR}/../../../../include")`.  
 > **Important**: eagle_mpc_lib has to be recompile before running `colcon build` 
-
-
-1. source the ros2 workspace environment
-2. test
+5. source the ros2 workspace environment
+6. test
 ``` bash
 mkdir ~/galactic_ws && cd ~/galactic_ws
 ```
+7. Add a new alias in `.bash_aliases`:
+``` bash
+alias rosgalactic='source /opt/ros/galactic/setup.bash && source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash'
+alias rosgalactic_cyclone='source /home/hidro/galactic_ws/install/setup.bash && cd /home/hidro/galactic_ws && export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp && export CYCLONEDDS_URI=/home/hidro/galactic_ws/src/eagle_ros2/eagle_ros2_bringup/config_dds/cyclone_dds_nuc.xml'
+```
+
+8. Modify `odri_ros2/odri_interface/config/robots/flying_arm_2.yaml`
 
 [Back to Software](README.md)

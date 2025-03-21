@@ -1,6 +1,6 @@
 # Pixhawk Configuration
 
-    :warning: Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. :warning:
+> :warning: Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. :warning:
 
 In this part we will install all the libraries to flash and interact with the pixhawk.
 
@@ -103,17 +103,6 @@ To build **FastRTPS-Gen**, we need **Gradle**, which at the same time must be do
 
 ## 2 Build
 
-### 2.1 URTPS Bridge configuration
-The packages of this repository use this [PX4 architecture](https://docs.px4.io/master/en/ros/ros2_comm.html) to communicate with the PX4. Not all the messages inside PX4 are broadcasted to ROS2. This is done to avoid saturating the ethernet link between the Pixhawk and the onboard computer. The messages that the Pixhawk and the onboard computer exchange cannot are set at build time by using `.yaml` files.
-
-The `.yaml` files use to select the messages have to be configured are:
-- PX4 Autopilot. You should configure [this file](https://github.com/hidro-iri/PX4-Autopilot/blob/motor_control/msg/tools/urtps_bridge_topics.yaml).
-- MicroRTPS Agent: You should configure [this file](https://github.com/hidro-iri/px4_ros_com/blob/master/templates/urtps_bridge_topics.yaml)
-
-We provide some `.yaml` files with the topics already configured depending on the type of operation that we plan to execute. You only need to copy & paste the content to the files specified above.
-
-The files are placed in [`yaml_msgs`](https://github.com/hidro-iri/eagle_ros2/tree/devel/yaml_msgs) folder of this repo. Notice that the files with the `px4` prefix should be copied to the `PX4 Autopilot` side, whilst the ones with the `ros2` prefix should be copied to the `px4_ros_com` side.
-
 ### 2.2 Build the PX4-Autopilot
 
 There are two options here:
@@ -169,8 +158,10 @@ cd ~/libraries/PX4-Autopilot/
 make px4_fmu-v5x_rtps upload
 
 
-
-
+## Last Part: Network configuration
+1. launch `sudo nmtui`
+2. set the following connection
+**TODO: PUT the screenshot**
 
 
 

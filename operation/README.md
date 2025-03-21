@@ -1,20 +1,23 @@
-# Usage
+# Operation Guide
 
-This page provides instructions for operating the UAM using the nodes in this repository.
+This page provides instructions for operating the Borinot using the nodes installed in it.
 
-## [Preflight safety checklist](preflight.md)
+## Contents:
+0. [**Environment Setup**](0_environment_setup.md) - Set up Ubuntu 20.04, install utility libraries, configure lab network access and enable SSH.  
+1. [**Borinot Bringup**](1_borinot_bringup.md) - Install and customize PX4 firmware.
+2. [**Laptop Bringup**](2_laptop_bringup.md) - Install control library with Crocoddyl dependency and Python bindings.  
+3. [**Flight Procedure**](3_flight_protocol.md) - Protocol explaining how a standard flight is performed and which signs that should be looked for.
 
-Before each flight, it's important to perform a series of checks to ensure that the UAM is safe to operate. Follow the procedures outlined in the [preflight.md](preflight.md) file to complete these checks.
+[Back to Borinot Main Page](../README.md)
+
+
 
 ## Additional procedures and troubleshooting
 
 In addition to the preflight safety checklist, this page also contains documentation for other procedures that are necessary for operating the Borinot UAM. These include:
 
-### [Optitrack fusion](optitrack.md)
 
-The [optitrack.md](optitrack.md) file provides a procedure for fusing the position of the OptiTrack system with the PX4's EKF2 module.
 
-### [Borinot bringup](bringup.md)
 
 ### [Troubleshooting](troubleshooting.md)
 

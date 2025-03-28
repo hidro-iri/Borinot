@@ -17,9 +17,9 @@ Start by assembling, configuring, and operating Borinot:
 
 |                                             |                                                                                                                                        |
 | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| [**Hardware Assembly**](hardware/README.md) | Complete components list and instructions for assembling Borinot                                                                       |
+| [**Hardware Assembly**](hardware/README.md) | Components list and instructions for assembling Borinot                                                                       |
 | [**Software Setup**](software/README.md)    | Guide to Borinot's software stack installation, configuration, and subsystem integration                                               |
-| [**Operation Manual**](operation/README.md) | Instructions for operating Borinot, including preflight checks, Optitrack data fusion, and MPC controller usage for hybrid locomotion. |
+| [**Operation Manual**](operation/README.md) | Instructions for operating Borinot and troubleshooting |
 
 ## Citation  
 If Borinot contributes to your research, please cite:  

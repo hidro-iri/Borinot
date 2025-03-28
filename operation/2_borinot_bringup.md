@@ -1,63 +1,62 @@
 # Borinot Bringup
 
-## Hardware Checks
-- [ ] The motor case should not be loose -> should be tight
-- [ ] The motor ID, Spin Direction, noise in pitch -> bad -> should be clean
-- [ ] Wifi antenna should be in its position (pointing up)
-- [ ] on lower body, check connectors are connected
-- [ ] the arm should be streched 
+## Part 1: Hardware Checks
+1. Check the motors:
+   - [ ] Try to rotate the motor case, if it is loose, it the inside screws should be tighten
+   - [ ] If some cables have been disconnected, check the motor ID and the spin direction
+   - [ ] Check noise in pitch, if present, the motor should be clean
+2. Check upper body:
+   - [ ] Wifi antenna should be in its position (pointing up)
+3. Check lower body:
+   - [ ] Check connectors (Ethernet, microdriver + masterboard) are connected
+   - [ ] the arm should be streched (pointing down)
 
-- Install the propellers
-  - use red for top, blue for the rest
-  - check that they respect the orientation of the airframe
-  - check that the propeller is not damaged
-  - tight the propeller
+## Install the propellers
+1. check that the propeller is not damaged
+2. Use the following color convention: red for front, blue for the rest
+3. Check that they respect the orientation of the [Hexarotor X airframe reference](https://docs.px4.io/main/en/airframes/airframe_reference.html#hexarotor-x)
+4. Tight the propeller
 
-- when everything tight, turn on Borinot (with the power supply at 22.5V)
+ When everything tight, turn on Borinot (with the power supply at 22.5V)
 
-- If the radio controller does not detect the receiver, the receiver need to be bind to the radio controller
-  - on the receiver, connect a jumper to the bypass pins
-  - on the radio controller, start binding procedure (setting icon,`RX bind`)
+## Prepare radio controller
+- Put battery in it (4x AA Batteries)
+- Check if the radio controller detects the receiver (`RX` battery bar should have a voltage level -> should not be `?`)
+> :warning: If the radio controller does not detect the receiver , the receiver need to be bind to the radio controller
+>  - on the receiver, connect a jumper to the bypass pins
+>  - on the radio controller, start binding procedure (setting icon,`RX bind`)
+- Activate the Kill Switch (red switch)
 
-## URTPS Bridge configuration
-The packages of this repository use this [PX4 architecture](https://docs.px4.io/master/en/ros/ros2_comm.html) to communicate with the PX4. Not all the messages inside PX4 are broadcasted to ROS2. This is done to avoid saturating the ethernet link between the Pixhawk and the onboard computer. The messages that the Pixhawk and the onboard computer exchange cannot are set at build time by using `.yaml` files.
-
-The `.yaml` files use to select the messages have to be configured are:
-- PX4 Autopilot. You should configure this file `PX4-Autopilot/msg/tools/urtps_bridge_topics.yaml`.
-- MicroRTPS Agent: You should configure this file `px4_ros_com/templates/urtps_bridge_topics.yaml`
-We provide some `.yaml` files with the topics already configured depending on the type of operation that we plan to execute. You only need to copy & paste the content to the files specified above.
-
-The files are placed in [`yaml_msgs`](https://github.com/hidro-iri/eagle_ros2/tree/devel/yaml_msgs) folder of this repo. Notice that the files with the `px4` prefix should be copied to the `PX4 Autopilot` side, whilst the ones with the `ros2` prefix should be copied to the `px4_ros_com` side.
-
-## Software 
-- 4 terminals
-  - one for PX4
+## Part 2: Software Start Up
+Inside Borinot `ssh borinot-X`:
+1. Start `micrortps_client` in pixhawk:
     ``` bash
     ssh borinot-X
     rosgalactic_cyclone
     ./start_px4
     # copy/paste the command inside the Mavlink Shell
     ```
-  - one for the system
+2. Start ros2 launch file for the system:
     ``` bash
     ssh borinot-X
     rosgalactic_cyclone
     ros2 launch eagle_ros2_bringup borinot_flying_arm_2_system.launch.py
+    # the password will be asked if the arm don't start
     ```
-  - one for the mpc
+    - You should see that the `vrpn _client_node` has fount `borinot_fur_ot`, if not, got to troubleshooting
+    - If `robot_interface` don't start
+    - `Warning` message should not be consider has an error
+3. When using the MPC:
     ``` bash
     ssh borinot-X
     rosgalactic_cyclone
     ros2 launch eagle_ros2_bringup borinot_flying_arm_2_mpc.launch.py
     ```
-  - one for bag record
+  - If you need to record data, record inside Borinot
     ``` bash
     ssh borinot-X
     rosgalactic_cyclone
     ros2 bag record -a
     ```
-
-
-
 
 ### [Borinot bringup](bringup.md)

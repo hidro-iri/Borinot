@@ -22,3 +22,14 @@ PX4 messages are different from the ROS2 messages
 ### Recalibrate the esc
 
 
+
+
+## ERROR at motor driver ## : SPI Receiver timeout
+- This error can occur randomly
+- to solve it:
+  1. kill `system.launch.py` 
+  2. restrech the arm (pointing down)
+  3. disconnect and reconnect the two power cables (udriver and master board)
+  4. restart the `system.launch.py`
+  5. reable the arm throught the MPC Interface
+  6. If the arm is in it's correct starting position, you are good! 

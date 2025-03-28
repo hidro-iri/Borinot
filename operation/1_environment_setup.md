@@ -21,10 +21,13 @@
     - x : 62.9
     - y : 29.0
     - z : 84.9
-- steam (in streaming panel)
-  - check IP
-  - activate bradcast
-  - activate vrpn
+3. Start the stream:
+  - Inside Optitrack Streaming Engine:
+    - Check that Local interface is `192.168.1.100`, if not, note the new `optitrack_interface` (you will have to modify files inside eagle_ros2) 
+    - Check `Broadcast Frame Data`
+  - Inside VRPN Streaming Engine:
+    - Check that VRPN Broadcast Port is `3883`, if not, not the new `optitrack_port` (you will have to modify files inside eagle_ros2)
+    - Check `Broadcast Frame Data`
 
 
 

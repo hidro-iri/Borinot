@@ -15,3 +15,10 @@ PX4 messages are different from the ROS2 messages
 3. Compile again ROS2 workspace
 
 [Back to Procedures](../README.md)
+
+
+## Problem: motor not spinning at the same speed
+
+### Recalibrate the esc
+
+

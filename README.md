@@ -4,22 +4,36 @@
 <img src="media/borinot_agile.png" width="350" align="center">
 </p>
 
-Borinot is an open-source Unmanned Aerial Loco-Manipulator, developed by the HiDRo group. This torque-controlled robot is designed for hybrid flying and contact loco-manipulation. It utilizes its extremity as a tail for flying locomotion, a hand for agile aerial manipulation, or a leg for hybrid aerial-contact locomotion. You can watch Borinot in action [here](https://www.youtube.com/watch?v=Ob7IIVB6P_A).
+Borinot is an open-source, torque-controlled Unmanned Aerial Loco-Manipulator developed by the HiDRo group.  
+It dynamically reconfigures its extremity as:
+- A **tail** for agile flight  
+- A **hand** for aerial manipulation  
+- A **leg** for hybrid aerial-contact locomotion  
 
-## Assembly, Setup, and Operation Guides  
-Before deploying Borinot, ensure proper assembly, configuration, and operation. For detailed instructions, refer to the following guides:
+**Watch the demo**: [YouTube Presentation](https://www.youtube.com/watch?v=Ob7IIVB6P_A)
 
-- **[Hardware Guide](hardware/README.md)** - Step-by-step instructions for assembling Borinot, including a complete components list and building process.
-  
-- **[Software Setup](software/README.md)** - Guide to Borinot's software stack installation, configuration, and subsystem integration. 
+## Documentation  
+Start by assembling, configuring, and operating Borinot: 
 
-- **[Operation Guide](operation/README.md)** - Instructions for operating Borinot, including preflight checks, Optitrack data fusion, and MPC controller usage for hybrid locomotion.
+|                                             |                                                                                                                                        |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| [**Hardware Assembly**](hardware/README.md) | Complete components list and instructions for assembling Borinot                                                                       |
+| [**Software Setup**](software/README.md)    | Guide to Borinot's software stack installation, configuration, and subsystem integration                                               |
+| [**Operation Manual**](operation/README.md) | Instructions for operating Borinot, including preflight checks, Optitrack data fusion, and MPC controller usage for hybrid locomotion. |
 
-## Citing
-If you use Borinot in your research work, please acknowledge our work by citing the following paper:
+## Citation  
+If Borinot contributes to your research, please cite:  
 
-> J. Martí-Saumell, H. Duarte, P. Grosch, J. Andrade-Cetto, A. Santamaria-Navarro, J. Solà. Borinot: an open thrust-torque-controlled robot for research on agile aerial-contact motion. arXiv preprint arXiv:2307.14686, 2023.
+<!-- J. Martí-Saumell, H. Duarte, P. Grosch, J. Andrade-Cetto, A. Santamaria-Navarro, J. Solà. Borinot: an open thrust-torque-controlled robot for research on agile aerial-contact motion. arXiv preprint arXiv:2307.14686, 2023.-->
+
+```bibtex
+@misc{marti2023borinot,
+  title={Borinot: An Open Thrust-Torque-Controlled Robot for Agile Aerial-Contact Motion Research},
+  author={Martí-Saumell, Josep and Duarte, Hugo and Grosch, Patrick and Andrade-Cetto, Juan and Santamaria-Navarro, Angel and Solà, Joan},
+  journal={arXiv preprint arXiv:2307.14686},
+  year={2023}
+}
+```
 
 ## License
-
-Borinot is licensed under the BSD 3-clause license. You can read the full license [here](LICENSE).
+Borinot is licensed under the BSD 3-clause license. See [LICENSE](LICENSE) for details.

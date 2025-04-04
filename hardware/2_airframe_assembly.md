@@ -1,18 +1,16 @@
 # Airframe Assembly Guide
 
-The airframe is the structure that houses and maintains the motors in their respective positions. This guide outlines the assembly procedure for the airframe.
-
-
+The airframe is the structure that houses and maintains the motors in their respective positions. This guide covers the assembly procedure for the airframe.
 
 ---
 
 ## Part 1: Motor Case Preparation
 
-The Motor Case is a structural component that holds both the motor and the carbon fiber tube. It also houses the corresponding ESC and features slots for the Optitrack markers.  Clean all 3D printed parts thoroughly before assembling.
+The Motor Case holds both the motor and the carbon fiber tubes together. It also houses the esc and the Optitrack markers.
 
 ### Materials
 
-<img src="../media/exploded_motorcase.png" alt="Exploded view of Motor Case" width="350">
+<img src="../media/2_motor_case_exploded.avif" alt="Exploded view of Motor Case" width="350">
 
 > **Exploded View: Motor Case components (all 3D printed parts)**
 
@@ -26,21 +24,19 @@ The Motor Case is a structural component that holds both the motor and the carbo
 
 ### Steps
 
-1. **Clean 3D Parts:** Clean all Motor Case components, ensuring removal of any support material inside the tube holder.  
+1. **Clean** all Motor Case components, ensuring removal of any support material inside the tube holder.  
    > :warning: Use a drill if anomalies are found inside the tube holder.
 
-<img src="../media/2_motor_case_step_1.avif" alt="Before marker assembly" width="350">
-
-<img src="../media/2_motor_case_step_1b.avif" alt="Before marker assembly" width="350">
+<img src="../media/2_motor_case_step_1.avif" alt="Before marker assembly" width="350"> <img src="../media/2_motor_case_step_1b.avif" alt="Before marker assembly" width="350">
 
 > **Side view:** middle part before and after installing the marker
 
-2. **Assemble Markers:** For each motor, install the marker (M4 nut + M4 nylon screw + M4 marker) according to the Motor ID.  
+2. **Assemble** the marker (M4 nut + M4 nylon screw + M4 marker) according to the **Motor ID**.  
+   > :warning: The faces of the middle part are not symmetric. Test alignement with the top and bottom parts so find the correct orientation.
+
    > :information_source: Each Motor Case is identified using the [Hexarotor X airframe reference](https://docs.px4.io/main/en/airframes/airframe_reference.html#hexarotor-x) ID.
 
-   > :warning: Test-fit the top and bottom parts, as the middle part is not symmetrical.
-
-<img src="../media/marker_position.png" alt="Marker position" width="350">
+<img src="../media/2_motor_case_marker.avif" alt="Marker position" width="350">
 
 > **Side view** Marker position
 
@@ -53,39 +49,30 @@ The Motor Case is a structural component that holds both the motor and the carbo
 | 5        | Top Right       |
 | 6        | Bottom Right    |
 
-<img src="../media/2_motor_case_step_2.avif" alt="Before asserts on bottom" width="350">
-
-<img src="../media/2_motor_case_step_2b.avif" alt="After asserts on bottom" width="350">
+<img src="../media/2_motor_case_step_2.avif" alt="Before asserts on bottom" width="350"> <img src="../media/2_motor_case_step_2b.avif" alt="After asserts on bottom" width="350">
 
 > **Side view:** Bottom part before and after inserting asserts
 
-3. **Install Inserts:** On the bottom part of each Motor Case, install two inserts.
+3. **Install** two inserts on the bottom part.
 
-<img src="../media/2_motor_case_step_3.avif" alt="Cover assembly before" width="350">
-
-<img src="../media/2_motor_case_step_3b.avif" alt="Cover assembly after" width="350">
+<img src="../media/2_motor_case_step_3.avif" alt="Cover assembly before" width="350"> <img src="../media/2_motor_case_step_3b.avif" alt="Cover assembly after" width="350">
 
 > **Side view:** Cover before and after assembling the cover
 
-4. **Assemble Cover:** Attach the cover to the Motor Case.
-5. **Repeat:** Perform these steps for all 6 Motor Cases.
+4. **Assemble** the different piece composing the cover.
+
+5. **Repeat** these steps for all 6 Motor Cases.
 
 
-<img src="../media/2_motor_case_prepared.avif" alt="Cover assembly after" width="350">
+<img src="../media/2_motor_case_prepared.avif" alt="Motor case prepared" width="350">
 
 > **Side view:** Motor case prepared.
 
 ---
 
-
-
-
-
-
-
 ## Part 2: Frame Assembly
 
-Visualize the complete frame as composed of two intersecting triangles—each vertex representing a Motor Case and each edge a Carbon Fiber Tube. Start by assembling one triangle, then merge the two triangles before sealing the final Motor Case.
+The frame is composed of two intersecting triangles. Each motor case is a vertex and each carbon fiber tube a edge.
 
 ### Materials
 

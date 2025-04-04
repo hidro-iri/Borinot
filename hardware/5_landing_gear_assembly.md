@@ -63,6 +63,32 @@ The landing gear serves as the foundational structure for Borinot's lower body, 
 <img src="../media/landing_gear_assembly_13.png" alt="Side view of the assembled landing gear" width="350"/>
 <img src="../media/landing_gear_final.png" alt="Side view of the assembled landing gear" width="350"/>
 
----
+## Landing Gear Assembly
+
+#### Components List
+
+| Part Name | Quantity |
+|:-:|:-:|
+| [Landing Gear - 3D Kit](CAD/legs/) | 1 |
+| Ø20mm O-Ring Seals | 12 |
+| M3x10mm Screws | 8 |
+| M3x16mm Screws | 8 |
+| M3 Nuts | 16 |
+| Ø8mmx6mmx110.0mm Carbon Fiber Round Checked Tubes | 4 |
+| Ø8mmx6mmx170.0mm Carbon Fiber Round Checked Tubes | 2 |
+| Ø8mmx6mmx300.0mm Carbon Fiber Round Checked Tubes | 2 |
+
+#### 3D Preparation
+
+1. Clean all components of the **Landing Gear - 3D Kit**. Ensure that tube entry points are clear of any obstructions.
+2. Insert **M3 Nuts** in their specified slots.
+3. Place 3 **Ø20mm O-Ring Seals** around each pawn.
+
+#### Assembly
+
+1. Join the wye connectors and pawns with the 300mm carbon fiber tubes. Ensure alignment with provided pictures (or diagrams). Repeat the step for the second set.
+2. Combine the cross-block connectors with the 170mm carbon fiber tubes, following reference images. Create two such assemblies.
+3. Integrate the entire setup using the 4 110mm carbon fiber tubes, ensuring alignment with provided pictures (or diagrams).
+
 
 [Next → Flying Arm Assembly](6_flying_arm_assembly.md)

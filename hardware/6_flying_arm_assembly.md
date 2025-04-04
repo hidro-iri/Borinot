@@ -73,6 +73,77 @@ With both the base and first link assembled, the final step involves connecting 
 
 <!-- Add section for the extremities -->
 
----
+## ODRI Controller Assembly
+
+#### Components List
+
+| Part Name | Quantity |
+|:-:|:-:|
+| [Controller Case - 3D Kit](CAD/platform/) | 1 |
+| Master Board | 1 |
+| Micro Driver | 1 |
+| M2 Nuts | 4 |
+| M2.5 Nuts | 4 |
+| M3 Inserts | 3 |
+| M3x5mm Screws| 3 |
+| M2x6mm Screws | 4 |
+| M2.5x6mm Screws | 4 |
+
+#### 3D Preparation
+
+1. Clean all parts of the **Controller Case - 3D Kit**.
+2. Insert **M2 Nuts**, **M2.5 Nuts**, and **M3 Inserts** in their designated slots in the 3D kit components.
+
+#### Assembly
+
+1. Secure the master board inside the controller case - top using M2 screws.
+2. Mount the micro driver at the bottom of the controller case, securing with M2.5 screws.
+3. Connect the two links to the micro driver. Ensure the cable routes through the designated holes in both the controller and flying cases.
+4. Establish a connection between the micro driver and the master board. Close the assembly using 3 M3 screws.
+
+### Arm Assembly - Extremity
+
+#### Components List
+
+| Part Name | Quantity |
+|:-:|:-:|
+| [Extremity - 3D Kit](CAD/limbs/) | 1 |
+
+1. Thoroughly clean the extremity part.
+
+### Arm Assembly - ODRI Link
+
+Refer to the [actuator module page](https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware/blob/master/mechanics/actuator_module_v1/README.md#brushless-actuator-module-core-v1) of the ODRI project for assembly details.
+
+### Arm Assembly - Flying Link
+
+#### Components List
+
+| Part Name | Quantity |
+|:-:|:-:|
+| [Flying link - 3D Kit](CAD/limb/) | 1 |
+| Output Bearings | 2 |
+| Transmission Bearings | 3 |
+| M3x5mm flat head Screws | 4 |
+| M3x15mm Screw | 4 |
+| M3x16mm Flat Head nylon Screw | 2 |
+| M3x20mm flat head Screws | 6 |
+| 201mm timing belt | 1 |
+| 150mm timing belt | 1 |
+| M3 Nuts | 18 |
+| M3 Inserts | 2 |
+
+#### 3D Preparation
+
+1. Clean the **Flying - 3D Kit** components thoroughly.
+2. Insert **M3 Nuts**, **M3 Inserts**, **Output Bearings**, and **Transmission Bearings** in their corresponding slots in the 3D kit components.
+
+#### Assembly
+
+1. Secure the motor within the flying case A using 4 screws.
+2. Position the 150mm timing belt around the motor's axle.
+3. Install the encoder adjacent to the motor, and secure with nylon screws.
+4. Place the ODRI 3D component, aligned with the 201mm timing belt. Close using flying case B and 6x20mm screws.
+5. Attach the ODRI link and the extremity, securing with 15mm screws.
 
 [Next → Lower Body Integration](7_lower_body_integration.md)

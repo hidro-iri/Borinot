@@ -10,55 +10,82 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 
 ### Materials
 
-<img src="../media/1_power_module_exploded.avif" alt="Exploded view of power module components" width="350">
+<img src="../media/1_power_module_materials.avif" alt="materials for power module modification" width="350" align="center">
 
-> **Top view: computer cable, power module, masterboard power cable with JST connectors, EC5 connector, XT30-F connector, diode for hot-swap cable, XT30-M connector for microdriver, power cables**
+> **Top view list**
+> - computer cable (`#8`)
+> - power module (`#1`)
+> - masterboard power cable (`#9`) with JST connectors (`#10`)
+> - EC5 connector (`#2`)
+> - XT30-F connector (`#3`)
+> - diode (`#5`)
+> - XT30-M connector (`#4`)
+> - red (`#6`) and black (`#7`) power cables
 
-| Part Name             | Quantity | Description                          | Reference                                                                                   |
-|-----------------------|----------|--------------------------------------|---------------------------------------------------------------------------------------------|
-| PM03D Power Module    | 1        | Base unit                            | [Holybro](https://holybro.com/products/pm03d-power-module)                                  |
-| EC5-M Connector       | 1        | Male battery connector               | [TME](https://www.tme.eu/es/en/details/ec5-m/dc-power-connectors/amass/)                    |
-| XT30-F Connector      | 1        | Female power connector               | [RC Innovations](https://rc-innovations.es/shop/amass-conector-xt30-hembra-xt30u-h)         |
-| XT30-M Connector      | 1        | Male power connector                 | [RC Innovations](https://rc-innovations.es/shop/amass-conector-xt30-macho-xt30u-m)          |
-| Diode                 | 1        |                                      | `BQ30TB 45B714`                                                                             |
-| Red Power Cable       | 2        | 15cm 16AWG (VCC)                     | [RC Innovations](https://rc-innovations.es/shop/Cable-silicona-16AWG-Rojo-1-metro-amass)    |
-| Black Power Cable     | 2        | 15cm 16AWG (GND)                     | [RC Innovations](https://rc-innovations.es/shop/cable-de-silicona-26-awg-negro-1-metro)     |
-| Computer Cable        | 1        | 24cm barrel plug (5.5×2.5mm)         | [Amazon](https://www.amazon.com/Generic-5-5mm-2-5mm-Right-Pigtail/dp/B07H38LNPD)            |
-| Masterboard Cable     | 1        | 17cm line                            |                                                                                             |
-| Connector JST         | 1        | Male                                 |                                                                                             |
+| ID    | Part Name             | Qty | Description                          | Location | Reference             |
+|-------|-----------------------|-----|--------------------------------------|----------|-----------------------|
+| `#1`  | PM03D Power Module    | 1   | Base unit                            | HS-      | Holybro               |
+| `#2`  | EC5-M Connector       | 1   | Male battery connector               | HS-      | TME                   |
+| `#3`  | XT30-F Connector      | 1   | Female power connector               | HS-      | RC Innovations        |
+| `#4`  | XT30-M Connector      | 1   | Male power connector                 | HS-      | RC Innovations        |
+| `#5`  | Diode                 | 1   | BQ30TB 45B714                        | HS-      | -                     |
+| `#6`  | Red Power Cable       | 2   | 15cm 16AWG Silicon                   | HS-      | RC Innovations        |
+| `#7`  | Black Power Cable     | 2   | 15cm 16AWG Silicon                   | HS-      | RC Innovations        |
+| `#8`  | Computer Cable        | 1   | 24cm barrel plug (5.5×2.5mm)         | HS-      | Amazon                |
+| `#9`  | Masterboard Cable     | 1   | 17cm line                            | HS-      | ODRI                  |
+| `#10` | Connector JST         | 1   | Male                                 | HS-      | RC Innovations        |
 
 ### Steps
-<img src="../media/1_power_module_step_1.avif" alt="Reposition current component" width="350"> <img src="../media/1_power_module_step_1b.avif" alt="Reposition current component" width="350">
 
-> **Top view: EC5 connector and power module prior to battery cable connector replacement**
+<img src="../media/1_power_module_step_1a.avif" alt="Step 1A: Unsoldering original XT60 connector from PM03D (Component #1)" width="350"> 
+<img src="../media/1_power_module_step_1b.avif" alt="Step 1B: EC5-M connector installed on power module (Component #2)" width="350">
 
-1. **Unsolder** the capacitor and battery cable from the board.
-2. **Replace** the battery cable's connector from XT60 to EC5.
-   > :warning: Do not cut the cable to remove the XT60.
+> **Battery Cable Modification**  
+> Left: Original XT60 configuration | Right: Modified EC5 connector installation
 
-   > :warning: Do not hesitate to force when insering the the EC5 terminal inside the case.
-3. **Reposition** the capacitor and battery cable so they point **inward** on the board.
+1. **Unsolder** the capacitor and battery cable from the board (`#1`).
+2. **Replace** the battery cable's connector from XT60 to EC5 (`#2`).
+   
+   > :warning: Do not cut the cable to remove the XT60.  
+   > :information_source: Apply pressure when inserting EC5 terminals into housing.
 
-<img src="../media/1_power_module_step_2b.avif" alt="Hot swap components" height="350"> <img src="../media/1_power_module_step_2.avif" alt="Hot swap components" height="350">
+3. **Resolder** the capacitor and battery cable so they point **inward** on the board.
 
-> **Close view: Finalized hot-swap cable; diode visible at front-right**
+---
 
-4. **Bend** the diode's anode (right leg) to connect with the positive terminal of the XT30-M connector and **solder** it.
-5. **Solder** the diode's cathode (left leg) to the positive power cable.
-6. **Solder** the negative power cable to the negative terminal of the XT30-M connector.
+<img src="../media/1_power_module_step_2a.avif" alt="Step 4-7: Hot-swap cable assembly - Diode (#5) and XT30-M (#4) before heat shrink" height="350"> 
+<img src="../media/1_power_module_step_2b.avif" alt="Step 4-7: Hot-swap cable completed - Heat shrink applied to XT30-M (#4) connections" height="350">
+
+> **Hot-Swap Cable Assembly**  
+> Left: Pre-sealed assembly showing diode (#5) and XT30-M (#4) connections | Right: Finished cable with insulated joints
+
+4. **Bend** the diode's (`#5`) anode (right leg) to connect with the positive terminal of the XT30-M connector (`#4`) and **solder**.
+5. **Solder** the diode's cathode (left leg) to the positive power cable (`#6`).
+6. **Solder** the negative power cable (`#7`) to the negative terminal of the XT30-M connector.
 7. **Add** heat shrink tubing over the connectors and **heat** to seal.  
-   > :information_source: This cable will be referred to as the **hot-swap cable**.
-8. **Solder** the hot-swap cable to the original battery cable location, keeping the same orientation.
+   > :information_source: This becomes the **hot-swap cable** - compare your result with right image above.
+8. **Solder** the hot-swap cable to the battery cable location, keeping the same orientation (**See final picture of the part**).
 
-<img src="../media/1_power_module_step_3.avif" alt="Microdriver components" width="350">
+---
 
-> **Close view: Pad for microdriver soldering with corresponding cables and connector**
+<img src="../media/1_power_module_step_3a.avif" alt="Step 9-10: Microdriver cable components - XT30-M (#4), red (#6) & black (#7) cables unsoldered" width="350"> 
+<img src="../media/1_power_module_step_3b.avif" alt="Step 9-10: Completed microdriver cable - XT30-M (#4) with heat shrunk connections" width="350">
 
-9. **Solder** both power cables to the XT30 connector (red to positive, black to negative).
-10. **Add** heat shrink tubing to seal the connections.  
-    > :information_source: This cable will be referred to as the **microdriver cable**.
-11. **Solder** the microdriver cable to the pad visible on the picture (red to B+ pad, black to GND pad).
-    > :information_source: Put a heat shrink on the connector for manipulation safety.
+> **Microdriver Cable Assembly**  
+> Left: Preparation stage | Right: Finished assembly  
+> Components: XT30-F connector (`#5`), red 16AWG (`#6`), black 16AWG (`#7`)
+
+9. **Solder** both power cables to XT30-F connector (`#5`):
+   - Red (`#6`) → Positive terminal
+   - Black (`#7`) → Negative terminal
+
+10. **Add** heat shrink tubing and **seal** connections.  
+    > :information_source: Now referred to as **microdriver cable** - compare with right image.
+11. **Solder** microdriver cable to board:
+   - Red (`#6`) → B+ pad
+   - Black (`#7`) → GND pad  
+   > :warning: Apply heat shrink over connector before use (as shown right).
+---
 
 <img src="../media/1_power_module_step_4.avif" alt="Masterboard components" width="350">
 
@@ -66,9 +93,13 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 
 12. **Cut** the masterboard power cable in half.
 13. **Crimp** JST connector onto each cable.
+    > :warning: Be sure to put the connector the correct way to ensure positive-to-positive alignment.
+
 14. **Use** the connector-bearing cable for the [flying arm assembly](6_flying_arm_assembly.md) and the other as the **masterboard cable**.
-   > :warning: Be sure to put the connector the correct way to ensure that positive connect to positive. 
-15. **Solder** the masterboard cable to the **5V com pin**, ensuring proper polarity (black cable to ground, red cable to 5V).
+15. **Solder** the masterboard cable to the **5V com pin**, ensuring proper polarity (black cable to ground, green cable to 5V).
+    > :information_source: Add heat shrink over exposed pins for safety.
+
+---
 
 <img src="../media/1_power_module_step_5.avif" alt="Computer components" width="350">
 
@@ -77,6 +108,9 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 16. **Set VDD to 12V** using the jumper configuration.
 17. **Cut** the computer cable to a **24cm length**.
 18. **Solder** the computer cable to the **VDD servo pin**, maintaining correct polarity.
+    > :information_source: Cover solder joints with heat shrink tubing.
+
+---
 
 <img src="../media/1_power_module_modified.avif" alt="Modified power module" width="350">
 
@@ -122,6 +156,8 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 3. **Add** heat shrink tubing around the connectors to insulate the soldered joints.
 4. **Repeat** these steps for all 6 brushless motors.
 
+---
+
 <img src="../media/1_motor_modified.avif" alt="Modified brushless motor" width="350">
 
 > **Close view: Finalized motor**
@@ -140,16 +176,25 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 9. **Solder** the XT30 male connectors to the ends of the power cables.  
    > :warning: Double-check polarity before sealing.
 10. **Heat** the tubing to secure the connections.
+
+---
+
+<img src="../media/esc_servo_crimp.jpg" alt="ESC servo connector orientation" width="250">
+
 11. **Solder** 30cm servo cables to the ESC’s servo pads.  
     > :information_source: Attach the white cable to the signal (S) pad and the black cable to the ground (–) pad.
 12. **Crimp** the wires and attach the servo connectors.  
-    > :warning: Double-check the orientation.
+    > :warning: Orientation matters - white wire must align with signal (S) pad position.  
+    > Match connector notch with ESC's plastic alignment tab.
+
 13. **Repeat** the entire ESC modification process for all 6 ESCs.
+
+---
 
 <img src="../media/1_esc_modified.avif" alt="Modified ESC" width="350">
 
 > **Top view: Finalized modified ESC**
 
----
 
+---
 [Next → Airframe Assembly](2_airframe_assembly.md)

@@ -7,6 +7,18 @@ Before beginning assembly, ensure you have all necessary components on hand. Thi
 <!-- Put Picture of all the piece of the upper part -->
 <!-- Plus comment of the picture -->
 
+| Part Name             | Quantity | Description                          | Reference                                                                                   |
+|-----------------------|----------|--------------------------------------|---------------------------------------------------------------------------------------------|
+| PM03D Power Module    | 1        | Base unit                            | [Holybro](https://holybro.com/products/pm03d-power-module)                                  |
+| EC5-M Connector       | 1        | Male battery connector               | [TME](https://www.tme.eu/es/en/details/ec5-m/dc-power-connectors/amass/)                    |
+| XT30-F Connector      | 1        | Female power connector               | [RC Innovations](https://rc-innovations.es/shop/amass-conector-xt30-hembra-xt30u-h)         |
+| XT30-M Connector      | 1        | Male power connector                 | [RC Innovations](https://rc-innovations.es/shop/amass-conector-xt30-macho-xt30u-m)          |
+| Diode                 | 1        |                                      | `BQ30TB 45B714`                                                                             |
+| Red Power Cable       | 2        | 15cm 16AWG (VCC)                     | [RC Innovations](https://rc-innovations.es/shop/Cable-silicona-16AWG-Rojo-1-metro-amass)    |
+| Black Power Cable     | 2        | 15cm 16AWG (GND)                     | [RC Innovations](https://rc-innovations.es/shop/cable-de-silicona-26-awg-negro-1-metro)     |
+| Computer Cable        | 1        | 24cm barrel plug (5.5×2.5mm)         | [Amazon](https://www.amazon.com/Generic-5-5mm-2-5mm-Right-Pigtail/dp/B07H38LNPD)            |
+| Masterboard Cable     | 1        | 17cm line                            |                                                                                             |
+| Connector JST         | 1        | Male                                 |                                                                                             |
 
 
 | Part Name | Quantity | Type | Assembly Reference |

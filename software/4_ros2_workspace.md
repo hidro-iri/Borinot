@@ -93,6 +93,20 @@ alias rosgalactic='source /opt/ros/galactic/setup.bash && source /usr/share/colc
 alias rosgalactic_cyclone='source /home/hidro/galactic_ws/install/setup.bash && cd /home/hidro/galactic_ws && export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp && export CYCLONEDDS_URI=/home/hidro/galactic_ws/src/eagle_ros2/eagle_ros2_bringup/config_dds/cyclone_dds_nuc.xml'
 ```
 
-8. Modify `odri_ros2/odri_interface/config/robots/flying_arm_2.yaml`
+8. Modify the interface name in `odri_ros2/odri_interface/config/robots/flying_arm_2.yaml`
+
+
+## Part 3: URTPS Bridge configuration
+
+The packages of this repository use this [PX4 architecture](https://docs.px4.io/master/en/ros/ros2_comm.html) to communicate with the PX4. Not all the messages inside PX4 are broadcasted to ROS2. This is done to avoid saturating the ethernet link between the Pixhawk and the onboard computer. The messages that the Pixhawk and the onboard computer exchange cannot are set at build time by using `.yaml` files.
+
+The `.yaml` files use to select the messages have to be configured are:
+- PX4 Autopilot. You should configure this file `~/libraries/PX4-Autopilot/msg/tools/urtps_bridge_topics.yaml`.
+- MicroRTPS Agent: You should configure this file `~/galactic_ws/px4_ros_com/templates/urtps_bridge_topics.yaml`
+We provide some `.yaml` files with the topics already configured depending on the type of operation that we plan to execute. You only need to copy & paste the content to the files specified above.
+
+The files are placed in [`yaml_msgs`](https://github.com/hidro-iri/eagle_ros2/tree/devel/yaml_msgs) folder of `eaagle_ros2` repo. Notice that the files with the `px4` prefix should be copied to the `PX4 Autopilot` side, whilst the ones with the `ros2` prefix should be copied to the `px4_ros_com` side.
+
+When these files are modified, the ros2 workspace should be build again (don't forget to remove the previous build) and the pixhawk should be flash again.
 
 [Back to Software](README.md)

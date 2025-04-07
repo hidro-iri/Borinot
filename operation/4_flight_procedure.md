@@ -4,7 +4,9 @@
 - one flying the drone (on the radio controller)
 - one taking care of the MPC Interface (controlling state machine and MPC command)
 
-##Part 1: Position Control
+TIPs: If you plan to use the MPC, put the trajectory + goto command directly into the MPC Interface launched on the laptop and restart the mpc launch file. This will save time (and battery) during flight
+
+## Part 1: Position Control
 1. Install the battery
    - Check that the battery is full (~25V)
    - The battery cable should face front and the power cable should point top (see picture)
@@ -57,4 +59,4 @@
 - ALWAYS RAIL
 - trajectory : `/home/hidro/libraries/eagle_mpc_lib/yaml/borinot_flying_arm_2/trajectories/`
 - warm start : **not use**
-- mpc : `/home/hidro/libraries/eagle_mpc_lib/yaml/borinot_flying_arm_2/mpc`
+- mpc : `/home/hidro/libraries/eagle_mpc_lib/yaml/borinot_flying_arm_2/mpc/mpc.yaml`

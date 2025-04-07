@@ -1,4 +1,4 @@
-# EagleMPC ROS2: Control -> MPC Controller
+# Eagle MPC ROS2: Control -> MPC Controller
 This node incorporates functionalities to interact with the UAM by using the `eagle_mpc::ControlManager` object. This object is in charge of ensuring a continuous operation of the UAM using MPC controllers (see diagram below).
 
 What the node **DOES NOT** do:
@@ -83,4 +83,4 @@ foo@bar:~$ ros2 topic pub -1 /goto_command eagle_mpc_2_interfaces/msg/GoToCmd "{
 foo@bar:~$ ros2 service call /mpc_controller/state_transition eagle_mpc_2_interfaces/srv/TransitionCommand "{command: enable}"
 ```
 
-[Back to EagleMPC - ROS2 Control](README.md)
+[Back to Eagle MPC - ROS2 Control](README.md)

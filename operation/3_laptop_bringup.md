@@ -1,5 +1,11 @@
 # Laptop Bringup
 
+## User at laptop
+
+Login at the Hido laptop with user "hidro_admin" with password "drhesulab".
+
+## Launch borinot GUI:
+
 ``` bash
 # This did not work:
 # rosgalactic_cyclone
@@ -15,7 +21,7 @@ ros2 launch eagle_ros2_viz bringup_gui.launch.py robot_name:=borinot_flying_arm_
 - Borinot's State: Visualizer for Borinot intern state (pose, orientation, etc)
 - MPC Interface: Control the mpc and the arm
 
-⚠️: This second window is use to send command, be careful about the value you are sending 
+> ⚠️⚠️ This second window is used to send commands, be careful about the values you are sending!! ⚠️⚠️
 
 
 **Tip: Don't close these windows between flight as you can load previous command through the History**

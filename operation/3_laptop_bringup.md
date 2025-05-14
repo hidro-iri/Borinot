@@ -7,13 +7,7 @@ Login at the Hido laptop with user "hidro_admin" with password "drhesulab".
 ## Launch borinot GUI:
 
 ``` bash
-# This did not work:
-# rosgalactic_cyclone
-# ros2 launch eagle_ros2_viz bringup_gui.launch.py robot_name:=borinot_flying_arm_2
-
-# This worked:
-rosgalactic
-source ~/joan_ws/install/setup.bash
+rosgalactic_cyclone
 ros2 launch eagle_ros2_viz bringup_gui.launch.py robot_name:=borinot_flying_arm_2
 ```
 

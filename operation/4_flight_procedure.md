@@ -45,18 +45,18 @@ TIPs: If you plan to use the MPC, put the trajectory + goto command directly int
     - land Borinot,
     - when landed, activate the KillSwitch
 
-## PART 2 : EAGLE MPC 
-1. **FOLLOW POSITION CONTROL 1 TO 4 BEFORE THIS**
-2. "Stabilize" Borinot before following 
+## Part: EAGLE MPC 
+1. ⚠️ **FOLLOW POSITION CONTROL 1 TO 4 BEFORE THIS**
+2. "Stabilize" Borinot before proceeding further 
 3. Enable the MPC `enable`
   - In the laptop -> MPC interface -> state machine -> Controller,  write and send `enable`
 4. if enabled, arm the mpc with `start` command
   - In the laptop -> MPC interface -> state machine -> Controller,  write and send `start`
-  - Borinot should stabilize and the arm will strech down, if not -> retake control (using the radio controller, switch to position control)
+  - Borinot should stabilize and the arm will strech down, if not -> retake control (using the radio controller, switch to position control by pulling the switch down)
 5. To use the GoTo Command:
    - The origin is the same as specified for optitrack
    - The frame convention is flu (x: front, y: left, z: up)
-- ALWAYS RAIL
+- ⚠️ ALWAYS USE RAIL MPC
 - trajectory : `/home/hidro/libraries/eagle_mpc_lib/yaml/borinot_flying_arm_2/trajectories/`
-- warm start : **not use**
+- warm start : **do not use**
 - mpc : `/home/hidro/libraries/eagle_mpc_lib/yaml/borinot_flying_arm_2/mpc/mpc.yaml`

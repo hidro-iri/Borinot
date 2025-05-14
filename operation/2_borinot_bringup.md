@@ -40,7 +40,7 @@ Inside Borinot `ssh borinot-X`, usually `X=1`:
     ```
    -A micrortps command will be printed in the Mavlink Shell (terminal).
    - copy/paste the command inside the Mavlink Shell
-   - the command looks like this:
+   - the command looks like this, but copy/paste that on the terminal:
       -  `micrortps_client start -t UDP -i 192.168.0.4`
   
 2. Start ros2 launch file for the system:
@@ -55,8 +55,9 @@ Inside Borinot `ssh borinot-X`, usually `X=1`:
     - You should see `Connection established`
     - After that, enter the password (not explicitly demanded) and click enter
     - You should see `Using Ethernet (xxxxxxx)`
-    - If `robot_interface` does not start (TODO: then what?)
-    - `Warning` message should not be consider has an error (TODO: what?)
+    - These two instructions I dont understand:
+       - If `robot_interface` does not start (TODO: then what?)
+       - `Warning` message should not be consider has an error (TODO: what?)
 3. When using the MPC, launch the MPC:
     ``` bash
     ssh borinot-X

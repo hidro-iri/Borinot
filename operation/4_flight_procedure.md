@@ -52,7 +52,7 @@ TIPs: If you plan to use the MPC, put the trajectory + goto command directly int
   - In the laptop -> MPC interface -> state machine -> Controller,  write and send `enable`
 4. if enabled, arm the mpc with `start` command
   - In the laptop -> MPC interface -> state machine -> Controller,  write and send `start`
-  - Borinot should stabilize and the arm will strech down, if not -> retake control (using the radio controller, switch to position control by pulling the switch down)
+  - Borinot should stabilize and the arm will strech down, if not -> retake control (using the radio controller, switch to position control by pulling the `SWC` switch down)
 5. To use the GoTo Command:
    - The origin is the same as specified for optitrack
    - The frame convention is flu (x: front, y: left, z: up)

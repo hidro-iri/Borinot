@@ -2,7 +2,7 @@
 
 ## User at laptop
 
-Login at the Hido laptop with user "hidro_admin" with password "drhesulab".
+Login at the HiDRo laptop with user "hidro_admin" with password "drhesulab".
 
 ## Launch borinot GUI:
 

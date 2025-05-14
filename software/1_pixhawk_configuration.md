@@ -1,6 +1,6 @@
 # Pixhawk Configuration
 
-> :warning: Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. :warning:
+> ⚠️  Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. ⚠️ 
 
 In this part we will install all the libraries to flash and interact with the pixhawk.
 
@@ -16,7 +16,7 @@ In this part we will install all the libraries to flash and interact with the pi
    ./Tools/setup/ubuntu.sh
    # reboot
    ```
-   :warning: **Reboot** the computer.
+   ⚠️  **Reboot** the computer.
 1. **
     ``` shell
     cd ~/libraries
@@ -34,7 +34,7 @@ In this part we will install all the libraries to flash and interact with the pi
 ## 1 Installation
 In order to perform direct actuator control we need to modify the [original](https://github.com/PX4/PX4-Autopilot) PX4 repository. You should install [this modified version](https://github.com/hidro-iri/PX4-Autopilot).
 
-> :warning: we use the `motor_control` branch.
+> ⚠️  we use the `motor_control` branch.
 
 Quick installation commands (the last command it is a script to install all PX4 Autopilot dependencies):
 ```shell
@@ -45,7 +45,7 @@ foo@bar:libraries/PX4-Autopilot$  git submodule update --init --recursive
 foo@bar:libraries/PX4-Autopilot$  ./Tools/setup/ubuntu.sh
 ```
 
-> :warning: "Relogin or reboot computer before attempting to build NuttX targets"
+> ⚠️  "Relogin or reboot computer before attempting to build NuttX targets"
 
 ### 1.1 Dependencies: FastDDS & Fast-RTPS-Gen
 

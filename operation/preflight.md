@@ -33,7 +33,7 @@ The Optitrack positioning is streamed via UDP. This info is gathered by a ROS no
 *TODO: Instructions on how to launch all required elements*
 
 ### 1.3 Connect PX4 with ROS2
->:warning: **NOTE:** A prerequisite for this to work is that both (PX4 and `px4_ros_com`) have been built with the same set of messages. [See here for more info](build.md#121-urtps-bridge-configuration)
+>⚠️  **NOTE:** A prerequisite for this to work is that both (PX4 and `px4_ros_com`) have been built with the same set of messages. [See here for more info](build.md#121-urtps-bridge-configuration)
 #### 1.3.1 Pixhawk 5x side
 From the onboard computer do (you can connect it via SSH):
 1. Access the MAVLink console `./Tools/mavlink_shell.py /dev/ttyACM0`. [More info here](https://docs.px4.io/master/en/debug/mavlink_shell.html)
@@ -55,7 +55,7 @@ foo@bar:~/$ cd <path-to-px4-autopilot>
 foo@bar:<path-to-px4-autopilot>/$ make px4_sitl_rtps gazebo
 ```
 ### 2.2 Connect PX4 with ROS2
->:warning: **NOTE:** A prerequisite for this to work is that both (PX4 and `px4_ros_com`) have been built with the same set of messages. [See here for more info](build.md#121-urtps-bridge-configuration)
+>⚠️  **NOTE:** A prerequisite for this to work is that both (PX4 and `px4_ros_com`) have been built with the same set of messages. [See here for more info](build.md#121-urtps-bridge-configuration)
 #### 2.2.1 Pixhawk 5x side
 
 The MicroRTPS Client inside the PX4 should be launched automatically. You can check its status typing the following command in the PX4 shell:

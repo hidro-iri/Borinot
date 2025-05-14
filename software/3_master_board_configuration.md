@@ -1,6 +1,6 @@
 # Master Board Configuration
 
-> :warning: Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. :warning:
+> ⚠️  Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. ⚠️ 
 
 Part 1: Master Board SDK Installation
 1. **Build** and **install** forked Master Board SDK from source:

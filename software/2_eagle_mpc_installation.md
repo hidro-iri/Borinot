@@ -1,6 +1,6 @@
 # Eagle MPC Installation
 
-> :warning: Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. :warning:
+> ⚠️  Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. ⚠️ 
 
 
 This library contains tools to solve *optimal control problems* (OCPs) that deal with *unmanned aerial manipulators* (UAMs). For more information, [read the repo](https://github.com/hidro-iri/eagle_mpc_lib).
@@ -27,7 +27,7 @@ export LD_LIBRARY_PATH=/opt/openrobots/lib:$LD_LIBRARY_PATH
 export PYTHONPATH=/opt/openrobots/lib/python3.8/site-packages:$PYTHONPATH
 export CMAKE_PREFIX_PATH=/opt/openrobots:$CMAKE_PREFIX_PATH
 ```
-> :warning: source `~/.bashrc` or open a new terminal to pursue
+> ⚠️  source `~/.bashrc` or open a new terminal to pursue
 3. **Install** Crocoddyl dependencies:
 ``` bash
 sudo apt install -qqy robotpkg-py38-eigenpy=2.8.0 \
@@ -58,7 +58,7 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 export PYTHONPATH=/usr/local/lib/python3/dist-packages:$PYTHONPATH
 ```
-> :warning: source `~/.bashrc` or open a new terminal to pursue
+> ⚠️  source `~/.bashrc` or open a new terminal to pursue
 
 ## Part 2: Eagle MPC Installation
 1. **Install** Eagle MPC dependencies:
@@ -75,13 +75,13 @@ cmake -DCMAKE_BUILD_TYPE=Release -DEAGLE_MPC_URDF_DIR=/home/hidro/galactic_ws/in
 make -j6
 sudo make install
 ```
-> :warning: **Problem with the system locale** :warning: The Yaml parser uses the `std::stod` function to convert a string to a double. This function is locale dependant. Be sure to have set a locale that uses `.` as a decimal separator. To make sure of it you can run:
+> ⚠️  **Problem with the system locale** ⚠️  The Yaml parser uses the `std::stod` function to convert a string to a double. This function is locale dependant. Be sure to have set a locale that uses `.` as a decimal separator. To make sure of it you can run:
 ``` bash
 export LC_NUMERIC="en_US.UTF-8"
 ```
  
 ## Part 3: Running example
-> :warning: A monitor connected to the computer is required to run this example
+> ⚠️  A monitor connected to the computer is required to run this example
 
 As this library contains Python bindings to its C++ code, we can run a python-based example.
 1. **Install** gepetto viewer:

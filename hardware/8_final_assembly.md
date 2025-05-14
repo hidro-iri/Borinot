@@ -12,7 +12,7 @@
 1. Put the upper body on his back (upside-down)
 > :information_source: The wifi antenna can be fold
 2. Put the lower Body on top of the upper body 
-> :warning: The orientation of the arm should match the orientation of the drone
+> ⚠️  The orientation of the arm should match the orientation of the drone
 3. Screw the structure together
 4. 
 ## Part 2: ODRI Wirering

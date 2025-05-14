@@ -1,6 +1,6 @@
 # Flight Procedure
 
-:WARNING: When flying with the MPC, two persons are required:
+⚠️: When flying with the MPC, two persons are required:
 - one flying the drone (on the radio controller)
 - one taking care of the MPC Interface (controlling state machine and MPC command)
 
@@ -14,7 +14,7 @@ TIPs: If you plan to use the MPC, put the trajectory + goto command directly int
    - Try to position the cables in order to not let them free (and possibily touch a propeller)
    - Attach the battery with the scratch
 2. Enable the arm
-   - :warning: be sure that nothing can block the arm motion 
+   - ⚠️  be sure that nothing can block the arm motion 
    - In the laptop -> MPC interface -> state machine -> Arm,  write and send `enable`
    - If the arm do not have the correct position, see troubleshoting
 3. Move Borinot to the flying area
@@ -28,14 +28,14 @@ TIPs: If you plan to use the MPC, put the trajectory + goto command directly int
       - qx ~ 0
       - qy ~ 0
       - qz ~ 0
-4. With the radio controller :warning: The drone will fly ::warning:
+4. With the radio controller ⚠️  The drone will fly :⚠️ 
     - put `SWC` switch in the middle position
     - check Borinot's state -> `PX4: POSITION`
     - Desactivate the KillSwitch (top position)
     - Arm the drone with the left joystick (pointing down/right)
     - Check if the motors are spinning properly, if something weird -> troubleshooting
     - Refer to this [link](https://docs.px4.io/main/en/flight_modes_mc/position.html) image for the command.
-    - :WARNING: Trigger the jump
+    - ⚠️  Trigger the jump
     - after each arm, you have to trigger the jump,
     - climb slowly until you see borinot "jumping", then descend when the jump occurs
     - After this, you are good to flight

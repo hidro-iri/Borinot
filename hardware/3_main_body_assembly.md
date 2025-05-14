@@ -30,7 +30,7 @@ The Upper Body of Borinot acts as a flying platform, similar to a hexacopter. It
 | Airframe | 1 | Assembled structure | [Airframe Assembly Guide](airframe.md) |
 | Power Module | 1 | Essential power component | [Power Module Modification Guide](power_module.md) |
 
-> :warning: Please note that While the Pixhawk 5x has been discontinued, the Pixhawk 6x is mechanically compatible. However, Ensure software compatibility before proceeding.
+> ⚠️  Please note that While the Pixhawk 5x has been discontinued, the Pixhawk 6x is mechanically compatible. However, Ensure software compatibility before proceeding.
 
 ## Assembly
 
@@ -46,7 +46,7 @@ Before starting the assembly of the upper body, ensure that:
 Ensure the main body case and associated components are ready for assembly:
 
 - **Clean the 3D printed parts.** Ensure there are no residual supports or anomalies.
-    > :warning: Pay special attention to the marker holders and fastener holders.
+    > ⚠️  Pay special attention to the marker holders and fastener holders.
 
 <img src="../media/pixhawk_case_preparation_2.png" alt="" width="350"/>
 <img src="../media/pixhawk_case_preparation_3.png" alt="" width="350"/>

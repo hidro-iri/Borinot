@@ -46,7 +46,7 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 1. **Unsolder** the capacitor and battery cable from the board (`#1`).
 2. **Replace** the battery cable's connector from XT60 to EC5 (`#2`).
    
-   > :warning: Do not cut the cable to remove the XT60.  
+   > ⚠️  Do not cut the cable to remove the XT60.  
    > :information_source: Apply pressure when inserting EC5 terminals into housing.
 
 3. **Resolder** the capacitor and battery cable so they point **inward** on the board.
@@ -84,7 +84,7 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 11. **Solder** microdriver cable to board:
    - Red (`#6`) → B+ pad
    - Black (`#7`) → GND pad  
-   > :warning: Apply heat shrink over connector before use (as shown right).
+   > ⚠️  Apply heat shrink over connector before use (as shown right).
 ---
 
 <img src="../media/1_power_module_step_4.avif" alt="Masterboard components" width="350">
@@ -93,7 +93,7 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 
 12. **Cut** the masterboard power cable in half.
 13. **Crimp** JST connector onto each cable.
-    > :warning: Be sure to put the connector the correct way to ensure positive-to-positive alignment.
+    > ⚠️  Be sure to put the connector the correct way to ensure positive-to-positive alignment.
 
 14. **Use** the connector-bearing cable for the [flying arm assembly](6_flying_arm_assembly.md) and the other as the **masterboard cable**.
 15. **Solder** the masterboard cable to the **5V com pin**, ensuring proper polarity (black cable to ground, green cable to 5V).
@@ -150,7 +150,7 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 > **Top view: Motor and banana plugs (from left to right)**
 
 1. **Trim** the phase cables by about **5cm**.  
-   > :warning: Retain the trimmed segments for the ESC modification.
+   > ⚠️  Retain the trimmed segments for the ESC modification.
 2. **Solder** the male banana plugs to the trimmed phase cables.  
    > :information_source: Use the connector’s side hole to help evenly melt the solder paste.
 3. **Add** heat shrink tubing around the connectors to insulate the soldered joints.
@@ -174,7 +174,7 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
    > :information_source: Connect the red cable to the positive (`+`) pad and the black cable to the negative (`–`) pad.
 8. **Slide** heat shrink tubing onto both power cables (do not heat yet).
 9. **Solder** the XT30 male connectors to the ends of the power cables.  
-   > :warning: Double-check polarity before sealing.
+   > ⚠️  Double-check polarity before sealing.
 10. **Heat** the tubing to secure the connections.
 
 ---
@@ -184,7 +184,7 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 11. **Solder** 30cm servo cables to the ESC’s servo pads.  
     > :information_source: Attach the white cable to the signal (S) pad and the black cable to the ground (–) pad.
 12. **Crimp** the wires and attach the servo connectors.  
-    > :warning: Orientation matters - white wire must align with signal (S) pad position.  
+    > ⚠️  Orientation matters - white wire must align with signal (S) pad position.  
     > Match connector notch with ESC's plastic alignment tab.
 
 13. **Repeat** the entire ESC modification process for all 6 ESCs.

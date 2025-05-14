@@ -24,25 +24,25 @@
 
 1. Place the main body on top of the airframe keeping the fronts align.
 > :information_source: each CF tube should fit inside the CFT slots.  
-> :warning: if one triangle does not fit, place properly two tubes and reassemble the two others motor cases to make the third bare fits.  
+> ⚠️  if one triangle does not fit, place properly two tubes and reassemble the two others motor cases to make the third bare fits.  
 2. Put the medium spacer between the differents carbon fiber tubes and tight them with fasterner.
-> :warning: The slots should be facing out.  
+> ⚠️  The slots should be facing out.  
 > :information_source: The spacer is place at the intersections of the carbon fibers tube. (seeing from the top)  
 > :information_source: use the main body's inside cavity to hide the head of the fasteners.
-> :warning: be careful to not fastern cables in it.
+> ⚠️  be careful to not fastern cables in it.
 > :Cut the oer part of the fasterner. 
 
 3. Put all the other spacers where they should go.
-> :warning: The slots should be facing out.  
+> ⚠️  The slots should be facing out.  
 > :information_source: The spacer is place at the intersections of the carbon fibers tube. (seeing from the top)  
 > :information_source: The more distance between two tubes, the bigger the spacers
 
 
 4. For each landing gear interface, put it in place and tight it using fasterner.
-> :warning: The slots should be facing out.  
+> ⚠️  The slots should be facing out.  
 > :info_source: The interface should fit just below the spacer.
 > :information_source: use the main body's inside cavity to hide the head of the fasteners.
-> :warning: be careful to not fastern cables in it.
+> ⚠️  be careful to not fastern cables in it.
 > :Cut the oer part of the fasterner. 
 
 
@@ -62,7 +62,7 @@
 
 ## Upper Body Routing
 
-> :warning: Patience is key.
+> ⚠️  Patience is key.
 
 ### Materials
 

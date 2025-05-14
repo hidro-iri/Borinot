@@ -25,14 +25,14 @@ The Motor Case holds both the motor and the carbon fiber tubes together. It also
 ### Steps
 
 1. **Clean** all Motor Case components, ensuring removal of any support material inside the tube holder.  
-   > :warning: Use a drill if anomalies are found inside the tube holder.
+   > ⚠️  Use a drill if anomalies are found inside the tube holder.
 
 <img src="../media/2_motor_case_step_1.avif" alt="Before marker assembly" width="350"> <img src="../media/2_motor_case_step_1b.avif" alt="Before marker assembly" width="350">
 
 > **Side view:** middle part before and after installing the marker
 
 2. **Assemble** the marker (M4 nut + M4 nylon screw + M4 marker) according to the **Motor ID**.  
-   > :warning: The faces of the middle part are not symmetric. Test alignement with the top and bottom parts so find the correct orientation.
+   > ⚠️  The faces of the middle part are not symmetric. Test alignement with the top and bottom parts so find the correct orientation.
 
    > :information_source: Each Motor Case is identified using the [Hexarotor X airframe reference](https://docs.px4.io/main/en/airframes/airframe_reference.html#hexarotor-x) ID.
 
@@ -109,7 +109,7 @@ The frame is composed of two intersecting triangles. Each motor case is a vertex
 1. **Combine Motor Cases:** Assemble the top, middle, and bottom parts of each Motor Case.  
    > :information_source: Ensure the O-rings are snugly fitted.
 2. **Attach Tubes:** Insert Carbon Fiber Tubes into the tube holders of the Motor Cases and secure them with 4 M3x30mm screws.  
-   > :warning: Refer to the table above for tube positioning.
+   > ⚠️  Refer to the table above for tube positioning.
 3. **Add Tube Accessories:** For each tube, slide on two O-rings and a 7cm length of heat shrink tubing on both ends.
 4. **Assemble Triangles:**  
    - Assemble Motor Cases 1, 3, and 6 to form the first triangle.  
@@ -138,7 +138,7 @@ With the frame assembled, install the ESCs and connect them to the motors. Route
 1. **Install ESCs:** Position the ESC within the bottom section of each Motor Case and connect it to its corresponding motor.
 2. **Mount Covers:** Attach the cover onto each Motor Case using 2 M3x5mm screws.
 3. **Route Cables:** Route the ESC cables through the designated heat shrink tubing on the Carbon Fiber Tubes.  
-   > :warning: Ensure cables are routed according to the assembly guidelines.
+   > ⚠️  Ensure cables are routed according to the assembly guidelines.
 4. **Repeat:** Complete these steps for all 6 Motor Cases.
 
 ---

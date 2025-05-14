@@ -15,7 +15,7 @@
    ```bash
    sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade
    ```
-   > :warning: Do not accept the upgrade to Ubuntu 22.04.
+   > ⚠️  Do not accept the upgrade to Ubuntu 22.04.
 
 4. **Install** system tools for the next parts:
    ```bash

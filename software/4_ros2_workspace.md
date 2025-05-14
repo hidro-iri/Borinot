@@ -1,6 +1,6 @@
 # ROS2 Workspace
 
-> :warning: Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. :warning:
+> ⚠️  Since some libraries are no longer actively maintained, version conflicts may occur in the future. If something doesn't work during the installation process, it could be due to a dependency that needs to be downgraded. ⚠️ 
 
 # Part 1: ROS2 Galactic Installation
 > :information_source: The official documentation can be find [here](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html). The following is just a rewriting 
@@ -73,7 +73,7 @@ sudo make install
 cd ~/galactic_ws
 colcon build --event-handlers console_direct+ --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Release --symlink-install
 ```
-> :warning: **KNOWN ISSUE**: :warning:  
+> ⚠️  **KNOWN ISSUE**: ⚠️   
 ``` bash
 CMake Error in eagle_ros2/eagle_mpc_controller/CMakeLists.txt:
 Imported target "eagle_mpc" includes non-existent path

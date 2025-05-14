@@ -33,9 +33,16 @@ Inside Borinot `ssh borinot-X`, usually `X=1`:
     ``` bash
     ssh borinot-X
     rosgalactic_cyclone
-    ./start_px4
-    # copy/paste the command inside the Mavlink Shell (TODO: which command?)
+    ./start_px4.sh
+    # copy/paste the command inside the Mavlink Shell
+    # the command looks like this:
+    #    micrortps_client start -t UDP -i 192.168.0.4
     ```
+   -A micrortps command will be printed in the Mavlink Shell (terminal).
+   - copy/paste the command inside the Mavlink Shell
+   - the command looks like this:
+      -  `micrortps_client start -t UDP -i 192.168.0.4`
+  
 2. Start ros2 launch file for the system:
     ``` bash
     ssh borinot-X
@@ -45,7 +52,10 @@ Inside Borinot `ssh borinot-X`, usually `X=1`:
     # sometimes it is not asked: type the password anyway
     ```
     - You should see that the `vrpn _client_node` has found `borinot_fur_ot`, if not, got to troubleshooting
-    - If `robot_interface` don't start (TODO: then what?)
+    - You should see `Connection established`
+    - After that, enter the password (not explicitly demanded) and click enter
+    - You should see `Using Ethernet (xxxxxxx)`
+    - If `robot_interface` does not start (TODO: then what?)
     - `Warning` message should not be consider has an error (TODO: what?)
 3. When using the MPC, launch the MPC:
     ``` bash

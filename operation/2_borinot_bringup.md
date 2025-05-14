@@ -2,57 +2,58 @@
 
 ## Part 1: Hardware Checks
 1. Check the motors:
-   - [ ] Try to rotate the motor case, if it is loose, it the inside screws should be tighten
-   - [ ] If some cables have been disconnected, check the motor ID and the spin direction
-   - [ ] Check noise in pitch, if present, the motor should be clean
+   - [ ] Try to rotate the motor case, if it is loose, it the inside screws should be tightened
+   - [ ] If some motor cables have been disconnected, check the motor ID and the spin direction. Spin direction must follow this convention: [Hexarotor X airframe reference](https://docs.px4.io/main/en/airframes/airframe_reference.html#hexarotor-x)
+   - [ ] Check unusual noise in pitch. If present, the motor should be cleaned for attached metal on the magnets
 2. Check upper body:
-   - [ ] Wifi antenna should be in its position (pointing up)
+   - [ ] Wifi antenna should be in its upright position (pointing up)
 3. Check lower body:
    - [ ] Check connectors (Ethernet, microdriver + masterboard) are connected
-   - [ ] the arm should be streched (pointing down)
+   - [ ] The arm should be streched (pointing down)
 
 ## Install the propellers
-1. check that the propeller is not damaged
+1. Check that the propellers are not damaged
 2. Use the following color convention: red for front, blue for the rest
 3. Check that they respect the orientation of the [Hexarotor X airframe reference](https://docs.px4.io/main/en/airframes/airframe_reference.html#hexarotor-x)
-4. Tight the propeller
+4. Tighten the propeller
 
  When everything tight, turn on Borinot (with the power supply at 22.5V)
 
 ## Prepare radio controller
-- Put battery in it (4x AA Batteries)
+- Put batteries in it (4x AA Batteries)
 - Check if the radio controller detects the receiver (`RX` battery bar should have a voltage level -> should not be `?`)
-> :warning: If the radio controller does not detect the receiver , the receiver need to be bind to the radio controller
+> ⚠️  If the radio controller does not detect the receiver, the receiver need to be bind to the radio controller
 >  - on the receiver, connect a jumper to the bypass pins
 >  - on the radio controller, start binding procedure (setting icon,`RX bind`)
-- Activate the Kill Switch (red switch)
+- Activate the Kill Switch (red switch in down position)
 
 ## Part 2: Software Start Up
-Inside Borinot `ssh borinot-X`:
+Inside Borinot `ssh borinot-X`, usually `X=1`:
 1. Start `micrortps_client` in pixhawk:
     ``` bash
     ssh borinot-X
     rosgalactic_cyclone
     ./start_px4
-    # copy/paste the command inside the Mavlink Shell
+    # copy/paste the command inside the Mavlink Shell (TODO: which command?)
     ```
 2. Start ros2 launch file for the system:
     ``` bash
     ssh borinot-X
     rosgalactic_cyclone
     ros2 launch eagle_ros2_bringup borinot_flying_arm_2_system.launch.py
-    # the password will be asked if the arm don't start
+    # the password will be asked if the arm does not start
+    # sometimes it is not asked: type the password anyway
     ```
-    - You should see that the `vrpn _client_node` has fount `borinot_fur_ot`, if not, got to troubleshooting
-    - If `robot_interface` don't start
-    - `Warning` message should not be consider has an error
-3. When using the MPC:
+    - You should see that the `vrpn _client_node` has found `borinot_fur_ot`, if not, got to troubleshooting
+    - If `robot_interface` don't start (TODO: then what?)
+    - `Warning` message should not be consider has an error (TODO: what?)
+3. When using the MPC, launch the MPC:
     ``` bash
     ssh borinot-X
     rosgalactic_cyclone
     ros2 launch eagle_ros2_bringup borinot_flying_arm_2_mpc.launch.py
     ```
-  - If you need to record data, record inside Borinot
+4. If you need to record data, record inside Borinot
     ``` bash
     ssh borinot-X
     rosgalactic_cyclone

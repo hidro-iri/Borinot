@@ -12,7 +12,7 @@ The Borinot robot consists of a flying platform and an arm, and is supported by 
 
 ## Software
 
-Borinot runs many pieces of software. Here, we detail the information flow for estimation (from sensors to computer) and control (from computer to motors). We also show the data flow for simulations.
+Borinot runs many pieces of software. Here, we detail the information flow for *estimation* (from sensors to computer) and *control* (from computer to motors). We also show the data flow for *simulations*.
 
 ### Software for state estimation
 
@@ -28,11 +28,13 @@ The result of the estimation is send back to the NUC.
 
 Additionally, the ODRI master board reports the arm state to the NUC via Ethernet.
 
+The state `X` is located in the ROS2 node `StatePubSub`
+
 Beware there are thre different reference frame conventions:
-  - Optitrack uses FRU
-  - PX4 uses FRD
-  - ROS and Eagle MPC uses FLU
-  - There is a node in NUC transforming messages
+  - Optitrack uses `FUR`
+  - PX4 uses `FRD`
+  - ROS2 and Eagle MPC use `FLU`
+  - The node `StatePubSub` in NUC transforms messages
 
 ![Borinot Estimation](../media/Borinot.Estimation.png)
 

@@ -30,8 +30,8 @@ In both cases, states and state transition commands are as follows:
 +------+   ------>   +---------+   start   +---------+
 | Idle |             | Enabled |  ------>  | Running |
 +------+   <------   +---------+           +---------+
-    ↑      disable                              |
-    \__________________________________________/
+    ∧      disable                              |
+    |___________________________________________|
                        disable
 ```
 

@@ -1,0 +1,29 @@
+repositories:
+  src/eagle_ros2:
+    type: git
+    url: git@github.com:hidro-iri/eagle_ros2.git
+    version: hidro_borinot
+  src/hidro_robots:
+    type: git
+    url: git@github.com:hidro-iri/hidro_robots.git
+    version: main
+  src/hidro_ros2_utils:
+    type: git
+    url: git@github.com:hidro-iri/hidro_ros2_utils.git
+    version: bfa2_experiments
+  src/odri_ros2:
+    type: git
+    url: git@github.com:hidro-iri/odri_ros2.git
+    version: hidro_borinot
+  src/px4_msgs:
+    type: git
+    url: https://github.com/hidro-iri/px4_msgs.git
+    version: master
+  src/px4_ros_com:
+    type: git
+    url: https://github.com/hidro-iri/px4_ros_com.git
+    version: master
+  src/vrpn_client_ros:
+    type: git
+    url: git@github.com:hidro-iri/vrpn_client_ros.git
+    version: ros2

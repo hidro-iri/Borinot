@@ -3,7 +3,7 @@
 This package contains different nodes that allow to interact with the UAM. There are some basic nodes that can be used to test more advanced control architectures.
 
 ## 1. Basic (abstract) nodes
-The EagleMPC-ROS2 control package has several abstract (or base) classes. These, are common pieces used on a wide variety of control architectures for real robots.
+The Eagle MPC-ROS2 control package has several abstract (or base) classes. These, are common pieces used on a wide variety of control architectures for real robots.
 1. We need to get the state estimation of the robot.
 2. We need to compute a control (using some fancy algorithm) and send it to the actuators
 3. It is good to have a state machine that ensures the good operation of the robot: a proper initialization of data structures and algorithms, a proper ending of algorithms, acceptable handling of unexpected situations, to provide a user interface, etc.

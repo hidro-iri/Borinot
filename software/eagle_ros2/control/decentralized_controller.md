@@ -1,4 +1,4 @@
-# EagleMPC ROS2: Control -> Decentralized controller
+# Eagle MPC ROS2: Control -> Decentralized controller
 
 ## 1 Architecture
 ## 2 Operation
@@ -28,4 +28,4 @@ foo@bar:~$ ros2 topic pub -1 /goto_command eagle_mpc_2_interfaces/msg/GoToCmd "{
 foo@bar:~$ ros2 service call /decentralized_controller/state_transition eagle_mpc_2_interfaces/srv/TransitionCommand "{command: enable}"
 ```
 
-[Back to EagleMPC - ROS2 Control](README.md)
+[Back to Eagle MPC - ROS2 Control](README.md)

@@ -3,6 +3,8 @@
 ⚠️ When flying with the MPC, two persons are required:
 - one flying the drone (on the radio controller)
 - one taking care of the MPC Interface (controlling state machine and MPC command)
+- > ⚠️ The person on the MPC interface should count 3..2..1..0 before sending any command
+
 
 TIPs: If you plan to use the MPC, put the trajectory + goto command directly into the MPC Interface launched on the laptop and restart the mpc launch file. This will save time (and battery) during flight
 
@@ -83,8 +85,9 @@ This section allows you to select a trajectory to execute. (⚠️ TODO revise)
       - Laptop -> Borinot state GUI -> `PX4: POSITION`
     - Desactivate the KillSwitch (red switch, top position)
     - Arm the drone with the left joystick (pointing down/right)
-    - Check if the motors are spinning properly, if something weird -> troubleshooting
-    - Refer to this [link](https://docs.px4.io/main/en/flight_modes_mc/position.html) image for the command.
+      -  ⚠️ The motors start spinning
+      - Check if the motors are spinning properly, if something weird -> troubleshooting
+      - Refer to this [link](https://docs.px4.io/main/en/flight_modes_mc/position.html) image for the command.
     - Take off slowly up
     - ⚠️ Trigger the jump
       - Climb slowly until you see borinot "jumping", then descend when the jump occurs
@@ -102,8 +105,10 @@ This section allows you to select a trajectory to execute. (⚠️ TODO revise)
 3. Land Borinot with the radio,
 4. Disable the motors 
    - Radio: left joystick down-left
+   - All motors stop
 5. ⚠️ Activate the KillSwitch
    - Radio: red switch down
+   - The robot is no longer responsive to the radio. This is a safe mode.
 
 ### ⚠️ Mild emergency recovery ⚠️
 1. Set position control: 
@@ -116,20 +121,25 @@ This section allows you to select a trajectory to execute. (⚠️ TODO revise)
 1. ⚠️ Activate the KillSwitch
    - Radio: red switch down
 2. ⚠️ All motors will stop.
-3. ⚠️ The robot will fall to the ground and crash. 
+3. ⚠️ THE ROBOT WILL FALL TO THE GROUND AND CRASH. 
 
 ## Part 2: Automatic flight with EAGLE MPC 
 1. > ⚠️ **FOLLOW POSITION CONTROL 1 TO 4 BEFORE THIS**
+   - > ⚠️ Count 3..2..1..0 before sending any command
 2. "Stabilize" Borinot in the air with the radio before proceeding further 
 3. Enable the MPC `enable`
+   - > ⚠️ Count 3..2..1..0 to warn the pilot
    - Laptop -> MPC interface -> state machine -> Controller ->  write  `enable` and send request
 4. if enabled, arm the mpc with `start` command
+   - > ⚠️ Count 3..2..1..0 to warn the pilot
    - Laptop -> MPC interface -> state machine -> Controller ->  write  `start` and send request
    - Borinot should stabilize and the arm will strech down, if not -> retake control (using the radio controller, switch to position control by pulling the `SWC` switch down)
 5. To use the GoTo Command:
+   - > ⚠️ Count 3..2..1..0 to warn the pilot
    - The origin is the same as specified for optitrack
    - The frame convention is flu (x: front, y: left, z: up)
 6. To use the Trajectory command:
+   - > ⚠️ Count 3..2..1..0 to warn the pilot
    - > ⚠️ ALWAYS USE RAIL MPC
    - trajectory : select one from `/home/hidro/libraries/eagle_mpc_lib/yaml/borinot_flying_arm_2/trajectories/`
    - warm start : **do not use**

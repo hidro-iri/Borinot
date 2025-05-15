@@ -1,5 +1,6 @@
 # Borinot Bringup
 
+
 ## Part 1: Hardware Checks
 1. Check the motors:
    - [ ] Try to rotate the motor case, if it is loose, it the inside screws should be tightened
@@ -28,6 +29,10 @@
 - Activate the Kill Switch (red switch in down position)
 
 ## Part 2: Software Start Up
+
+> ⚠️ **User at laptop** Login at the HiDRo laptop with user "hidro_admin" with password "drhesulab".
+
+
 Inside Borinot `ssh borinot-X`, usually `X=1`:
 1. Start `micrortps_client` in pixhawk:
     ``` bash

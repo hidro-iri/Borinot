@@ -39,21 +39,21 @@ In Optitrack, follow these steps to set the IMU center reference frame:
 
 1. Select (mouse left-click) the pivot marker in the solid
 
-  ![Optitrack 1](../media/Optitrack_1.png)
+   ![Optitrack 1](../media/Optitrack_1.png)
 
 2. Also select (SHIFT + mouse left-click) the inner rear-left marker 
 
-  ![Optitrack 2](../media/Optitrack_2.png)
+   ![Optitrack 2](../media/Optitrack_2.png)
 
 1. Set this marker as pivot point (right-click -> Rigid Body -> Set Pivot Point to Selected Marker)
 
-  ![Optitrack 3](../media/Optitrack_3.png)
+   ![Optitrack 3](../media/Optitrack_3.png)
 
-You should see how the pivot moves to the selected marker
+   You should see how the pivot moves to the selected marker
 
 1. Select the Orientation tab to add the offsets of the IMU reference frame
 
-  ![Optitrack 4](../media/Optitrack_4.png)
+   ![Optitrack 4](../media/Optitrack_4.png)
 
 5. Insert the XYZ offset values (in mm, not shown) and apply the transformation
 
@@ -62,9 +62,9 @@ You should see how the pivot moves to the selected marker
       - y : 29.0
       - z : 84.9
 
-  ![Optitrack 5](../media/Optitrack_5.png)
+   ![Optitrack 5](../media/Optitrack_5.png)
 
-You should see how the pivot moves to the center of the solid, a little above all the other markers.
+   You should see how the pivot moves to the center of the solid, a little above all the other markers.
 
 
 

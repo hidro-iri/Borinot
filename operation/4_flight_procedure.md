@@ -39,9 +39,9 @@ To send commands, write the commands `enable`, `start` or `disable` in the 'tran
 
 2. **GoTo command**
 
-This section allows you to sens waypoints to the controller. Follow these steps:
-  - Enter desired XYZ and Yaw for the opse of the base, and j0, j1 for the arm angles.
-  - Enter the time in milliseconds
+This section allows you to send waypoints to the controller. Follow these steps:
+  - Enter desired XYZ and Yaw for the pose of the base, and j0, j1 for the arm angles.
+  - Enter the travel time in milliseconds
   - Press ENTER or click 'Send command'
 
 3. **Trajectory command**
@@ -52,7 +52,7 @@ This section allows you to select a trajectory to execute. (⚠️ TODO revise)
   - Enter the controller
   - Press ENTER or click 'send command' 
 
-## Part 1: Position Control
+## Part 1: Radio-controlled flight in Position Control
 1. Install the battery
    - Check that the battery is full (~25V)
    - The battery cable should face front and the power cable should point top (see picture)
@@ -116,7 +116,7 @@ This section allows you to select a trajectory to execute. (⚠️ TODO revise)
 2. ⚠️ The robot will fall to the ground and crash. 
 3. ⚠️ All motors will stop.
 
-## Part 2: EAGLE MPC 
+## Part 2: Automatic flight with EAGLE MPC 
 1. > ⚠️ **FOLLOW POSITION CONTROL 1 TO 4 BEFORE THIS**
 2. "Stabilize" Borinot in the air with the radio before proceeding further 
 3. Enable the MPC `enable`

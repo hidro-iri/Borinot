@@ -35,6 +35,8 @@ In both cases, states and state transition commands are as follows:
                        disable
 ```
 
+The button `STOP` will stop both state machines at once.
+
 To send commands, write the commands `enable`, `start` or `disable` in the 'transition name' window and press ENTER or click on 'send command'. The gray window on the right will display the new state.
 
 2. **GoTo command**

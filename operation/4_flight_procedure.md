@@ -5,8 +5,9 @@
 - one taking care of the MPC Interface (controlling state machine and MPC command)
 - > ⚠️ The person on the MPC interface should count 3..2..1..0 before sending any command
 
+Refer to the [GUI operation guide](./3_laptop_bringup.md/#graphical-user-interfaces) to become familiar with the GUI controls and procedures.
 
-TIPs: If you plan to use the MPC, put the trajectory + goto command directly into the MPC Interface launched on the laptop and restart the mpc launch file. This will save time (and battery) during flight
+**TIP:** If you plan to use the MPC, put the trajectory + goto command directly into the MPC Interface launched on the laptop and restart the mpc launch file. This will save time (and battery) during flight
 
 
 ## Part 1: Radio-controlled flight in Position Control

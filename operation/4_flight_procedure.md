@@ -5,7 +5,7 @@
 - one taking care of the MPC Interface (controlling state machine and MPC command)
 - > ⚠️ The person on the MPC interface should count 3..2..1..0 before sending any command
 
-Refer to the [GUI operation guide](./3_laptop_bringup.md/#graphical-user-interfaces) to become familiar with the GUI controls and procedures.
+Refer to the [GUI operation guide](./3_laptop_bringup.md#launch-borinot-graphical-user-interface) to become familiar with the GUI controls and procedures.
 
 **TIP:** If you plan to use the MPC, put the trajectory + goto command directly into the MPC Interface launched on the laptop and restart the mpc launch file. This will save time (and battery) during flight
 
@@ -78,22 +78,18 @@ Refer to the [GUI operation guide](./3_laptop_bringup.md/#graphical-user-interfa
 3. ⚠️ THE ROBOT WILL FALL TO THE GROUND AND CRASH. 
 
 ## Part 2: Automatic flight with EAGLE MPC 
-1. > ⚠️ **FOLLOW POSITION CONTROL 1 TO 4 BEFORE THIS**
+1. > ⚠️ **FOLLOW [POSITION CONTROL](#part-1-radio-controlled-flight-in-position-control) 1 TO 4 BEFORE THIS**
    - > ⚠️ Count 3..2..1..0 before sending any command
 2. "Stabilize" Borinot in the air with the radio before proceeding further 
 3. Enable the MPC `enable`
-   - > ⚠️ Count 3..2..1..0 to warn the pilot
    - Laptop -> MPC interface -> state machine -> Controller ->  write  `enable` and send request
 4. if enabled, arm the mpc with `start` command
-   - > ⚠️ Count 3..2..1..0 to warn the pilot
    - Laptop -> MPC interface -> state machine -> Controller ->  write  `start` and send request
    - Borinot should stabilize and the arm will strech down, if not -> retake control (using the radio controller, switch to position control by pulling the `SWC` switch down)
 5. To use the GoTo Command:
-   - > ⚠️ Count 3..2..1..0 to warn the pilot
    - The origin is the same as specified for optitrack
    - The frame convention is flu (x: front, y: left, z: up)
 6. To use the Trajectory command:
-   - > ⚠️ Count 3..2..1..0 to warn the pilot
    - > ⚠️ ALWAYS USE RAIL MPC
    - trajectory : select one from `/home/hidro/libraries/eagle_mpc_lib/yaml/borinot_flying_arm_2/trajectories/`
    - warm start : **do not use**

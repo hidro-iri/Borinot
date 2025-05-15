@@ -108,13 +108,13 @@ This section allows you to select a trajectory to execute. (⚠️ TODO revise)
    - Radio: set the `SWC` switch in the down position.
    - The control is transferred from MPC to user
    - The robot will remain in the air in position
-   - [Land the robot normally](#normal-stop)
+2. [Land the robot normally](#normal-stop)
 
 ### ⚠️⚠️⚠️ Severe emergency stop ⚠️⚠️⚠️
-1. Activate the KillSwitch
+1. ⚠️ Activate the KillSwitch
    - Radio: red switch down
-2. ⚠️ The robot will fall to the ground and crash. 
-3. ⚠️ All motors will stop.
+2. ⚠️ All motors will stop.
+3. ⚠️ The robot will fall to the ground and crash. 
 
 ## Part 2: Automatic flight with EAGLE MPC 
 1. > ⚠️ **FOLLOW POSITION CONTROL 1 TO 4 BEFORE THIS**

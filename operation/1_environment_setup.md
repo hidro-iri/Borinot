@@ -17,7 +17,7 @@
   - pose of Borinot when creating the "solid" (top view )
     - Put the drone on top of a table for all the cameras to detect it
   - the name convention `borinot_fur_ot`
-  - origin and offset of the "imu center" (check error per markers + untrack markers)
+  - origin and offset of the "imu center" (check error per markers + untrack markers) --> See [Helper](#helper-optitrack-imu-center-reference-frame) below.
     - origin : internal marker at the rear left (TODO: add image of markers and origin marker) 
       - x : 62.9
       - y : 29.0
@@ -33,6 +33,38 @@
 
 
 
+### **Helper: Optitrack IMU center reference frame**
+
+In Optitrack, follow these steps to set the IMU center reference frame:
+
+1. Select (mouse left-click) the pivot marker in the solid
+
+  ![Optitrack 1](../media/Optitrack_1.png)
+
+2. Also select (SHIFT + mouse left-click) the inner rear-left marker 
+
+  ![Optitrack 2](../media/Optitrack_2.png)
+
+1. Set this marker as pivot point (right-click -> Rigid Body -> Set Pivot Point to Selected Marker)
+
+  ![Optitrack 3](../media/Optitrack_3.png)
+
+You should see how the pivot moves to the selected marker
+
+1. Select the Orientation tab to add the offsets of the IMU reference frame
+
+  ![Optitrack 4](../media/Optitrack_4.png)
+
+5. Insert the XYZ offset values (in mm, not shown) and apply the transformation
+
+   The values are:
+      - x : 62.9
+      - y : 29.0
+      - z : 84.9
+
+  ![Optitrack 5](../media/Optitrack_5.png)
+
+You should see how the pivot moves to the center of the solid, a little above all the other markers.
 
 
 
@@ -40,13 +72,10 @@
 
 
 
-
-# [Preflight safety checklist](preflight.md)
-
-
+# Preflight safety check list
 
 Before each flight, it's important to perform a series of checks to ensure that the UAM is safe to operate. Follow the procedures outlined in the [preflight.md](preflight.md) file to complete these checks.
 
-### [Optitrack fusion](optitrack.md)
+### Optitrack fusion
 
 The [optitrack.md](optitrack.md) file provides a procedure for fusing the position of the OptiTrack system with the PX4's EKF2 module.

@@ -6,6 +6,52 @@
 
 TIPs: If you plan to use the MPC, put the trajectory + goto command directly into the MPC Interface launched on the laptop and restart the mpc launch file. This will save time (and battery) during flight
 
+## Graphical User Interfaces.
+From [Laptop Bringup](./3_laptop_bringup.md#laptop-bringup) you opened two GUI windows in the laptop: `Borinot state` and `MPC Interface`. 
+
+### Borinot state
+In **Borinot state** you can read the state of Borinot:
+
+  ![Borinot State](../media/borinot_state.png)
+
+### MPC Interface
+In **MPC Interface** you control the robot using MPC.
+
+  ![MPC Interface](../media/mpc_interface.png)
+
+This GUI contains three sections:
+
+1. State Machine: controls and displays the state machines of Borinot. There's the Controller machine and the Arm machine.
+
+In both cases, states and state transition commands are as follows:
+
+```
+           enable                 
++------+   ------>   +---------+   start   +---------+
+| Idle |             | Enabled |  ------>  | Running |
++------+   <------   +---------+           +---------+
+    ↑      disable                              |
+    \__________________________________________/
+                       disable
+```
+
+To send commands, write the commands `enable`, `start` or `disable` in the 'transition name' window and press ENTER or click on 'send command'. The gray window on the right will display the new state.
+
+2. GoTo command
+
+This section allows you to sens waypoints to the controller. Follow these steps:
+  - Enter desired XYZ and Yaw for the opse of the base, and j0, j1 for the arm angles.
+  - Enter the time in milliseconds
+  - Press ENTER or click 'Send command'
+
+3. Trajectory command
+
+This section allows you to select a trajectory to execute. (:warning: TODO revise)
+  - Enter the trajectory name
+  - Enter the controller type (use only RAIL MPC)
+  - Enter the controller
+  - Press ENTER or click 'send command' 
+
 ## Part 1: Position Control
 1. Install the battery
    - Check that the battery is full (~25V)
@@ -15,7 +61,7 @@ TIPs: If you plan to use the MPC, put the trajectory + goto command directly int
    - Attach the battery with the scratch
 2. Enable the arm
    - > ⚠️ be sure that nothing can block the arm's motion 
-   - Laptop -> MPC interface -> state machine -> Arm,  write and send `enable`
+   - Laptop -> MPC interface -> state machine -> Arm -> write `enable` and send request
    - If the arm do not have the correct position, see troubleshoting
 3. Move Borinot to the flying area
     - When moving Borinot, grab it from the Pixhawk case (avoid putting your hand in the propeller area)
@@ -48,7 +94,7 @@ TIPs: If you plan to use the MPC, put the trajectory + goto command directly int
 
 ### Normal stop
 1. Enable the arm,
-   - Laptop -> MPC interface -> state machine -> Arm,  write and send `enable`
+   - Laptop -> MPC interface -> state machine -> Arm -> write `enable` and send request
 2. Set position control: 
    - Radio, set the `SWC` switch in the down position.
 3. Land Borinot with the radio,
@@ -74,9 +120,9 @@ TIPs: If you plan to use the MPC, put the trajectory + goto command directly int
 1. > ⚠️ **FOLLOW POSITION CONTROL 1 TO 4 BEFORE THIS**
 2. "Stabilize" Borinot in the air with the radio before proceeding further 
 3. Enable the MPC `enable`
-   - Laptop -> MPC interface -> state machine -> Controller,  write and send `enable`
+   - Laptop -> MPC interface -> state machine -> Controller ->  write  `enable` and send request
 4. if enabled, arm the mpc with `start` command
-   - Laptop -> MPC interface -> state machine -> Controller,  write and send `start`
+   - Laptop -> MPC interface -> state machine -> Controller ->  write  `start` and send request
    - Borinot should stabilize and the arm will strech down, if not -> retake control (using the radio controller, switch to position control by pulling the `SWC` switch down)
 5. To use the GoTo Command:
    - The origin is the same as specified for optitrack

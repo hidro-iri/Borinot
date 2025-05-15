@@ -13,7 +13,12 @@ ros2 launch eagle_ros2_viz bringup_gui.launch.py robot_name:=borinot_flying_arm_
 
 2 windows opened:
 - Borinot's State: Visualizer for Borinot intern state (pose, orientation, etc)
+ 
+  ![Borinot State](../media/borinot_state.png)
+
 - MPC Interface: Control the mpc and the arm
+
+  ![MPC Interface](../media/mpc_interface.png)
 
 > ⚠️⚠️ This second window is used to send commands, be careful about the values you are sending!! ⚠️⚠️
 

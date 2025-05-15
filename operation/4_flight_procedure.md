@@ -127,9 +127,10 @@ This section allows you to select a trajectory to execute. (⚠️ TODO revise)
 5. To use the GoTo Command:
    - The origin is the same as specified for optitrack
    - The frame convention is flu (x: front, y: left, z: up)
+6. To use the Trajectory command:
    - > ⚠️ ALWAYS USE RAIL MPC
-   - trajectory : `/home/hidro/libraries/eagle_mpc_lib/yaml/borinot_flying_arm_2/trajectories/`
+   - trajectory : select one from `/home/hidro/libraries/eagle_mpc_lib/yaml/borinot_flying_arm_2/trajectories/`
    - warm start : **do not use**
    - mpc : `/home/hidro/libraries/eagle_mpc_lib/yaml/borinot_flying_arm_2/mpc/mpc.yaml`
 7. You can lanuch multiple trajectories or goto commands.
-6. When done, [stop the robot normally](#normal-stop)
+8. When done, [stop the robot normally](#normal-stop)

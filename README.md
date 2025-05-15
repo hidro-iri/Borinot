@@ -13,12 +13,13 @@ It dynamically reconfigures its extremity as:
 **Watch the demo**: [YouTube Presentation](https://www.youtube.com/watch?v=Ob7IIVB6P_A)
 
 ## Documentation  
-Start by assembling, configuring, and operating Borinot: 
+Start by understanding the architecture and then assembling, configuring, and operating Borinot: 
 
-|                                             |                                                                                                                                        |
-| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| [**Hardware Assembly**](hardware/README.md) | Components list and instructions for assembling Borinot                                                                       |
-| [**Software Setup**](software/README.md)    | Guide to Borinot's software stack installation, configuration, and subsystem integration                                               |
+|                                             |                         |
+| ------------------------------------------- | ----------------------- |
+| [**Borinot architecture**](architecture/README.md) | Understand the hardware and software architectures of Borinot |
+| [**Hardware Assembly**](hardware/README.md) | Components list and instructions for assembling Borinot              |
+| [**Software Setup**](software/README.md)    | Guide to Borinot's software stack installation, configuration, and subsystem integration |
 | [**Operation Manual**](operation/README.md) | Instructions for operating Borinot and troubleshooting |
 
 ## Citation  

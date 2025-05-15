@@ -6,7 +6,7 @@ This chapter describes the architecture.
 
 ## Hardware
 
-The Borinot robot consists of a flying platform and an arm, and is supported by some external equipments such as the WIFI router, Optitrack and the base station or Laptop.
+The Borinot robot consists of a flying platform and an arm, and is supported by some external equipments such as the Radio controller, the WIFI router, Optitrack and the base station or Laptop.
 
 ![Borinot Hardware](../media/Borinot.Hardware.png)
 

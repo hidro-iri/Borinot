@@ -21,7 +21,7 @@ In **MPC Interface** you control the robot using MPC.
 
 This GUI contains three sections:
 
-1. State Machine: controls and displays the state machines of Borinot. There's the Controller machine and the Arm machine.
+1. **State Machine:** controls and displays the state machines of Borinot. There's the Controller state machine and the Arm state machine.
 
 In both cases, states and state transition commands are as follows:
 
@@ -37,16 +37,16 @@ In both cases, states and state transition commands are as follows:
 
 To send commands, write the commands `enable`, `start` or `disable` in the 'transition name' window and press ENTER or click on 'send command'. The gray window on the right will display the new state.
 
-2. GoTo command
+2. **GoTo command**
 
 This section allows you to sens waypoints to the controller. Follow these steps:
   - Enter desired XYZ and Yaw for the opse of the base, and j0, j1 for the arm angles.
   - Enter the time in milliseconds
   - Press ENTER or click 'Send command'
 
-3. Trajectory command
+3. **Trajectory command**
 
-This section allows you to select a trajectory to execute. (:warning: TODO revise)
+This section allows you to select a trajectory to execute. (⚠️ TODO revise)
   - Enter the trajectory name
   - Enter the controller type (use only RAIL MPC)
   - Enter the controller

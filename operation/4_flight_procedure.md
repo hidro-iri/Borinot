@@ -3,7 +3,8 @@
 ⚠️ When flying with the MPC, two persons are required:
 - one flying the drone (on the radio controller)
 - one taking care of the MPC Interface (controlling state machine and MPC command)
-- > ⚠️ The person on the MPC interface should count 3..2..1..0 before sending any command
+
+> ⚠️ The person on the MPC interface should count 3..2..1..0 before sending any command
 
 Refer to the [GUI operation guide](./3_laptop_bringup.md#launch-borinot-graphical-user-interface) to become familiar with the GUI controls and procedures.
 

@@ -100,3 +100,6 @@ Before beginning assembly, ensure you have all necessary components on hand. Thi
 | ø8mmx300.0mm Carbon Fiber Round Tubes | 2 | | [Landing Gear Assembly](building_instructions.md#landing-gear-assembly) |
 | ø8mmx352.5mm Carbon Fiber Round Tubes | 6 | | [Airframe Assembly](building_instructions.md#airframe-assembly) |
 | [Markers](https://optitrack.com/accessories/markers/#mcm-14.0-m4-10) | 11 | | [Airframe Assembly](building_instructions.md#airframe-assembly) & [Body Assembly](building_instructions.md#body-assembly)|
+
+| [Top of page](#components-list) | [Back to Hardware Building Instructions](README.md) | [Back to Borinot HOME](../README.md) | [Next → Component Preparation](1_component_preparation.md) |
+| --- | --- | --- | --- |

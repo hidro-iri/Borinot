@@ -18,5 +18,7 @@ See [here for installation instructions](https://github.com/hidro-iri/eagle_mpc_
 
 See [here for building instructions](https://github.com/hidro-iri/eagle_mpc_lib#3-installation---eagle-mpc)
 
+---
 
-[Back to Software](../README.md)
+| [Top of page](#eagle-mpc-library) | [Back to Software](../README.md) | [Back to Borinot HOME](../../README.md) |
+| --- | --- | --- |

@@ -83,4 +83,7 @@ foo@bar:~$ ros2 topic pub -1 /goto_command eagle_mpc_2_interfaces/msg/GoToCmd "{
 foo@bar:~$ ros2 service call /mpc_controller/state_transition eagle_mpc_2_interfaces/srv/TransitionCommand "{command: enable}"
 ```
 
-[Back to Eagle MPC - ROS2 Control](README.md)
+---
+
+| [Top of page](#eagle-mpc-ros2-control---mpc-controller) | [Back to Eagle MPC - ROS2 Control](README.md) | [Back to Software](../README.md) |
+| --- | --- | --- |

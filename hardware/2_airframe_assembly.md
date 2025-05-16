@@ -143,4 +143,5 @@ With the frame assembled, install the ESCs and connect them to the motors. Route
 
 ---
 
-[Next → Main Body Assembly](3_main_body_assembly.md)
+| [Top of page](#airframe-assembly-guide) | [Back to Hardware Building Instructions](README.md) | [Back to Borinot HOME](../README.md) | [Next -> go to Main Body Assembly](./3_main_body_assembly.md)
+| --- | --- | --- | --- |

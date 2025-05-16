@@ -90,5 +90,7 @@ The landing gear serves as the foundational structure for Borinot's lower body, 
 2. Combine the cross-block connectors with the 170mm carbon fiber tubes, following reference images. Create two such assemblies.
 3. Integrate the entire setup using the 4 110mm carbon fiber tubes, ensuring alignment with provided pictures (or diagrams).
 
+---
 
-[Next → Flying Arm Assembly](6_flying_arm_assembly.md)
+| [Top of page](#borinot-landing-gear-assembly-guide) | [Back to Hardware Building Instructions](README.md) | [Back to Borinot HOME](../README.md) | [Next → Flying Arm Assembly](6_flying_arm_assembly.md) |
+| --- | --- | --- | --- |

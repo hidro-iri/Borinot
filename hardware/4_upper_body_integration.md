@@ -101,4 +101,5 @@ Motors connected to the Power module front : 2, 3, 5
 6. 
 ---
 
-[Next → Landing Gear Assembly](5_landing_gear_assembly.md)
+| [Top of page](#upper-body-integration) | [Back to Hardware Building Instructions](README.md) | [Back to Borinot HOME](../README.md) | [Next → Landing Gear Assembly](5_landing_gear_assembly.md) |
+| --- | --- | --- | --- |

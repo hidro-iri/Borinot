@@ -146,4 +146,5 @@ Refer to the [actuator module page](https://github.com/open-dynamic-robot-initia
 4. Place the ODRI 3D component, aligned with the 201mm timing belt. Close using flying case B and 6x20mm screws.
 5. Attach the ODRI link and the extremity, securing with 15mm screws.
 
-[Next → Lower Body Integration](7_lower_body_integration.md)
+| [Top of page](#borinot-flying-arm-assembly-guide) | [Back to Hardware Building Instructions](README.md) | [Back to Borinot HOME](../README.md) | [Next → Lower Body Integration](7_lower_body_integration.md) |
+| --- | --- | --- | --- |

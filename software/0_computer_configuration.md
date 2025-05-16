@@ -77,4 +77,5 @@ Some useful personalizations:
 
 ---
 
-[Next → Pixhawk Configuration](1_pixhawk_configuration.md)
+| [Top of page](#computer-configuration) | [Back to Software Setup Guide](README.md) | [Back to Borinot HOME](../README.md) | [Next → Pixhawk Configuration](1_pixhawk_configuration.md) |
+| --- | --- | --- | --- |

@@ -197,4 +197,5 @@ In this part you’ll modify both the brushless motors and the ESCs. Follow the 
 
 
 ---
-[Next → Airframe Assembly](2_airframe_assembly.md)
+| [Top of page](#component-preparation-guide) | [Back to Hardware Building Instructions](README.md) | [Back to Borinot HOME](../README.md) | [Next → Airframe Assembly](2_airframe_assembly.md) |
+| --- | --- | --- | --- |

@@ -97,4 +97,5 @@ gepetto-gui
 python3 ~/libraries/eagle_mpc_lib/examples/python/trajectory.py display
 ```
 
-[Next → Master Board Configuration](3_master_board_configuration.md)
+| [Top of page](#eagle-mpc-installation) | [Back to Software Setup Guide](README.md) | [Back to Borinot HOME](../README.md) | [Next → Master Board Configuration](3_master_board_configuration.md) |
+| --- | --- | --- | --- |

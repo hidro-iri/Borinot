@@ -46,4 +46,5 @@ sudo ./
 ```
 
 
-[Next → ROS2 Workspace Configuration](4_ros2_workspace.md)
+| [Top of page](#master-board-configuration) | [Back to Software Setup Guide](README.md) | [Back to Borinot HOME](../README.md) | [Next → ROS2 Installation & Configuration](4_ros2_workspace.md) |
+| --- | --- | --- | --- |

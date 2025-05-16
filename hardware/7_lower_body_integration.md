@@ -47,4 +47,5 @@ The controller case and the arm are holded by the landing gear. The last step is
 
 ---
 
-[Next → Final Assembly](8_final_assembly.md)
+| [Top of page](#borinot-lower-body-assembly-guide) | [Back to Hardware Building Instructions](README.md) | [Back to Borinot HOME](../README.md) | [Next → Final Assembly](8_final_assembly.md) |
+| --- | --- | --- | --- |

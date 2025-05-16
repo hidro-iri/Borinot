@@ -109,4 +109,5 @@ The files are placed in [`yaml_msgs`](https://github.com/hidro-iri/eagle_ros2/tr
 
 When these files are modified, the ros2 workspace should be build again (don't forget to remove the previous build) and the pixhawk should be flash again.
 
-[Back to Software](README.md)
+| [Top of page](#ros2-workspace) | [Back to Software Setup Guide](README.md) | [Back to Borinot HOME](../README.md) | [Next → User Laptop Configuration](5_user_laptop_configuration.md) |
+| --- | --- | --- | --- |

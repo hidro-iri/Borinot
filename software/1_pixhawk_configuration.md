@@ -165,4 +165,5 @@ make px4_fmu-v5x_rtps upload
 
 
 
-[Next → Eagle MPC Configuration](2_eagle_mpc_installation.md)
+| [Top of page](#pixhawk-configuration) | [Back to Software Setup Guide](README.md) | [Back to Borinot HOME](../README.md) | [Next → Eagle MPC Installation](2_eagle_mpc_installation.md) |
+| --- | --- | --- | --- |

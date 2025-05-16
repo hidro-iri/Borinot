@@ -101,4 +101,5 @@ Ensure all connections are secure before proceeding with the next step.
 
 ---
 
-[Next → Upper Body Integration](4_upper_body_integration.md)
+| [Top of page](#main-body-assembly-guide) | [Back to Hardware Building Instructions](README.md) | [Back to Borinot HOME](../README.md) | [Next → Upper Body Integration](4_upper_body_integration.md) |
+| --- | --- | --- | --- |

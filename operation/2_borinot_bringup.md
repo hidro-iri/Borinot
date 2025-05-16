@@ -76,4 +76,6 @@ Inside Borinot `ssh borinot-X`, usually `X=1`:
     ros2 bag record -a
     ```
 
-### [Borinot bringup](bringup.md)
+
+| [Top of page](#borinot-bringup) | [Back to Operations](./README.md) | [back to Borinot HOME](../README.md) | [Next → Laptop Bringup](3_laptop_bringup.md) |
+| --- | --- | --- | --- |

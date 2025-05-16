@@ -52,10 +52,10 @@ Refer to the [GUI operation guide](./3_laptop_bringup.md#launch-borinot-graphica
 ## To stop the flight 
 
 ### Normal stop
-1. Enable the arm,
-   - Laptop -> MPC interface -> state machine -> Arm -> write `enable` and send request
-2. Set position control: 
+1. Set position control: 
    - Radio, set the `SWC` switch in the down position.
+2. Enable the arm,
+   - Laptop -> MPC interface -> state machine -> Arm -> write `enable` and send request
 3. Land Borinot with the radio,
 4. Disable the motors 
    - Radio: left joystick down-left

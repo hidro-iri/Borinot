@@ -47,7 +47,7 @@ Beware there are thre different reference frame conventions:
 
 ![Borinot Simulation](../media/Borinot.Simulator.png)
 
+---
 
-
-| [Top of page](#borinot-architecture) | [back to Borinot HOME](../README.md) |
+| [Top of page](#architecture) | [Back to Borinot HOME](../README.md) |
 | --- | --- |

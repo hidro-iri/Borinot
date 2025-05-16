@@ -11,5 +11,7 @@ This guide provides a step-by-step overview of configuring Borinot's software st
 4. [**ROS2 Installation & Configuration**](4_ros2_workspace.md) - Install ROS2 Galactic, build workspace, and validate Pixhawk connectivity.  
 5. [**User Laptop Configuration**](5_user_laptop_configuration.md) - Build and install the ros2 workspace to interact with Borinot.
 
+---
+
 | [Top of page](#borinot-software-setup-guide) | [Back to Borinot HOME](../README.md) |
 | --- | --- |

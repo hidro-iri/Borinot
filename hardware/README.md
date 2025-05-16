@@ -14,7 +14,7 @@ This guide provides a step-by-step overview of assembling Borinot. The assembly 
 7. [**Lower Body Integration**](7_lower_body_integration.md) - Connect flying arm to landing gear and electronics.
 8. [**Final Assembly**](8_final_assembly.md) - Combine upper and lower bodies.
 
-
+---
 
 | [Top of page](#borinot-hardware-building-instructions) | [Back to Borinot HOME](../README.md) |
 | --- | --- |

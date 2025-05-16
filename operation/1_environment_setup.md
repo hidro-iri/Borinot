@@ -81,6 +81,6 @@ Before each flight, it's important to perform a series of checks to ensure that 
 The [optitrack.md](optitrack.md) file provides a procedure for fusing the position of the OptiTrack system with the PX4's EKF2 module. -->
 
 
-
+---
 | [Top of page](#environment-setup) | [Back to Operations](./README.md) | [back to Borinot HOME](../README.md) | [Next → Borinot Bringup](2_borinot_bringup.md) |
 | --- | --- | --- | --- |

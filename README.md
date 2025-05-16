@@ -22,6 +22,10 @@ Start by understanding the architecture and then assembling, configuring, and op
 | [**Software Setup**](software/README.md)    | Guide to Borinot's software stack installation, configuration, and subsystem integration |
 | [**Operation Manual**](operation/README.md) | Instructions for operating Borinot and troubleshooting |
 
+---
+
+
+
 ## Citation  
 If Borinot contributes to your research, please cite:  
 

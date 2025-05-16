@@ -98,7 +98,7 @@ Refer to the [GUI operation guide](./3_laptop_bringup.md#launch-borinot-graphica
 7. You can lanuch multiple trajectories or goto commands.
 8. When done, [stop the robot normally](#normal-stop)
 
-
+---
 
 | [Top of page](#flight-procedure) | [Back to Operations](./README.md) | [back to Borinot HOME](../README.md) |
 | --- | --- | --- |

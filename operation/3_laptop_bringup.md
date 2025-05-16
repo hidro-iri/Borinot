@@ -98,6 +98,6 @@ To use Borinot, we've made a set of guides to help you get started with it:
 - [Optitrack fusion](resource/optitrack.md) - This document explains how to fuse data from the Optitrack motion capture system and the PX4 flight controller to obtain accurate position and orientation estimates for Borinot.
 - [MPC Controller](resource/mpc.md) - This document provides an overview of the Model Predictive Controller (MPC) used to control Borinot's hybrid locomotion, and explains how to run simulations and experiments with the controller. -->
 
-
+---
 | [Top of page](#laptop-bringup) | [Back to Operations](./README.md) | [back to Borinot HOME](../README.md) | [Next → Flight Procedure](4_flight_procedure.md) |
 | --- | --- | --- | --- |

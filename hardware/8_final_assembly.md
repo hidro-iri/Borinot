@@ -26,5 +26,6 @@
 [Return to Hardware Building Instructions](README.md)
 [Next → Software Setup](../software/README.md)
 
+---
 | [Top of page](#final-assembly) | [Back to Hardware Building Instructions](README.md) | [Back to Borinot HOME](../README.md) |
 | --- | --- | --- |

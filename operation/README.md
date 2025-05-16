@@ -9,5 +9,6 @@ This page provides instructions for operating the Borinot using the nodes instal
 2. [**Laptop Bringup**](3_laptop_bringup.md) - Launch GUIs.  
 3. [**Flight Procedure**](4_flight_procedure.md) - Protocol explaining how a standard flight is performed and which signs that should be looked for.
 
+---
 | [Top of page](#operation-guide) | [back to Borinot HOME](../README.md) |
 | --- | --- |

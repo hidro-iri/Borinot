@@ -72,13 +72,13 @@ In Optitrack, follow these steps to set the IMU center reference frame:
 
 
 
-# Preflight safety check list
+<!-- # Preflight safety check list
 
 Before each flight, it's important to perform a series of checks to ensure that the UAM is safe to operate. Follow the procedures outlined in the [preflight.md](preflight.md) file to complete these checks.
 
 ### Optitrack fusion
 
-The [optitrack.md](optitrack.md) file provides a procedure for fusing the position of the OptiTrack system with the PX4's EKF2 module.
+The [optitrack.md](optitrack.md) file provides a procedure for fusing the position of the OptiTrack system with the PX4's EKF2 module. -->
 
 
 

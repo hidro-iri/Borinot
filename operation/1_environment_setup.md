@@ -45,7 +45,7 @@ In Optitrack, follow these steps to set the IMU center reference frame:
 
    ![Optitrack 2](../media/Optitrack_2.png)
 
-1. Set this marker as pivot point (right-click -> Rigid Body -> Set Pivot Point to Selected Marker)
+1. Set this second marker as pivot point (right-click -> Rigid Body -> Set Pivot Point to Selected Marker)
 
    ![Optitrack 3](../media/Optitrack_3.png)
 

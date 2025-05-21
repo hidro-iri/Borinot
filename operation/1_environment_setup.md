@@ -11,24 +11,27 @@
 
 
 ## Part 2: Optitrack Setup
-- Already documentation for the calibration in `iri_optitrack_how_to` (TODO: find the link)
-- Add info about
-  - pose of the origin (top view of the lab)
-  - pose of Borinot when creating the "solid" (top view )
-    - Put the drone on top of a table for all the cameras to detect it
-  - the name convention `borinot_fur_ot`
-  - origin and offset of the "imu center" (check error per markers + untrack markers) --> See [Helper](#helper-optitrack-imu-center-reference-frame) below.
-    - origin : internal marker at the rear left (TODO: add image of markers and origin marker) 
-      - x : 62.9
-      - y : 29.0
-      - z : 84.9
+1. Already documentation for the calibration in `iri_optitrack_how_to` (TODO: find the link)
+2. Add info about
+   - pose of the "world" origin (top view of the lab)
+   - pose of Borinot when creating the "solid" (top view )
+     - Put the drone on top of a table for all the cameras to detect it
+   - name the created solid `borinot_fur_ot`, which means:
+     - name of the robot: borinot
+     - reference frame: FUR (X-front, U-up, Z-right) -- see information on reference frames in [architecture](../architecture/README.md#software-for-state-estimation)
+     - reference of system: OT: Opti-track
+   - origin and offset of the "imu center" (check error per markers + untrack markers) --> See [Helper](#helper-optitrack-imu-center-reference-frame) below.
+     - origin : internal marker at the rear left (see images [below](#helper-optitrack-imu-center-reference-frame)) 
+       - x : 62.9 mm
+       - y : 29.0 mm
+       - z : 84.9 mm
 1. Start the stream:
-  - Inside Optitrack Streaming Engine:
-    - Check that Local interface is `192.168.1.100`, if not, note the new `optitrack_interface` (you will have to modify files inside eagle_ros2) 
-    - Check `Broadcast Frame Data`
-  - Inside VRPN Streaming Engine:
-    - Check that VRPN Broadcast Port is `3883`, if not, not the new `optitrack_port` (you will have to modify files inside eagle_ros2)
-    - Check `Broadcast Frame Data`
+   - Inside Optitrack Streaming Engine:
+     - Check that Local interface is `192.168.1.100`, if not, note the new `optitrack_interface` (you will have to modify files inside eagle_ros2) 
+     - Check `Broadcast Frame Data`
+   - Inside VRPN Streaming Engine:
+     - Check that VRPN Broadcast Port is `3883`, if not, not the new `optitrack_port` (you will have to modify files inside eagle_ros2)
+     - Check `Broadcast Frame Data`
 
 
 

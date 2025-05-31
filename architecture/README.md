@@ -2,7 +2,9 @@
 
 Borinot consists of hardware and software, both within the robot body and outside as necessary support elements.
 
-This chapter describes the architecture.
+This chapter describes the architecture. 
+
+> You can click on the images below to get them in full resolution.
 
 ## Hardware
 

@@ -1,9 +1,13 @@
 # Flight Procedure
 
 ⚠️ When flying with the MPC, two persons are required:
-- one flying the drone (on the radio controller)
-- one taking care of the MPC Interface (controlling state machine and MPC command)
+- One person flying the drone (on the radio controller)
+- One person taking care of the MPC Interface (controlling state machine and MPC command)
 
+> ⚠️⚠️⚠️ The person on the Radio MUST KEEP HIS/HER EYES ON BORINOT AT ALL TIMES ⚠️⚠️⚠️
+>
+> ⚠️⚠️⚠️ STUDY [EMERGENCY PROCEDURES](#severe-emergency-stop) BEFOREHAND ⚠️⚠️⚠️
+>
 > ⚠️ The person on the MPC interface should count 3..2..1..0 before sending any command
 
 Refer to the [GUI operation guide](./3_laptop_bringup.md#launch-borinot-graphical-user-interface) to become familiar with the GUI controls and procedures.
@@ -65,14 +69,16 @@ Refer to the [GUI operation guide](./3_laptop_bringup.md#launch-borinot-graphica
    - Radio: red switch down
    - The robot is no longer responsive to the radio. This is a safe mode.
 
-### ⚠️ Mild emergency recovery ⚠️
+### Mild emergency recovery
+> ⚠️ QUICK CONTROL RECOVERY ⚠️
 1. Set position control: 
    - Radio: set the `SWC` switch in the down position.
    - The control is transferred from MPC to user
    - The robot will remain in the air in position
 2. [Land the robot normally](#normal-stop)
 
-### ⚠️⚠️⚠️ Severe emergency stop ⚠️⚠️⚠️
+### Severe emergency stop
+> ⚠️⚠️⚠️ EMERGENCY STOP ⚠️⚠️⚠️
 1. ⚠️ Activate the KillSwitch
    - Radio: red switch down
 2. ⚠️ All motors will stop.

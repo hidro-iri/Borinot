@@ -79,6 +79,9 @@ You can interrupt any automatic flight and regain control immediately with the r
    - The control is transferred from MPC to user
    - The robot will remain in the air in position
 2. [Land the robot normally](#normal-stop)
+3. ⚠️ Activate the KillSwitch
+   - Radio: red switch down
+   - The robot is no longer responsive to the radio. This is a safe mode.
 
 ### Severe emergency stop
 > ⚠️⚠️⚠️ EMERGENCY STOP ⚠️⚠️⚠️

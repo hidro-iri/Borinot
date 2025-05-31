@@ -30,7 +30,7 @@
 
 ## Part 2: Software Start Up
 
-> ⚠️ **User at laptop** Login at the HiDRo laptop with user "hidro_admin" with password "drhesulab".
+> ⚠️ **User at laptop** Login at the HiDRo laptop with user "hidro_admin".
 
 
 Inside Borinot `ssh borinot-X`, usually `X=1`:

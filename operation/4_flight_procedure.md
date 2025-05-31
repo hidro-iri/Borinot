@@ -57,6 +57,7 @@ Refer to the [GUI operation guide](./3_laptop_bringup.md#launch-borinot-graphica
 ## To stop the flight 
 
 ### Normal stop
+At the end of an automatic flight governed by MPC (GoTo command or Trajectory command):
 1. Set position control: 
    - Radio, set the `SWC` switch in the down position.
 2. Enable the arm,
@@ -71,6 +72,8 @@ Refer to the [GUI operation guide](./3_laptop_bringup.md#launch-borinot-graphica
 
 ### Mild emergency recovery
 > ⚠️ QUICK CONTROL RECOVERY ⚠️
+
+You can interrupt any automatic flight and regain control immediately with the radio.
 1. Set position control: 
    - Radio: set the `SWC` switch in the down position.
    - The control is transferred from MPC to user

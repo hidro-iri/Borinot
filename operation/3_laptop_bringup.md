@@ -56,7 +56,7 @@ This GUI contains three sections:
    +------+   <------   +---------+           +---------+
        ∧      disable                              |
        |___________________________________________|
-                          stop
+                      stop / disable
    ```
 
    The button `STOP` will stop both state machines at once. The arm is disabled and the platform switches to POSITION CONTROL MODE.

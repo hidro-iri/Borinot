@@ -35,7 +35,7 @@ This GUI contains three sections:
 
 1. **State Machine:** controls and displays the state machines of Borinot. There's the Controller state machine and the Arm state machine.
 
-   In both cases, states and state transition commands are as follows:
+   In the controller state machine, states and state transition commands are as follows:
 
    ```
               enable                 
@@ -47,7 +47,19 @@ This GUI contains three sections:
                           disable
    ```
 
-   The button `STOP` will stop both state machines at once.
+   In the arm state machine, states and state transition commands are as follows:
+
+   ```
+              enable                 
+   +------+   ------>   +---------+   start   +---------+
+   | Idle |             | Enabled |  ------>  | Running |
+   +------+   <------   +---------+           +---------+
+       ∧      disable                              |
+       |___________________________________________|
+                          stop
+   ```
+
+   The button `STOP` will stop both state machines at once. The arm is disabled and the platform switches to POSITION CONTROL MODE.
 
    To send commands, write the commands `enable`, `start` or `disable` in the 'transition name' window and press ENTER or click on 'send command'. The gray window on the right will display the new state.
 

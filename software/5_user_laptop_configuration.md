@@ -73,6 +73,11 @@ MAKEFLAGS="-j6" colcon build --packages-up-to hidro_robots --symlink-install
 cd ~/galactic_ws
 MAKEFLAGS="-j6" colcon build --packages-up-to eagle_ros2_viz --event-handlers console_direct+ --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Release --symlink-install
 ```
+7. Add a new alias in `.bash_aliases`:
+``` bash
+alias rosgalactic='source /opt/ros/galactic/setup.bash && source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash'
+alias rosgalactic_cyclone='source /home/hidro/galactic_ws/install/setup.bash && cd /home/hidro/galactic_ws && export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp && export CYCLONEDDS_URI=/home/hidro/galactic_ws/src/eagle_ros2/eagle_ros2_bringup/config_dds/cyclone_dds_nuc.xml'
+```
 ---
 
 | [Top of page](#user) | [Back to Software Setup Guide](README.md) | [Back to Borinot HOME](../README.md) |  |

@@ -2,7 +2,7 @@ repositories:
   src/eagle_ros2:
     type: git
     url: git@github.com:hidro-iri/eagle_ros2.git
-    version: hidro_borinot
+    version: 2025_07_experiments
   src/hidro_robots:
     type: git
     url: git@github.com:hidro-iri/hidro_robots.git

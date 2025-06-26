@@ -68,7 +68,7 @@ sudo apt install libyaml-cpp-dev
 2. **Build** and **install** Eagle MPC:
 ``` bash
 cd ~/libraries
-git clone https://github.com/hidro-iri/eagle_mpc_lib.git -b bfa2_experiments
+git clone git@github.com:hidro-iri/eagle_mpc_lib.git -b bfa2_experiments
 cd eagle_mpc_lib
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release -DEAGLE_MPC_URDF_DIR=/home/hidro/galactic_ws/install/hidro_robots/share/hidro_robots ..

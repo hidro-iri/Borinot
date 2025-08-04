@@ -1,6 +1,24 @@
 # Components List
 
-Before beginning assembly, ensure you have all necessary components on hand. This list is organized into categories for ease of reference.
+Before beginning assembly, ensure you have all necessary components on hand. This page lists all the components divided in assembly sections.
+
+## Power Module Modification
+
+
+| ID      | Part Name             | Qty | Description                          | Location | Reference             |
+|---------|-----------------------|-----|--------------------------------------|----------|-----------------------|
+| `#PM1`  | PM03D Power Module    | 1   | Base unit                            | HS-      | Holybro               |
+| `#PM2`  | Battery Cable         | 1   | Battery connector                    | HS-      | -                     |
+| `#PM3`  | EC5-M Connector       | 1   | Male battery connector               | HS-      | TME                   |
+| `#PM4`  | XT30-M Connector      | 1   | Male power connector                 | HS-      | RC Innovations        |
+| `#PM5`  | Diode                 | 1   | BQ30TB 45B714                        | HS-      | -                     |
+| `#PM6`  | Red Power Cable       | 2   | 15cm 16AWG Silicon                   | HS-      | RC Innovations        |
+| `#PM7`  | Black Power Cable     | 2   | 15cm 16AWG Silicon                   | HS-      | RC Innovations        |
+| `#PM8`  | XT30-F Connector      | 1   | Male power connector                 | HS-      | RC Innovations        |
+| `#PM9`  | Computer Cable        | 1   | 24cm barrel plug (5.5×2.5mm)         | HS-      | Amazon                |
+| `#PM10` | Masterboard Cable     | 1   | 17cm line                            | HS-      | ODRI                  |
+| `#PM11` | Connector JST         | 1   | Male and female connector            | HS-      | RC Innovations        |
+| `#PM12` | JST crimps            | 2   | Crimps for JST connector             | HS-      | RC Innovations        |
 
 ## Upper Part
 

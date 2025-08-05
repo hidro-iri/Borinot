@@ -10,111 +10,104 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 
 ### Materials
 
-<img src="../media/1_power_module_materials.avif" alt="materials for power module modification" width="350" align="center">
+All the materiales for this sections are listed in [component preparation -> Power Module modification](0_components_list.md#power-module-modification).
 
-> **Top view list**
-> - computer cable (`#8`)
-> - power module (`#1`)
-> - masterboard power cable (`#9`) with JST connectors (`#10`)
-> - EC5 connector (`#2`)
-> - XT30-F connector (`#3`)
-> - diode (`#5`)
-> - XT30-M connector (`#4`)
-> - red (`#6`) and black (`#7`) power cables
+Also it will be necessary some heat shrink tubing (small and big), solder tin and a jumper.
 
-| ID    | Part Name             | Qty | Description                          | Location | Reference             |
-|-------|-----------------------|-----|--------------------------------------|----------|-----------------------|
-| `#1`  | PM03D Power Module    | 1   | Base unit                            | HS-      | Holybro               |
-| `#2`  | EC5-M Connector       | 1   | Male battery connector               | HS-      | TME                   |
-| `#3`  | XT30-F Connector      | 1   | Female power connector               | HS-      | RC Innovations        |
-| `#4`  | XT30-M Connector      | 1   | Male power connector                 | HS-      | RC Innovations        |
-| `#5`  | Diode                 | 1   | BQ30TB 45B714                        | HS-      | -                     |
-| `#6`  | Red Power Cable       | 2   | 15cm 16AWG Silicon                   | HS-      | RC Innovations        |
-| `#7`  | Black Power Cable     | 2   | 15cm 16AWG Silicon                   | HS-      | RC Innovations        |
-| `#8`  | Computer Cable        | 1   | 24cm barrel plug (5.5×2.5mm)         | HS-      | Amazon                |
-| `#9`  | Masterboard Cable     | 1   | 17cm line                            | HS-      | ODRI                  |
-| `#10` | Connector JST         | 1   | Male                                 | HS-      | RC Innovations        |
+### Tools
+
+For this section it will be necessary the following tools:
+- Solder station.
+- Pliers.
+- Diagonal pliers.
+- Flat-head screwdriver.
+- Hammer.
+- Bench vise.
+- Crimping tools.
 
 ### Steps
 
-<img src="../media/1_power_module_step_1a.avif" alt="Step 1A: Unsoldering original XT60 connector from PM03D (Component #1)" width="350"> 
-<img src="../media/1_power_module_step_1b.avif" alt="Step 1B: EC5-M connector installed on power module (Component #2)" width="350">
+#### 1. Battery cable and capacitor modification.
+<img src="../media/1_power_module_step_1a.avif" alt="Step 1A: Unsoldering original XT60 connector from PM03D (Component #1)" width="433"> 
+<img src="../media/1_power_module_step_1b.avif" alt="Step 1B: EC5-M connector installed on power module (Component #2)" width="433">
 
-> **Battery Cable Modification**  
-> Left: Original XT60 configuration | Right: Modified EC5 connector installation
+> Left: Original XT60 configuration and capacitor pointing outwards | Right: Modified EC5 connector and capacitor pointing inwards
 
-1. **Unsolder** the capacitor and battery cable from the board (`#1`).
-2. **Replace** the battery cable's connector from XT60 to EC5 (`#2`).
-   
-   > ⚠️  Do not cut the cable to remove the XT60.  
-   > :information_source: Apply pressure when inserting EC5 terminals into housing.
-
-3. **Resolder** the capacitor and battery cable so they point **inward** on the board.
+1. **Unsolder** the capacitor and battery cable (`#PM2`) from the power board (`#PM1`). Use a thick soldering tip to heat the solder.
+2. **Remove** the original XT60 connector from the battery cable (`#PM2`). To do this, do not cut the wire. Break the connector using a pair of diagonal pliers, a flat-head screwdriver, and a hammer. Finally, desolder the wires from the original terminals. If the terminals have a side hole, this is very useful for heating the internal solder by inserting a fine soldering tip.
+3. **Solder** the new EC5 connector (`#PM3`). First, fill a terminal with solder tin using the side hole to heat the solder tin from the inside. Then insert a wire into the terminal and solder it making sure the wire and terminal are as well aligned as possible. Repeat this process with the other wire.
+Once both wires are soldered, slide the EC5 connector housing from the cable side (without terminals) until it reaches the terminals. Hold the connector with a bench vise and finish inserting the terminals using a screwdriver and a hammer.
+4. **Resolder** the capacitor and battery cable so they point **inward** on the power board (`#PM1`).
 
 ---
-
+#### 2. Hot-swap cable assembly.
 <img src="../media/1_power_module_step_2a.avif" alt="Step 4-7: Hot-swap cable assembly - Diode (#5) and XT30-M (#4) before heat shrink" height="350"> 
 <img src="../media/1_power_module_step_2b.avif" alt="Step 4-7: Hot-swap cable completed - Heat shrink applied to XT30-M (#4) connections" height="350">
+ 
+> Left: Pre-sealed assembly showing diode and XT30-M connections | Right: Finished cable with insulated joints
 
-> **Hot-Swap Cable Assembly**  
-> Left: Pre-sealed assembly showing diode (#5) and XT30-M (#4) connections | Right: Finished cable with insulated joints
-
-4. **Bend** the diode's (`#5`) anode (right leg) to connect with the positive terminal of the XT30-M connector (`#4`) and **solder**.
-5. **Solder** the diode's cathode (left leg) to the positive power cable (`#6`).
-6. **Solder** the negative power cable (`#7`) to the negative terminal of the XT30-M connector.
-7. **Add** heat shrink tubing over the connectors and **heat** to seal.  
+5. **Insert** XT30-M connector (`#PM4`) in the XT30-F connector (`#PM8`) to keep its terminals in place when soldering.
+6. **Bend** the diode's (`#PM5`) anode (right leg) to connect with the positive terminal of the XT30-M connector (`#PM4`) and **solder** it.
+7. **Solder** the diode's cathode (left leg) to the red (positive) power cable (`#PM6`).
+8. **Solder** the black (negative) power cable (`#PM7`) to the negative terminal of the XT30-M connector (`#PM4`).
+9. **Add** heat shrink tubing over the connectors and **heat** to seal.  
    > :information_source: This becomes the **hot-swap cable** - compare your result with right image above.
-8. **Solder** the hot-swap cable to the battery cable location, keeping the same orientation (**See final picture of the part**).
+10. **Solder** the hot-swap cable to the battery cable pads keeping the same orientation (pointing inwards). See [final picture](1_component_preparation.md#modified-power-module) as reference.
 
 ---
-
+#### 3. Microdriver cable assembly.
 <img src="../media/1_power_module_step_3a.avif" alt="Step 9-10: Microdriver cable components - XT30-M (#4), red (#6) & black (#7) cables unsoldered" width="350"> 
 <img src="../media/1_power_module_step_3b.avif" alt="Step 9-10: Completed microdriver cable - XT30-M (#4) with heat shrunk connections" width="350">
 
-> **Microdriver Cable Assembly**  
 > Left: Preparation stage | Right: Finished assembly  
-> Components: XT30-F connector (`#5`), red 16AWG (`#6`), black 16AWG (`#7`)
 
-9. **Solder** both power cables to XT30-F connector (`#5`):
-   - Red (`#6`) → Positive terminal
-   - Black (`#7`) → Negative terminal
+11. **Insert** XT30-M connector (`#PM4`) in the XT30-F connector (`#PM8`) to keep its terminals in place when soldering.
+12. **Solder** both power cables to XT30-F connector (`#PM8`):
+   - Red (`#PM6`) → Positive terminal
+   - Black (`#PM7`) → Negative terminal
 
-10. **Add** heat shrink tubing and **seal** connections.  
+13. **Add** heat shrink tubing to **seal** connections.  
     > :information_source: Now referred to as **microdriver cable** - compare with right image.
-11. **Solder** microdriver cable to board:
-   - Red (`#6`) → B+ pad
-   - Black (`#7`) → GND pad  
-   > ⚠️  Apply heat shrink over connector before use (as shown right).
----
+14. **Solder** microdriver cable to the power board (`#PM1`)):
+   - Red (`#PM6`) → B+ pad
+   - Black (`#PM7`) → GND pad  
 
+---
+#### 4. Masterboard cable assembly.
 <img src="../media/1_power_module_step_4.avif" alt="Masterboard components" width="350">
 
 > **Top view: Components for masterboard cable (from right to left: masterboard power cable, JST male connector, JST female connector)**
 
-12. **Cut** the masterboard power cable in half.
-13. **Crimp** JST connector onto each cable.
-    > ⚠️  Be sure to put the connector the correct way to ensure positive-to-positive alignment.
-
-14. **Use** the connector-bearing cable for the [flying arm assembly](6_flying_arm_assembly.md) and the other as the **masterboard cable**.
-15. **Solder** the masterboard cable to the **5V com pin**, ensuring proper polarity (black cable to ground, green cable to 5V).
-    > :information_source: Add heat shrink over exposed pins for safety.
+15. **Cut** the masterboard power cable (`#PM10`) in half.
+16. **Crimp** JST connector (`#PM11`)(`#PM12`) onto each cable.
+    > ⚠️  Be sure to put the connector the correct way to ensure positive-to-positive wire alignment.
+    > :information_source: Now referred to as **masterboard cable**.
+17. **Save** the connector-bearing cable for the [flying arm assembly](6_flying_arm_assembly.md).
+18. **Slide** heat shrink tubbing to the remaining masterboard cable. **Solder** it to the **5V com pin** of the power board (`#PM1`), ensuring proper polarity (black cable to ground, green/red cable to 5V). **Heat** the shrink tube to **seal** connections.
 
 ---
-
-<img src="../media/1_power_module_step_5.avif" alt="Computer components" width="350">
+#### 5. Computer cable modification
+<img src="../media/1_power_module_step_5.avif" alt="Computer components" width="433">
 
 > **Close view: VDD jumper pins (middle left) and computer cable at servo pin (lower right)**
 
-16. **Set VDD to 12V** using the jumper configuration.
-17. **Cut** the computer cable to a **24cm length**.
-18. **Solder** the computer cable to the **VDD servo pin**, maintaining correct polarity.
-    > :information_source: Cover solder joints with heat shrink tubing.
+19. **Set VDD to 12V** using the jumper configuration of the power board (`#PM1`).
+20. **Cut** the computer cable (`#PM9`) to a **24cm length**.
+21. **slide** heat shrink tubbing to the computer cable. **Solder** it to the **VDD servo pin**, maintaining correct polarity. **Heat** the shrink tube to **seal** connections.
 
 ---
+#### Modified power module.
+In the following image the final power module is shown with the reference ids of the output connections.
 
-<img src="../media/1_power_module_modified.avif" alt="Modified power module" width="350">
+<img src="../media/1_power_module_out_comp_ids.jpg" alt="Modified power module with ids" width="433">
 
-> **Top view: Final modified power module**
+| ID       | Part Name             |
+|----------|-----------------------|
+| `#PM101` | Battery cable         |
+| `#PM102` | Hot-swap cable        |
+| `#PM103` | Microdriver cable     |
+| `#PM104` | Masterboard cable     |
+| `#PM105` | Computer cable        |
 
 ---
 
@@ -123,78 +116,69 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 In this part you’ll modify both the brushless motors and the ESCs. Follow the steps closely to ensure proper electrical connections and maintain correct polarity.
 
 ### Materials
+All the materiales for this sections are listed in [component preparation -> Brushless Motor and ESC Modification](0_components_list.md#brushless-motor-and-esc-modification).
 
-<img src="../media/1_brushless_motor_exploded.avif" alt="Exploded view of brushless motor components" width="350">
+Also it will be necessary some heat shrink tubing (medium) and solder.
 
-> **Top view: Components for motor and ESC modification (from top to bottom, left to right: servo connector, ESC, motor, servo pins, power cables, banana plug, XT30-M connector, signal cables)**
+### Tools
 
-| Part Name             | Quantity | Description                          | Reference                                                                                                    |
-|-----------------------|:--------:|--------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| TMotor F90-1300KV     | 6        | Brushless motor                      | [TMotor](https://store.tmotor.com/goods.php?id=1064)                                                         |
-| Banana Plug (male)    | 18       | 3.5 mm, male                         | [RC Innovations](https://rc-innovations.es/shop/con00000438-conector-banana-3-5mm-tipo-tmotor-pareja-18644)  |
-| TMotor F35A 6s        | 6        | ESC                                  | [TMotor](https://store.tmotor.com/goods.php?id=1176)                                                         |
-| Red Power Cable       | 6        | 30cm Silicone 16 AWG cable in Red     | [RC Innovations](https://rc-innovations.es/shop/Cable-silicona-16AWG-Rojo-1-metro-amass)                     |
-| Black Power Cable     | 6        | 30cm Silicone 16 AWG cable in Black   | [RC Innovations](https://rc-innovations.es/shop/Cable-silicona-16AWG-Negro-1-metro-amass)                    |
-| White Servo Cable     | 6        | 30cm Silicone 26 AWG cable in White   | [RC Innovations](https://rc-innovations.es/shop/Cable-de-silicona-26AWG-blanco-1-metro)                      |
-| Black Servo Cable     | 6        | 30cm Silicone 26 AWG cable in Black   | [RC Innovations](https://rc-innovations.es/shop/cable-de-silicona-26-awg-negro-1-metro)                      |
-| Banana Plug (female)  | 18       | 3.5 mm, female                       | [RC Innovations](https://rc-innovations.es/shop/con00000438-conector-banana-3-5mm-tipo-tmotor-pareja-18644)  |
-| XT30 Connector (male) | 6        | XT30 male connector                  | [RC Innovations](https://rc-innovations.es/shop/amass-conector-xt30-macho-xt30u-m)                           |
-| Servo Connector       | 6        | Female                               | [RC Innovations](https://rc-innovations.es/shop/Conector-servo-Futaba-hembra)                                |
+For this section it will be necessary the following tools:
+- Solder station.
+- Pliers.
+- Diagonal pliers.
+- Crimping tools.
 
 ### Steps
 
 #### Brushless Motor Modification
 
 <img src="../media/1_motor_step_1.avif" alt="Brushless motor modification" width="350">
-
-> **Top view: Motor and banana plugs (from left to right)**
-
-1. **Trim** the phase cables by about **5cm**.  
-   > ⚠️  Retain the trimmed segments for the ESC modification.
-2. **Solder** the male banana plugs to the trimmed phase cables.  
-   > :information_source: Use the connector’s side hole to help evenly melt the solder paste.
-3. **Add** heat shrink tubing around the connectors to insulate the soldered joints.
-4. **Repeat** these steps for all 6 brushless motors.
-
----
-
 <img src="../media/1_motor_modified.avif" alt="Modified brushless motor" width="350">
 
-> **Close view: Finalized motor**
+> Left: Preparation stage | Right: Finished assembly
+
+1. **Trim** the phase cables (`#ESC1`) by about **5cm**.  
+   > ⚠️  Save the trimmed segments for the ESC modification.
+2. **Solder** the male banana plugs (`#ESC2`) to the phase cables connected to the motors (`#ESC1`). First, fill the banana plug with solder tin using the side hole to heat the solder tin from the inside. Then insert a phase cable into the terminal and solder it making sure that is centered and that is as well aligned os posible with the banana plug.
+3. **Add** heat shrink tubing around the banana plug to insulate the soldered joints.
+4. **Repeat** these steps for all 18 phase cables connected to the brushless motors.
+
+---
 
 #### ESC Modification
 
 <img src="../media/1_esc_step_1.avif" alt="ESC modification" width="350">
-
-> **Close view: ESC faces – Left/Middle ones show pads labeled `–`, `S`, and `T` for signal cables at the bottom left. Right one shows power cable pads at the top; displays phase cable pads at the bottom**
-
-5. **Solder** 5cm of the leftover phase cables from the motors to the ESC’s phase pads.
-6. **Attach** the female banana plugs to these phase cables and **add** heat shrink tubing over the connections before heating to seal.
-7. **Solder** 30cm power cables to the ESC’s power pads.  
-   > :information_source: Connect the red cable to the positive (`+`) pad and the black cable to the negative (`–`) pad.
-8. **Slide** heat shrink tubing onto both power cables (do not heat yet).
-9. **Solder** the XT30 male connectors to the ends of the power cables.  
-   > ⚠️  Double-check polarity before sealing.
-10. **Heat** the tubing to secure the connections.
-
----
-
 <img src="../media/esc_servo_crimp.jpg" alt="ESC servo connector orientation" width="250">
+<img src="../media/1_esc_out_ids.jpg" alt="Modified ESC" width="350">
 
-11. **Solder** 30cm servo cables to the ESC’s servo pads.  
-    > :information_source: Attach the white cable to the signal (S) pad and the black cable to the ground (–) pad.
-12. **Crimp** the wires and attach the servo connectors.  
-    > ⚠️  Orientation matters - white wire must align with signal (S) pad position.  
-    > Match connector notch with ESC's plastic alignment tab.
+> Left: ESC close view | Middle: ESC servo connector orientation | Right: Final result
 
-13. **Repeat** the entire ESC modification process for all 6 ESCs.
+5. **Trim** 5cm of the 18 leftover phase claves.
+6. **Solder** the 18 female banana plugs (`#ESC3`) to the them following the instructions discribed in step 2.
+7. **Add** heat shrink tubing over the connections to **seal** them.
+8. **Use** the XT30-F connector (`#ESC5`) to keep in place the terminals of the XT30-M (`#ESC4`) during the solding.
+9. **Solder** the 6 XT30-M (`#ESC4`) connectors to the ends of the power cables:
+   - Red (`#ESC6`) → Positive terminal
+   - Black (`#ESC7`) → Negative terminal
+10. **Slide** heat shrink tubing onto each power cables and **heat** it to **seal** the terminals.
+11. **Crimp** (`#ESC11`) the 12 servo cables to the 6 servo connectors (`#ESC10`) as shown in the previous image:  
+   - White (`#ESC8`) to the left one.
+   - Black (`#ESC9`) to the right one.
+   - **Nothing** to the middle one.
+12. **Solder** Power cables to the ESC’s (`#ESC12`) power pads.  
+    > :information_source: Connect the red cable (`#ESC6`) to the ESC's positive (`+`) pad and the black cable (`#ESC7`) to the ESC's negative (`–`) pad.
+13. **Solder** the servo cables to the ESC’s (`#ESC12`) servo pads.  
+    > :information_source: Attach the white cable (`#ESC8`) to the signal (`S`) pad and the black cable (`#ESC9`) to the ground (`–`) pad.
+14. **Solder** the phase cables to the ESC’s (`#ESC12`) phase pads.
 
 ---
 
-<img src="../media/1_esc_modified.avif" alt="Modified ESC" width="350">
-
-> **Top view: Finalized modified ESC**
-
+Here is the table with the reference of each output labels:
+| ID        | Part Name             |
+|-----------|-----------------------|
+| `#ESC101` | ESC phase cables      |
+| `#ESC102` | ESC servo cables      |
+| `#ESC103` | ESC power cables      |
 
 ---
 | [Top of page](#component-preparation-guide) | [Back to Hardware Building Instructions](README.md) | [Back to Borinot HOME](../README.md) | [Next → Airframe Assembly](2_airframe_assembly.md) |

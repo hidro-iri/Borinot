@@ -1,9 +1,16 @@
 # Components List
 
-Before beginning assembly, ensure you have all necessary components on hand. This page lists all the components divided in assembly sections.
+Before beginning assembly, ensure you have all necessary components on hand. This page is divided into assembly sections. In each section there is an image with each component in a box with an id followed by a table with the following columns:
+- ID: The ID seen in the image. It will be used for reference to each component in the instructions.
+- Part name: The name of the component.
+- Qty: Quantity needed.
+- Description: A small description of the component.
+- Location: Where is stored in IRI. `HS`.. -> Hidro shelves, `WS` -> Workshop, `P` -> To print
+- Reference: Reference shop to buy it.
 
 ## Power Module Modification
 
+<img src="../media/0_power_module_comp_ids.jpg" alt="materials for power module modification" >
 
 | ID      | Part Name             | Qty | Description                          | Location | Reference             |
 |---------|-----------------------|-----|--------------------------------------|----------|-----------------------|
@@ -18,7 +25,26 @@ Before beginning assembly, ensure you have all necessary components on hand. Thi
 | `#PM9`  | Computer Cable        | 1   | 24cm barrel plug (5.5×2.5mm)         | HS-      | Amazon                |
 | `#PM10` | Masterboard Cable     | 1   | 17cm line                            | HS-      | ODRI                  |
 | `#PM11` | Connector JST         | 1   | Male and female connector            | HS-      | RC Innovations        |
-| `#PM12` | JST crimps            | 2   | Crimps for JST connector             | HS-      | RC Innovations        |
+| `#PM12` | JST crimps            | 2x2 | Crimps for JST connector             | HS-      | RC Innovations        |
+
+
+## Brushless Motor and ESC Modification
+<img src="../media/0_motor_esc_comp_ids.jpg" alt="Exploded view of brushless motor components">
+
+| ID       | Part Name              | Qty | Description                          | Location | Reference             |
+|----------|------------------------|-----|--------------------------------------|----------|-----------------------|
+| `#ESC1`  | TMotor F90-1300KV      | 6   | Brushless motor and phase cables     | HS-      | TMotor                |
+| `#ESC2`  | Banana Plug (male)     | 18  | 3.5 mm male banana plugs             | -        | RC Innovations        |
+| `#ESC3`  | Banana Plug (female)   | 18  | 3.5 mm female banana plugs           | -        | RC Innovations        |
+| `#ESC4`  | XT30-M Connector       | 6   | Male power connector                 | HS-      | RC Innovations        |
+| `#ESC5`  | XT30-F Connector       | 1   | Female power connector               | HS-      | RC Innovations        |
+| `#ESC6`  | Red Power Cable        | 6   | 30cm Red Silicone 16 AWG cable       | HS-      | RC Innovations        |
+| `#ESC7`  | Black Power Cable      | 6   | 30cm Black Silicone 16 AWG cable     | HS-      | RC Innovations        |
+| `#ESC8`  | White Servo Cable      | 6   | 30cm Silicone 26 AWG cable in White  | HS-      | RC Innovations        |
+| `#ESC9`  | Black Servo Cable      | 6   | 30cm Silicone 26 AWG cable in White  | HS-      | RC Innovations        |
+| `#ESC10` | Female Servo Connector | 6   | Female servo connector               | HS-      | RC Innovations        |
+| `#ESC11` | Servo Connector Crimps | 12  | Female servo connector crimps        | HS-      | RC Innovations        |
+| `#ESC12` | TMotor F35A 6s         | 6   | ESC                                  | HS-      | TMotor                |
 
 ## Upper Part
 

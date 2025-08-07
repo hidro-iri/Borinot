@@ -10,7 +10,7 @@ The Power Module distributes power to all components (computer, motors, arm, fli
 
 ### Materials
 
-All the materials for this section are listed in [component preparation -> Power Module modification](0_components_list.md#power-module-modification).
+All the materials for this section are listed in [components list -> Power Module modification](0_components_list.md#power-module-modification).
 
 Also it will be necessary some heat shrink tubing (small and big), solder tin and a jumper.
 
@@ -117,7 +117,7 @@ In the following image the final power module is shown with the reference ids of
 In this part you’ll modify both the brushless motors and the ESCs. Follow the steps closely to ensure proper electrical connections and maintain correct polarity.
 
 ### Materials
-All the materials for this section are listed in [component preparation -> Brushless Motor and ESC Modification](0_components_list.md#brushless-motor-and-esc-modification).
+All the materials for this section are listed in [components list -> Brushless Motor and ESC Modification](0_components_list.md#brushless-motor-and-esc-modification).
 
 Also it will be necessary some heat shrink tubing (medium) and solder.
 

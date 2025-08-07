@@ -46,6 +46,41 @@ Before beginning assembly, ensure you have all necessary components on hand. Thi
 | `#ESC11` | Servo Connector Crimps | 12  | Female servo connector crimps        | HS-      | RC Innovations        |
 | `#ESC12` | TMotor F35A 6s         | 6   | ESC                                  | HS-      | TMotor                |
 
+## Airframe Assembly
+
+<img src="../media/0_airframe_comp_ids.jpg" alt="Airframe components with labels">
+
+| ID       | Part Name              | Qty | Description                          | Location | Reference             |
+|----------|------------------------|-----|--------------------------------------|----------|-----------------------|
+| `#AF1`   | Motor holder           | 6   | 3D printed motor and ESC holder      | HS-      | [CAD files](./0_components_list.md#motor-holder-parts)              |
+| `#AF2`   | M4 Marker              | 6   | 14 mm M4 Optitrack markers           | HS-      | OptiTrack             |
+| `#AF3`   | M4 Nylon Screws        | 6   | 12 mm M4 Nylon screws with any head  | WS       | -                     |
+| `#AF4`   | M4 nuts                | 6   | M4 nuts                              | WS       | -                     |
+| `#AF5`   | M3 inserts             | 12  | M3 inserts                           | WS       | -                     |
+| `#AF6`   | M3x30mm Screws         | 24  | 30 mm M3 screw with cylindric head   | WS       | -                     |
+| `#AF7`   | Carbon Fiber Tubes     | 6   | ø8 mm x 352.5 mm, Round Checked      | WS       | -                     |
+| `#AF8`   | O-ring Seals           | 24  | ø8 mm                                | WS       | -                     |
+| `#AF9`   | Modified Motors        | 6   | Modified motors in previous section  | HS-      | -                     |
+| `#AF10`  | Modified ESC           | 6   | Modified ESC in previous section     | HS-      | -                     |
+| `#AF11`  | M3x6mm Screws          | 12  | 6 mm M3 screws with cone head        | WS       | -                     |
+| `#AF12`  | Spiral cable wrap      | 6   | -                                    | HS-      | -                     |
+
+## Motor Holder parts
+
+<img src="../media/0_motor_holder_comp_ids.jpg" alt="Motor holder parts">
+
+| ID       | Part Name              | Qty | Description                          | Location | Reference             |
+|----------|------------------------|-----|--------------------------------------|----------|-----------------------|
+| `#MH1`   | Motor holder bottom    | 6   | 3D printed part                      | HS-      | [motor_holder_d.STEP](./cad_files/main_body/motor_holder_d.STEP)      |
+| `#MH2`   | Motor lower middle     | 6   | 3D printed part                      | HS-      | [motor_holder_c.STEP](./cad_files/main_body/motor_holder_c.STEP)      |
+| `#MH3`   | Motor top middle       | 6   | 3D printed part                      | HS-      | [motor_holder_b.STEP](./cad_files/main_body/motor_holder_b.STEP)      |
+| `#MH4`   | Motor holder top       | 6   | 3D printed part                      | HS-      | [motor_holder_a.STEP](./cad_files/main_body/motor_holder_a.STEP)      |
+| `#MH5`   | Motor holder cover     | 6   | 3D printed part                      | HS-      | [motor_holder_i.STEP](./cad_files/main_body/motor_holder_i.STEP)      |
+| `#MH6`   | internal middle aux    | 6   | 3D printed part                      | HS-      | [motor_holder_h.STEP](./cad_files/main_body/motor_holder_h.STEP)      |
+| `#MH7`   | internal left aux      | 6   | 3D printed part                      | HS-      | [motor_holder_e.STEP](./cad_files/main_body/motor_holder_e.STEP)      |
+| `#MH8`   | internal right aux     | 6   | 3D printed part                      | HS-      | [motor_holder_f.STEP](./cad_files/main_body/motor_holder_f.STEP)      |
+| `#MH9`   | external aux           | 6   | 3D printed part                      | HS-      | [motor_holder_g.STEP](./cad_files/main_body/motor_holder_g.STEP)      |
+
 ## Upper Part
 
 <!-- Put Picture of all the piece of the upper part -->

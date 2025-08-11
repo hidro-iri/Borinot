@@ -81,10 +81,44 @@ Before beginning assembly, ensure you have all necessary components on hand. Thi
 | `#MH8`   | internal right aux     | 6   | 3D printed part                      | HS-      | [motor_holder_f.STEP](./cad_files/main_body/motor_holder_f.STEP)      |
 | `#MH9`   | external aux           | 6   | 3D printed part                      | HS-      | [motor_holder_g.STEP](./cad_files/main_body/motor_holder_g.STEP)      |
 
-## Upper Part
+## Upper Body Assembly
 
-<!-- Put Picture of all the piece of the upper part -->
-<!-- Plus comment of the picture -->
+<img src="../media/0_upper_body_comp_ids.jpg" alt="Upper body components with reference ID">
+
+| ID       | Part Name                   | Qty | Description                          | Location | Reference             |
+|----------|-----------------------------|-----|--------------------------------------|----------|-----------------------|
+| `#UB1`   | Pixhawk Case                | 1   | 3D printed part                      | HS-      | [hex_stack_b](./cad_files/main_body/hex_stack_b.STEP)      |
+| `#UB2`   | M3 Nuts                     | 12  | M3 nuts                              | WS       | -                     |
+| `#UB3`   | Earplugs                    | 10  | Earplugs                             | WS       | -                     |
+| `#UB4`   | Earplug Tool                | 1   | Tool to convert earplugs in dampers  | HS-      | cad file missing      |
+| `#UB5`   | Short Carbon Fiber Tubes    | 2   | 5mmx3mmx65mm Squared                 | WS       | McMaster              |
+| `#UB6`   | Battery Support             | 1   | 3D printed part                      | HS-      | cad file missing      |
+| `#UB7`   | M3x10mm Screws              | 4   | M3x10mm screws with spheric head     | WS       | -                     |
+| `#UB8`   | Main Body Case top part     | 1   | 3D printed part                      | HS-      | [hex_stack_c](./cad_files/main_body/hex_stack_c.STEP)      |
+| `#UB9`   | Main Body Case bottom part  | 1   | 3D printed part                      | HS-      | [hex_stack_d](./cad_files/main_body/hex_stack_d.STEP)      |
+| `#UB10`  | Long Carbon Fiber Tubes     | 4   | 5mmx3mmx150mm Squared                | WS       | McMaster              |
+| `#UB11`  | Fasteners                   | X   | Fasteners                            | WS       | -                     |
+| `#UB12`  | Wi-Fi Antenna               | 1   | Wi-Fi antenna for the NUC            | HS-      | -                     |
+| `#UB13`  | Modified Power Module       | 1   | Modified power module                | HS-      | -                     |
+| `#UB14`  | M3x6mm Screws               | 4   | M3x6mm screws with cylindric/spheric head       | WS       | -          |
+| `#UB15`  | Ethernet adapter            | 1   | USB to ehternet adapter              | HS-      | -                     |
+| `#UB16`  | Radio Receiver              | 1   | FS-iA6B Radio receiver               | HS-      | RC Innovations        |
+| `#UB17`  | Radio data cable            | 1   | FS-iA6B Receiver data cable          | HS-      | RC Innovations        |
+| `#UB18`  | Radio pairing jumper        | 1   | FS-iA6B Receiver data cable          | HS-      | RC Innovations        |
+| `#UB19`  | Pixhawk 5x                  | 1   | Pixhawk 5x Flight controller         | HS-      | holybro               |
+| `#UB20`  | Pixhawk Ethernet Cable      | 1   | Pixhawk Ethernet cable               | HS-      | -                     |
+| `#UB21`  | Pixhawk Power Cable         | 1   | Pixhawk Power    cable               | HS-      | -                     |
+| `#UB22`  | NUC                         | 1   | NUC Kit NUC7i7DNKE                   | HS-      | Intel                 |
+| `#UB23`  | M3x16mm Screws              | 4   | M3x16mm Screws with cylindric/sphreic head      | WS       | -          |
+| `#UB24`  | Main body case middle part  | 1   | 3D printed part                      | HS-      | missing cad file      |
+| `#UB25`  | M3 inserts                  | 4   | M3 inserts                           | WS       | -                     |
+| `#UB26`  | M4 Marker                   | 5   | 14 mm M4 Optitrack markers           | HS-      | OptiTrack             |
+| `#UB27`  | M4 Nylon Screws             | 5   | 12 mm M4 Nylon screws with any head  | WS       | -                     |
+| `#UB28`  | M4 Nuts                     | 5   | M4 nuts                              | WS       | -                     |
+
+> ⚠️  Please note that While the Pixhawk 5x has been discontinued, the Pixhawk 6x is mechanically compatible. However, Ensure software compatibility before proceeding.
+
+# Old component list
 
 | Part Name             | Quantity | Description                          | Reference                                                                                   |
 |-----------------------|----------|--------------------------------------|---------------------------------------------------------------------------------------------|

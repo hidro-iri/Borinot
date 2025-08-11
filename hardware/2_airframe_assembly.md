@@ -6,13 +6,14 @@ The airframe is the structure that houses and maintains the motors in their resp
 
 All the materials for this section are listed in [components list -> Airframe Assembly](0_components_list.md#airframe-assembly).
 
-### Tools
+## Tools
 
 For this section it will be necessary the following tools:
 - Cutting Pliers.
 - Pliers.
 - Allen key.
 - Solder station.
+- Glue.
 - Ball of paper.
 
 ---
@@ -30,8 +31,8 @@ In [components list -> Motor holder parts](0_components_list.md#motor-holder-par
 #### 1. Parts preparation.
 
 1. **Clean** all Motor holder parts (`#AF1`) following [general cleaning tips](./cad_files/README.md#general-cleaning-tips).
-2. **Install** two inserts (`#AF5`)) on the motor holder bottom part (`#MH1`). Place them vertical on top of each hole and with the flat side on top.
-With a solder tip do a vertical slightly pressure until it is inside the hole
+2. **Install** two inserts (`#AF5`) on the motor holder bottom part (`#MH1`). Place them vertical on top of each hole and with the flat side on top.
+With a solder tip put a small vertical pressure until it is inside the hole
 
 <img src="../media/2_motor_case_step_2.avif" alt="Before inserts on bottom" width="350">
 <img src="../media/2_motor_case_step_2b.avif" alt="After inserts on bottom" width="350">
@@ -90,6 +91,7 @@ The following images show marker position references and the process of assembli
 ## Part 2: Frame Assembly
 
 The frame is composed of two intersecting triangles. Each motor holder is a vertex and each carbon fiber tube an edge.
+
 The assembly process is the following:
 1. Assemble one triangle (motor 5, 4 and 2).
 2. Assemble two motors of the second triangle (motors 3 and 1).
@@ -109,8 +111,16 @@ The assembly process is the following:
 
 ---
 
-#### 2. Assembly motor holders with carbon tubes.
-The process of assembling a motor holder is to stack each part. When a motor holder set is stacked, there are 3 levels of carbon tube holders. Use the following table and image as reference to know where to insert the carbon tubes:
+#### 2. Assemble motor holders with carbon tubes.
+The process of assembling a motor holder is to stack each part. When a motor holder set is stacked, there are 3 levels of carbon tube holders. 
+
+2. **Select** a motor. Take its bottom part (`#MH1`) and **insert** four M3x30mm (`#AF6`) screws on it. Use something (for example a ball of paper) to keep the screws in position.
+
+<img src="../media/attach_tubes.jpg" alt="Screws support examples">
+
+> Example of how to keep screws in place.
+
+3. **Stack** each motor holder part inserting a carbon tube between parts when necessary according to the table below. Use the following table and image as reference to know where to insert the carbon tubes:
 
 | Motor ID | Left Position | Right Position |
 |:--------:|---------------|----------------|
@@ -124,14 +134,6 @@ The process of assembling a motor holder is to stack each part. When a motor hol
 <img src="../media/2_left_right_position.jpg" alt="Left and right position reference">
 
 > Left and right position reference
-
-2. **Select** a motor. Take its bottom part (`#MH1`) and **insert** four M3x30mm (`#AF6`) screws on it. Use something (for example a ball of paper) to keep the screws in position.
-
-<img src="../media/attach_tubes.jpg" alt="Screws support examples">
-
-> Example of how to keep screws in place.
-
-3. **Stack** each motor holder part inserting a carbon tube between parts when necessary according to the **table above**.
 
 4. **Place** a motor (`#AF9`) on top of the stack. Make sure to place the motor so it does not cover the marker. While keeping pressure, turn the stack upside down and screw in the motor.
 

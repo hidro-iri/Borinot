@@ -51,7 +51,7 @@ With a solder tip put a small vertical pressure until it is inside the hole
 5. **Remove** the head of all nylon screws (`#AF3`) creating a 10 mm nylon screw without head.
 ---
 #### 2. Markers assembly and motor distribution.
-At the end of this chapter all motor holders parts must be sorted and distributed as it final distribution as shown in the image above.
+At the end of this chapter all motor holders parts must be sorted and distributed as it final distribution as shown in the image below.
 
 <img src="../media/2_motor_holders_parts_distribution.jpg" alt="Motor holders final distribution">
 

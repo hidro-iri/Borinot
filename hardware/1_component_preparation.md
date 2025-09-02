@@ -19,7 +19,7 @@ Also it will be necessary some heat shrink tubing (small and big), solder tin an
 For this section it will be necessary the following tools:
 - Solder station.
 - Pliers.
-- Diagonal pliers.
+- Cutting pliers.
 - Flat-head screwdriver.
 - Hammer.
 - Bench vise.

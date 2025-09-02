@@ -20,6 +20,11 @@ For this section it will be necessary the following tools:
 - Flathead screwdriver.
 - Hammer.
 
+## How to cut carbon fiber tubes
+1. Put on working gloves, a face mask and protective glasses.
+2. Use a bench wise to fix the carbon tube.
+3. Cut it with the dremel.
+
 ---
 
 ## Assembly
@@ -53,7 +58,7 @@ Before starting the assembly of the upper body, ensure that the power module (`#
 >Pixhawk case and battery support assembled.
 
 ---
-7. **Insert** 4 M3 nuts (`#UB2`) in the main body case top part (`#UB8`). To facilitate the process, insert an M3 screw bigger than necessary, screw the M3 nut until it fits in its hole. Tighten the screw until the nut is in its slot, then loosen the screw. Ue the following image as reference:
+7. **Insert** 4 M3 nuts (`#UB2`) in the main body case top part (`#UB8`). To facilitate the process, insert an M3 screw bigger than necessary then screw the M3 nut until it fits in its hole. Tighten the screw until the nut is in its slot, then loosen the screw. Use the following image as reference (The 3D printed part is different):
 
 <img src="../media/3_insert_nuts.jpg" alt="Insert nut reference"/>
 
@@ -85,7 +90,7 @@ The main body requires careful placement and connection of components:
 > Power module assembled.
 
 ---
-14. **Secure** radio receiver (`#UB16`) to the main body case upper part (`#UB8`) using fasteners (`#UB11`). **Don't** thigth them.
+14. **Secure** radio receiver (`#UB16`) to the main body case upper part (`#UB8`) using fasteners (`#UB11`). **Don't thigth them**.
 15. **Secure** ethernet adapter (`#UB15`) to the main body case upper part (`#UB8`) using fasteners (`#UB11`). 
 
 <img src="../media/Eth_radio_assembled.jpg" alt="Ethernet adapter, and radio secured" width="400"/>
@@ -95,9 +100,9 @@ The main body requires careful placement and connection of components:
 ---
 
 16. **Insert** pixhwak ethernet cable (`#UB20`) trough its designated hole of the main body case upper part (`#UB8`). Connect it to the Pixhwak 5x (`#UB19`) designated port.
-17. **Connect** pixhawk power cable (`#UB21`) to pixhwak 5x (`#UB19`). Pass it trough its designated hole of the main boy case upper part (`#UB8`).
+17. **Connect** pixhawk power cable (`#UB21`) to pixhwak 5x (`#UB19`). Pass it trough its designated hole of the main body case upper part (`#UB8`).
 18. **Connect** radio data cable (`#UB17`) to the pixhawk (`#UB19`) and the radio receiver (`#UB16`) passing it trough its designated hole of the main body case upper part (`#UB8`).
-19. **Guide** the antenna cable (`#UB12`) by its designated hole of the main boy case upper part (`#UB8`).
+19. **Guide** the antenna cable (`#UB12`) by its designated hole of the main body case upper part (`#UB8`).
 20. **Place** the Pixhawk 5x (`#UB19`) inside its designated case (`#UB1`).
 21. **Secure** pixhawk case (`#UB1`) to the main body case upper part (`#UB8`) using fasteners (`#UB11`). Fastener heads must be outside main body case.
 
@@ -108,12 +113,26 @@ The main body requires careful placement and connection of components:
 
 ---
 
+22. **Connect** the computer power cable(`#UB13`) to the NUC(`#UB22`).
+23. **Connect** The Wi-Fi antenna(`#UB12`) to the NUC(`#UB22`).
+24. **Insert** nuts for the optitrack makers.
+25. **Place** insertions in the middle part
+24. **Install** main body middle part(`#UB24`) in main body bottom part(`#UB9`) as shown in the following image:
+
+<img src="../media/mainbody_orientation.jpg" alt="" width="400"/>
+
+25. **Insert** two 150 mm squared carbon fiber tubes (`#UB10`) in the main body case bottom part (`#UB9`) using the lateral hole. Push them to the end. Fix them with 4 fasteners (`#UB11`).
+26. **Fasten** lower part.
+
+
+---
 - **Connect the NUC to the power module using the designated computer cable.**
 - **Connect the NUC to the Wi-Fi antenna.**
 - **Position the bottom part of the main body inside the contour part.**
 - **Insert the 150mm square carbon fiber tubes into the top and bottom parts of the main body case.**
 
-<img src="../media/mainbody_preparation_5.png" alt="" width="350"/>
+<img src="../media/mainbody_preparation_5.png" alt="" width="400"/>
+<img src="../media/upper_and_lower_assembled.jpg" alt="" width="400"/>
 
 - **Place the NUC inside the main body case and secure it to the bottom part using 4 M3 16mm screws.**
 - **Connect all necessary cables**:

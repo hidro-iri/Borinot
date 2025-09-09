@@ -8,11 +8,11 @@ All the materials for this section are listed in [components list -> Airframe As
 
 ## Tools
 
-For this section it will be necessary the following tools:
-- Cutting Pliers.
+For this section, the following tools are necessary:
+- Cutting pliers.
 - Pliers.
 - Allen key.
-- Solder station.
+- Soldering station.
 - Glue.
 - Ball of paper.
 
